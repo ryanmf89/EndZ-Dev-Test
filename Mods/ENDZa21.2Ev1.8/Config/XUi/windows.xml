@@ -167,7 +167,7 @@
 <panel name="header" pos="0,0" height="43" depth="1" disableautobackground="true" >
 	<sprite depth="2" name="border" sprite="menu_empty3px" pos="0,0" height="43" color="[red]" type="sliced" fillcenter="false" globalopacity="true"/>
 	<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="0,0" height="43" color="[red]" type="sliced" fillcenter="true" globalopacity="true" />
-	<label depth="4" style="header.name" pos="490,-6" text="INFORMATION CENTER" />
+	<label depth="4" style="header.name" pos="490,-6" text="EndZ Information" />
 </panel>
 			
 			
@@ -178,7 +178,9 @@
 	<label pos="10,-10" depth="4" color="[red]" text="Mod Information:" />
 <grid pos="20,-42" rows="0" cell_width="610" cell_height="32" repeat_content="false" arrangement="vertical" font_size="12" >
 	<label depth="3" color="[white]" text="- Mod Creators: Thee_Legion, Mayred2008" />
-	<label depth="3" color="[white]" text="- Moderators: Arramus" />
+	<label depth="3" color="[white]" text="- Moderators: Leon Yan" />
+	<label depth="3" color="[white]" text="- Moderators: Thanks to another person who has helped big time." />
+	<label depth="3" color="[white]" text="but did not want to be named for the credit." />
 </grid>
 				
 <label pos="660,-10" depth="4" color="[red]" text="Mod Information:" />

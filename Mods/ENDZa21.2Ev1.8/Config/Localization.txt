@@ -1,9 +1,9 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english
 
 01EndZ_stonecave_01_arramus,POI,POIName,,,"END Z Toy Store"
-1EndZ_BookFair,POI,POIName,,,"END Z Book Fair"
-2EndZ_Headquarters,POI,POIName,,,"END Z Headquarters"
-3EndZ_Headquarters,POI,POIName,,,"END Z OutPost 1"
+1EndZ_BookFair,POI,POIName,,,"EndZ Book Fair"
+2EndZ_Headquarters,POI,POIName,,,"EndZ Headquarters"
+3EndZ_Headquarters,POI,POIName,,,"EndZ OutPost 1"
 
 EndZallinoneglassesLL,items,Clothes,,,"EndZ Glasses"
 EndZallinoneglassesLLDesc,items,Clothes,,,"These glasses add 1 point to the skill trees like other glasses. Has some hidden benefits as well! Credits to the DrunkPenguin."
@@ -17,7 +17,7 @@ starteraxeLLDesc,Items,melee,,,"cant be crafted, but can be repaired with stone.
 resourceHotCoalsLL,Items,Resource,,,"[850101]Hot Coals"
 resourceHotCoalsLLDesc,Items,Resource,,,"crafted in the campfire"
 
-resourceMoonRocksLL,Items,Resource,,,"[7ec2c0]Moon Rocks"
+resourceMoonRocksLL,Items,Resource,,,"[7ec2c0]Moon Rock"
 resourceMoonRocksLLDesc,Items,Resource,,,"From the temp of those hot coals made this stronger material known as moon rocks use this to craft tiered weapons and tools stronger then stone"
 resourcemoonmixLL,Items,Resource,,,"[7ec2c0]Moon Rock Mortar"
 resourcemoonmixLLDesc,Items,Resource,,,"This strong resource is made in the mixer to upgrade to moonrock blocks"
@@ -136,7 +136,7 @@ cntWallOvenWorkingSchematic,items,Schematic,,,Working Ovens and Grills Schematic
 decoClawFootBathTubWorking,blocks,Block,,,Working Clawfoot Bathtub
 cntBathTubEmptyWorking,blocks,Block,,,Working Bathtub
 
-woodLogSpike1,blocks,Block,,,Wood LogSpike(upgradeable)
+woodLogSpike1,blocks,Block,,,Wood Log Spike(Upgradeable)
 woodLogSpike1Desc,blocks,Block,,,this is one sharp spike, can be upgraded further
 
 buffScentofPreyDesc,buffs,Buff,,,"You are carrying [db7c1d]Something Smelly[ffffff], predators will come far and wide to find you because of it. Better stash it somewhere safe, like a vehicle to protect yourself."
@@ -148,7 +148,7 @@ survivalNutsLL,items,Food,,,"Mixed Nuts"
 survivalNutsLLDesc,items,Food,,,"Nuts provide much needed nutrition. Keep a bunch of these on you for emergencies. Eating a handful may provide an extra boost."
 survivalBerriesLL,items,Food,,,"Assorted Berries"
 survivalBerriesLLDesc,items,Food,,,"Safe to eat and can provide a boost to your energy. Eating a handful may provide an extra boost."
-handfulOfNutsLL,items,Food,,,"Handful of MixedNuts"
+handfulOfNutsLL,items,Food,,,"Handful of Mixed Nuts"
 handfulOfNutsLLDesc,items,Food,,,"This handful of nuts will provide the boost you are looking for out there."
 handfulOfBerriesLL,items,Food,,,"Handful of Assorted Berries"
 handfulOfBerriesLLDesc,items,Food,,,"This handful of berries will provide the boost you are looking for out there."
@@ -321,7 +321,7 @@ quest_progressionZombieHunting10_offer,quests,Quest,,,"Kill 2000 zombies."
 
 quest_learnmoonrockLL_name,quests,Quest,,,"(Read Quest Description) MoonRock Tools"
 quest_learnmoonrockLL_subtitle,quests,Quest,,,"(Read Quest Description) MoonRock Tools"
-quest_learnmoonrockLL_desc,quests,Quest,,,"when crafting hot coals in the campfire, assure you stay in the campfire to get credit for the crafting of the hot coals."
+quest_learnmoonrockLL_desc,quests,Quest,,,"when crafting hot coals in the campfire, assure you stay in the campfire to get credit for the crafting of the hot coals. Also when crafting the moonrock axe and moonrock shovel assure they go to your backpack and not your toolbelt. If they equip to your toolbelt upon crafting completion, your quest will not complete."
 quest_learnmoonrockLL_offer,quests,Quest,,,"(Read Quest Description) MoonRock Tools"
 
 tooltipJammed,UI,Menu,,,{0} Use {1} ([cfcb02]Jammed[-]),,
@@ -578,7 +578,7 @@ moonrockShapes:VariantHelper,blocks,Block,,,"[7ec2c0]Moonrock Shapes(Player)"
 materialMvibe_shapes,blocks,Block,,,Vibranium
 vibeShapes:VariantHelper,blocks,Block,,,"[6a00a3]Vibranium Shapes(Player)"
 
-perkbows,,,,,"[fc9d03]Improved Bows"
+perkbows,,,,,"[fc9d03]EndZ Improved Bows"
 perkbowsDesc,,,,,"This tree unlocks Improved Bows(These items cannot be looted, only crafted. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO BOWS FROM VANILLA) THESE ARE LIMITED TO MOD ATTACHMENTS."
 perkbowsRank1Desc,,,,,"Level 1"
 perkbowsRank1LongDesc,,,,,"Unlocks Level 2- Improved Wooden Bow, Improved Compound Bow, and Improved Compound Crossbow"
@@ -591,7 +591,7 @@ perkbowsRank4LongDesc,,,,,"Unlocks Level 5- Improved Wooden Bow, Improved Compou
 perkbowsRank5Desc,,,,,"Level 5"
 perkbowsRank5LongDesc,,,,,"Unlocks Level 6- Improved Wooden Bow, Improved Compound Bow, and Improved Compound Crossbow"
 
-perkpistols,,,,,"[fc9d03]Improved Pistols"
+perkpistols,,,,,"[fc9d03]EndZ Improved Pistols"
 perkpistolsDesc,,,,,"This tree unlocks Improved Pistols(These items cannot be looted, only crafted. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO PISTOLS FROM VANILLA.) THESE ARE LIMITED TO MOD ATTACHMENTS."
 perkpistolsRank1Desc,,,,,"Level 1"
 perkpistolsRank1LongDesc,,,,,"Unlocks Level 2- Improved Pistol and Improved Desert Vulture"
@@ -604,7 +604,7 @@ perkpistolsRank4LongDesc,,,,,"Unlocks Level 5- Improved Pistol and Improved Dese
 perkpistolsRank5Desc,,,,,"Level 5"
 perkpistolsRank5LongDesc,,,,,"Unlocks Level 6- Improved Pistol and Improved Desert Vulture"
 
-perkshotguns,,,,,"[fc9d03]Improved Shotguns"
+perkshotguns,,,,,"[fc9d03]EndZ Improved Shotguns"
 perkshotgunsDesc,,,,,"This tree unlocks Improved Shotguns(These items cannot be looted, only crafted. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +10BASE DAMAGE TO SHOTGUNS FROM VANILLA.) THESE ARE LIMITED TO MOD ATTACHMENTS."
 perkshotgunsRank1Desc,,,,,"Level 1"
 perkshotgunsRank1LongDesc,,,,,"Unlocks Level 2- Improved Double Barrel, Improved Pump Shotgun, and Improved Auto Shotgun"
@@ -617,7 +617,7 @@ perkshotgunsRank4LongDesc,,,,,"Unlocks Level 5- Improved Double Barrel, Improved
 perkshotgunsRank5Desc,,,,,"Level 5"
 perkshotgunsRank5LongDesc,,,,,"Unlocks Level 6- Improved Double Barrel, Improved Pump Shotgun, and Improved Auto Shotgun"
 
-perkrifles,,,,,"[fc9d03]Improved Rifles"
+perkrifles,,,,,"[fc9d03]EndZ Improved Rifles"
 perkriflesDesc,,,,,"This tree unlocks Improved Rifles(These items cannot be looted, only crafted. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO RIFLES FROM VANILLA.) THESE ARE LIMITED TO MOD ATTACHMENTS."
 perkriflesRank1Desc,,,,,"Level 1"
 perkriflesRank1LongDesc,,,,,"Unlocks Level 2- Improved Hunting Rifle, Improved Lever Action Rifle, and Improved Sniper Rifle"
@@ -630,7 +630,7 @@ perkriflesRank4LongDesc,,,,,"Unlocks Level 5- Improved Hunting Rifle, Improved L
 perkriflesRank5Desc,,,,,"Level 5"
 perkriflesRank5LongDesc,,,,,"Unlocks Level 6- Improved Hunting Rifle, Improved Lever Action Rifle, and Improved Sniper Rifle"
 
-perkfullauto,,,,,"[fc9d03]Improved Machine Guns"
+perkfullauto,,,,,"[fc9d03]EndZ Improved Machine Guns"
 perkfullautoDesc,,,,,"This tree unlocks Improved Machine Guns(These items cannot be looted, only crafted. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO FULL AUTO GUNS FROM VANILLA.) THESE ARE LIMITED TO MOD ATTACHMENTS."
 perkfullautoRank1Desc,,,,,"Level 1"
 perkfullautoRank1LongDesc,,,,,"Unlocks Level 2- Improved SMG, Improved AK47, Improved Tactical Assault Rifle, and Improved M60"

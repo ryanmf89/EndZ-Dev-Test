@@ -332,279 +332,8 @@
 	,screamertrack
 </append>
 	
-<!--INFECTED ZOMBIES-->
-<append xpath="/entity_classes"> 
-<entity_class name="zombiesmallbitchLL" extends="zombieTemplateMale">
-	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Mesh" value="#@modfolder:Resources/wastesmallbitch.unity3d?zombiesmallbitch"/>
-	<property name="AvatarController" value="AvatarZombieController"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="WalkType" value="2"/>
-	<property name="Mass" value="500"/>
-	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
-	<property name="DeadBodyHitPoints" value="700"/>
-	<property name="RootMotion" value="true"/>
-	<property name="HasDeathAnim" value="true"/>
-	<property name="HasRagdoll" value="true"/>
-	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
-	<property name="Dismemberment" value="true"/>
-
-	<property name="AITask" value="
-	BreakBlock|
-	ApproachDistraction|
-	RangedAttackTarget itemType=1;cooldown=4;duration=5|
-	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
-	ApproachSpot|
-	Look|
-	Wander|
-	"/>	
-
-	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
-		
-	<property name="MoveSpeed" value="0.06"/>
-	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
-	<property name="SizeScale" value="1"/>
-	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-	<property name="LootDropProb" value=".1"/>
-
-<effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="1500,2000"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
-</effect_group>
-</entity_class>
-
-<entity_class name="zombiespikeLL" extends="zombieTemplateMale">
-	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Mesh" value="#@modfolder:Resources/wastespike.unity3d?endzspikez"/>
-	<property name="AvatarController" value="AvatarZombieController"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="WalkType" value="2"/>
-	<property name="Mass" value="500"/>
-	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
-	<property name="DeadBodyHitPoints" value="700"/>
-	<property name="RootMotion" value="true"/>
-	<property name="HasDeathAnim" value="true"/>
-	<property name="HasRagdoll" value="true"/>
-	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
-	<property name="Dismemberment" value="true"/>
-	
-	<property name="AITask" value="
-	BreakBlock|
-	ApproachDistraction|
-	RangedAttackTarget itemType=1;cooldown=4;duration=5|
-	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
-	ApproachSpot|
-	Look|
-	Wander|
-	"/>	
-
-	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
-				
-	<property name="MoveSpeed" value="0.06"/>
-	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
-	<property name="SizeScale" value="1"/>
-	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-	<property name="LootDropProb" value=".1"/>
-
-<effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="1500,2000"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
-</effect_group>
-</entity_class>
-
-<entity_class name="zombienecroLL" extends="zombieTemplateMale">
-	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Mesh" value="#@modfolder:Resources/wastenecro.unity3d?EndZNecromanser"/>
-	<property name="AvatarController" value="AvatarZombieController"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="WalkType" value="2"/>
-	<property name="Mass" value="500"/>
-	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
-	<property name="DeadBodyHitPoints" value="700"/>
-	<property name="RootMotion" value="true"/>
-	<property name="HasDeathAnim" value="true"/>
-	<property name="HasRagdoll" value="true"/>
-	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
-	<property name="Dismemberment" value="true"/>
-	
-	<property name="AITask" value="
-	BreakBlock|
-	ApproachDistraction|
-	RangedAttackTarget itemType=1;cooldown=4;duration=5|
-	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
-	ApproachSpot|
-	Look|
-	Wander|
-	"/>	
-
-	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
-				
-	<property name="MoveSpeed" value="0.06"/>
-	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
-	<property name="SizeScale" value="1"/>
-	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-	<property name="LootDropProb" value=".1"/>
-
-<effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="1500,2000"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
-</effect_group>
-</entity_class>
-
-<entity_class name="zombiemutantLL" extends="zombieTemplateMale">
-	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Mesh" value="#@modfolder:Resources/wastemutantregular.unity3d?EndZmutant"/>
-	<property name="AvatarController" value="AvatarZombieController"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="WalkType" value="2"/>
-	<property name="Mass" value="500"/>
-	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
-	<property name="DeadBodyHitPoints" value="700"/>
-	<property name="RootMotion" value="true"/>
-	<property name="HasDeathAnim" value="true"/>
-	<property name="HasRagdoll" value="true"/>
-	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
-	<property name="Dismemberment" value="true"/>
-	
-	<property name="AITask" value="
-	BreakBlock|
-	ApproachDistraction|
-	RangedAttackTarget itemType=1;cooldown=4;duration=5|
-	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
-	ApproachSpot|
-	Look|
-	Wander|
-	"/>	
-
-	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
-				
-	<property name="MoveSpeed" value="0.06"/>
-	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
-	<property name="SizeScale" value="1"/>
-	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-	<property name="LootDropProb" value=".1"/>
-
-<effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="1500,2000"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
-</effect_group>
-</entity_class>
-
-<entity_class name="zombiesupermutantLL" extends="zombieTemplateMale">
-	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Mesh" value="#@modfolder:Resources/wastemutantsuper.unity3d?Endzsupermutant"/>
-	<property name="AvatarController" value="AvatarZombieController"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="WalkType" value="2"/>
-	<property name="Mass" value="500"/>
-	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
-	<property name="DeadBodyHitPoints" value="700"/>
-	<property name="RootMotion" value="true"/>
-	<property name="HasDeathAnim" value="true"/>
-	<property name="HasRagdoll" value="true"/>
-	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
-	<property name="Dismemberment" value="true"/>
-	
-	<property name="AITask" value="
-	BreakBlock|
-	ApproachDistraction|
-	RangedAttackTarget itemType=1;cooldown=4;duration=5|
-	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
-	ApproachSpot|
-	Look|
-	Wander|
-	"/>	
-
-	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
-				
-	<property name="MoveSpeed" value="0.06"/>
-	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
-	<property name="SizeScale" value="1"/>
-	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-	<property name="LootDropProb" value=".1"/>
-
-<effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="1500,2000"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
-</effect_group>
-</entity_class>
-
-<entity_class name="zombieWguardianLL" extends="zombieTemplateMale">
-	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Mesh" value="#@modfolder:Resources/wasteguardian.unity3d?EndZwastelandguardian"/>
-	<property name="AvatarController" value="AvatarZombieController"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="WalkType" value="2"/>
-	<property name="Mass" value="500"/>
-	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
-	<property name="DeadBodyHitPoints" value="700"/>
-	<property name="RootMotion" value="true"/>
-	<property name="HasDeathAnim" value="true"/>
-	<property name="HasRagdoll" value="true"/>
-	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
-	<property name="Dismemberment" value="true"/>
-	
-	<property name="AITask" value="
-	BreakBlock|
-	ApproachDistraction|
-	RangedAttackTarget itemType=1;cooldown=4;duration=5|
-	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
-	ApproachSpot|
-	Look|
-	Wander|
-	"/>	
-
-	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
-				
-	<property name="MoveSpeed" value="0.03"/>
-	<property name="MoveSpeedAggro" value=".5, 1"/>
-			
-	<property name="SizeScale" value="1"/>
-	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-	<property name="LootDropProb" value=".1"/>
-
-<effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="2500,3500"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
-</effect_group>
-</entity_class>
-<!--END OF INFECTED ZOMBIES-->
-
+<!--PINEFOREST ZOMBIES-->
+<append xpath="/entity_classes">
 <entity_class name="zombiegrimlinLL" extends="zombieTemplateMale">
 	<property name="UserSpawnType" value="Menu"/>
 	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
@@ -615,26 +344,25 @@
 	<property name="WalkType" value="2"/>
 	<property name="Mass" value="500"/>
 	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
-	<property name="Dismemberment" value="true"/>
-				
+	<property name="Dismemberment" value="true"/>			
 	<property name="MoveSpeed" value="0.06"/>
-	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
 	<property name="SizeScale" value="1"/>
 	<property name="LootDropEntityClass" value="Knap Sack"/>
 	<property name="LootDropProb" value=".1"/>
+	<property name="PainResistPerHit" value=".3"/>
 
 <effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="500,1000"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
+	<passive_effect name="HealthMax" operation="base_set" value="700,800"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="15"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="3"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
 </entity_class>
 	
@@ -648,26 +376,26 @@
 	<property name="WalkType" value="2"/>
 	<property name="Mass" value="500"/>
 	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
-	<property name="Dismemberment" value="true"/>
-				
+	<property name="Dismemberment" value="true"/>				
 	<property name="MoveSpeed" value="0.06"/>
-	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>			
 	<property name="SizeScale" value="1"/>
 	<property name="LootDropEntityClass" value="Knap Sack"/>
 	<property name="LootDropProb" value=".1"/>
 
+	<property name="PainResistPerHit" value=".3"/>
+
 <effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="500,1000"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
+	<passive_effect name="HealthMax" operation="base_set" value="700,800"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="15"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="3"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
 </entity_class>
 
@@ -681,31 +409,124 @@
 	<property name="WalkType" value="2"/>
 	<property name="Mass" value="500"/>
 	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="500,1000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HasRagdoll" value="true"/>
-	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
-	<property name="Dismemberment" value="true"/>
-				
+	<property name="LookAtAngle" value="0"/>			
+	<property name="Dismemberment" value="true"/>				
 	<property name="MoveSpeed" value="0.06"/>
-	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>			
 	<property name="SizeScale" value="1"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 	<property name="LootDropProb" value=".1"/>
 
+	<property name="PainResistPerHit" value=".3"/>
+
 <effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="500,1000"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
+	<passive_effect name="HealthMax" operation="base_set" value="700,800"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="15"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="3"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
 </entity_class>
 </append>
+<!--END OF PINEFOREST ZOMBIES-->
+
+<!--DESERT ZOMBIES-->
+<append xpath="/entity_classes"> 
+<entity_class name="zombieimpLL" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Mesh" value="#@modfolder:Resources/EndZdesertbundle.unity3d?EndZimp"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="2500"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>			
+	<property name="Dismemberment" value="true"/>
 	
-<!--*******Snow Zombies********-->
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=3;minRange=1;maxRange=6;unreachableRange=18|
+		DestroyArea|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+
+	<property name="HandItem" value="meleeimpHanddesertzombieLL"/>				
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>			
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".1"/>
+	
+	<property name="PainResistPerHit" value=".6"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="775,875"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="25"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+</effect_group>
+</entity_class>
+	
+<entity_class name="zombiedesertmonsterorcLL" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Mesh" value="#@modfolder:Resources/EndZdesertbundle.unity3d?EndZdesertmonsterorc"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="2500"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>			
+	<property name="Dismemberment" value="true"/>
+	
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=3;minRange=1;maxRange=6;unreachableRange=18|
+		DestroyArea|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+
+	<property name="HandItem" value="meleeHanddesertzombieLL"/>				
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>			
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".1"/>
+
+	<property name="PainResistPerHit" value=".6"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="775,875"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="25"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+</effect_group>
+</entity_class>
+</append>
+<!--END OF DESERT ZOMBIES-->
+	
+<!--SNOW ZOMBIES-->
 <append xpath="/entity_classes"> 
 <entity_class name="zombiesnowguardianLL" extends="zombieTemplateMale">
 	<property name="UserSpawnType" value="Menu"/>
@@ -717,26 +538,25 @@
 	<property name="WalkType" value="2"/>
 	<property name="Mass" value="500"/>
 	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HasRagdoll" value="true"/>
-	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
-	<property name="Dismemberment" value="true"/>
-				
+	<property name="LookAtAngle" value="0"/>			
+	<property name="Dismemberment" value="true"/>				
 	<property name="MoveSpeed" value="0.03"/>
-	<property name="MoveSpeedAggro" value=".5, 1"/>
-			
+	<property name="MoveSpeedAggro" value=".5, 1"/>			
 	<property name="SizeScale" value="1"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 	<property name="LootDropProb" value=".1"/>
 
+	<property name="PainResistPerHit" value=".6"/>
 <effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="2500,3500"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
+	<passive_effect name="HealthMax" operation="base_set" value="775,875"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="25"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
 </entity_class>
 	
@@ -746,7 +566,6 @@
 	<property name="ReplaceMaterial0" value="particleeffects/models/materials/p_snow"/>
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/>
 	<property name="DismemberMultiplierLegs" value=".4"/>
-	<property name="PainResistPerHit" value=".9"/>
 	<property name="LegCrawlerThreshold" value="0"/>
 	<property name="LegCrippleThreshold" value="0.01"/>
 	<property name="KnockdownProneDamageThreshold" value="0.45"/>
@@ -766,123 +585,288 @@
 	<property name="ExperienceGain" value="2500"/> 
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 	<property name="LootDropProb" value=".1"/> 
-	<property name="MoveSpeedAggro" value="1, 1.5"/>	
-	<effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="1500,2000"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/>
-	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="20"/>
-	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/> 
-</effect_group>
-</entity_class>
-	<effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="541"/>
-	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8"/>
+	<property name="MoveSpeedAggro" value="1, 1.5"/>
+	
+	<property name="PainResistPerHit" value=".6"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="775,875"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="25"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
 	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
+</entity_class>
 </append>
-	
+<!--END OF SNOW ZOMBIES-->
+
+<!--WASTELAND ZOMBIES-->
 <append xpath="/entity_classes"> 
-<entity_class name="zombieimpLL" extends="zombieTemplateMale">
+<entity_class name="zombiesmallbitchLL" extends="zombieTemplateMale">
 	<property name="UserSpawnType" value="Menu"/>
 	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
 	<property name="Prefab" value="NPC"/>
-	<property name="Mesh" value="#@modfolder:Resources/EndZdesertbundle.unity3d?EndZimp"/>
+	<property name="Mesh" value="#@modfolder:Resources/wastesmallbitch.unity3d?zombiesmallbitch"/>
 	<property name="AvatarController" value="AvatarZombieController"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
 	<property name="Mass" value="500"/>
 	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
 	<property name="Dismemberment" value="true"/>
-	
-		<property name="AITask" value="
-	BreakBlock|
-	ApproachDistraction|
-	RangedAttackTarget itemType=1;cooldown=4;duration=3;minRange=1;maxRange=6;unreachableRange=18|
-	DestroyArea|
-	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
-	ApproachSpot|
-	Look|
-	Wander|
-	"/>
 
-	<property name="HandItem" value="meleeimpHanddesertzombieLL"/>
-				
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>	
+
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>		
 	<property name="MoveSpeed" value="0.06"/>
-	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>			
 	<property name="SizeScale" value="1"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 	<property name="LootDropProb" value=".1"/>
 
+	<property name="PainResistPerHit" value=".9"/>
 <effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="1000,1500"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
+	<passive_effect name="HealthMax" operation="base_set" value="875,1000"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
 </entity_class>
-	
-<entity_class name="zombiedesertmonsterorcLL" extends="zombieTemplateMale">
+
+<entity_class name="zombiespikeLL" extends="zombieTemplateMale">
 	<property name="UserSpawnType" value="Menu"/>
 	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
 	<property name="Prefab" value="NPC"/>
-	<property name="Mesh" value="#@modfolder:Resources/EndZdesertbundle.unity3d?EndZdesertmonsterorc"/>
+	<property name="Mesh" value="#@modfolder:Resources/wastespike.unity3d?endzspikez"/>
 	<property name="AvatarController" value="AvatarZombieController"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
 	<property name="Mass" value="500"/>
 	<property name="ExperienceGain" value="2500"/>
-	<property name="MaxHealth" value="1500,2000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="LookAtAngle" value="0"/>
-			
-	<property name="PainResistPerHit" value="100"/>
 	<property name="Dismemberment" value="true"/>
 	
 	<property name="AITask" value="
-	BreakBlock|
-	ApproachDistraction|
-	RangedAttackTarget itemType=1;cooldown=4;duration=3;minRange=1;maxRange=6;unreachableRange=18|
-	DestroyArea|
-	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
-	ApproachSpot|
-	Look|
-	Wander|
-	"/>
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>	
 
-	<property name="HandItem" value="meleeHanddesertzombieLL"/>
-				
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>				
 	<property name="MoveSpeed" value="0.06"/>
-	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>			
 	<property name="SizeScale" value="1"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 	<property name="LootDropProb" value=".1"/>
 
+	<property name="PainResistPerHit" value=".9"/>
 <effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="1000,1500"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
+	<passive_effect name="HealthMax" operation="base_set" value="875,1000"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+</effect_group>
+</entity_class>
+
+<entity_class name="zombienecroLL" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Mesh" value="#@modfolder:Resources/wastenecro.unity3d?EndZNecromanser"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="2500"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>
+	
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>	
+
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>				
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>			
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".1"/>
+
+	<property name="PainResistPerHit" value=".9"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="875,1000"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+</effect_group>
+</entity_class>
+
+<entity_class name="zombiemutantLL" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Mesh" value="#@modfolder:Resources/wastemutantregular.unity3d?EndZmutant"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="2500"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>
+	
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>	
+
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>				
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>			
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".1"/>
+
+	<property name="PainResistPerHit" value=".9"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="875,1000"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+</effect_group>
+</entity_class>
+
+<entity_class name="zombiesupermutantLL" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Mesh" value="#@modfolder:Resources/wastemutantsuper.unity3d?Endzsupermutant"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="2500"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>			
+	<property name="Dismemberment" value="true"/>
+	
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>	
+
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>				
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>			
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".1"/>
+
+	<property name="PainResistPerHit" value=".9"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="875,1000"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+</effect_group>
+</entity_class>
+
+<entity_class name="zombieWguardianLL" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,elitetrack"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Mesh" value="#@modfolder:Resources/wasteguardian.unity3d?EndZwastelandguardian"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="2500"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>
+	
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>	
+
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>				
+	<property name="MoveSpeed" value="0.03"/>
+	<property name="MoveSpeedAggro" value=".5, 1"/>			
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".1"/>
+
+	<property name="PainResistPerHit" value=".9"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="875,1000"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+	<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
 </entity_class>
 </append>
+<!--END OF WASTELAND ZOMBIES-->
 	
-<!--ULTIMATE SCREAMER-->
+<!--GHASTLY SCREAMER-->
 <append xpath="/entity_classes">
 <entity_class name="zombiebitchQueen" extends="zombieBoeFeral">
-	<property name="SizeScale" value="1.1"/>
-	<property name="Tags" value="entity,zombie,walker,boss,bansheequeen,screamertrack" />
+	<property name="SizeScale" value="1.5"/>
+	<property name="Tags" value="entity,zombie,walker,boss,zombiebitchQueen,screamertrack" />
 	<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZScreamer.prefab"/>
-	<property name="ReplaceMaterial0" value="particleeffects/models/materials/p_glass"/>
-	<property name="ReplaceMaterial2" value="entities/resources/materials/oreshaleboulder"/>
 	<property name="SoundRandom" value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
 	<property name="SoundRandomTime" value="15.0"/>	
 	<property name="SoundAlert" value=""/>
@@ -896,13 +880,13 @@
 	<property name="HasRagdoll" value="false"/>
 
 	<property name="WalkType" value="3"/>
-	<property name="HandItem" value="meleeHandBansheeQueen"/>
+	<property name="HandItem" value="meleeHandscreamerzombiebitchQueen"/>
 	<property name="LootDropEntityClass" value="Knap Sack"/>
 	<property name="LootDropProb" value=".1"/>
 	<effect_group name="Base Effects">
 	<passive_effect name="HealthMax" operation="base_set" value="400,500"/>
 	<passive_effect name="HealthMax" operation="perc_set" value="1"/>
-	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBansheeQueen01"/>
+	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffzombiebitchQueen01"/>
 	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
 	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
@@ -1868,31 +1852,6 @@
 </effect_group>
 </entity_class>
 <!--END OF WARRIOR NPC AND ZOMBIE VARIANT-->
-
-<!--BANSHEE NPC AND ZOMBIE VARIANT-->
-<entity_class name="npcEndZsurvivor4LL" extends="npcAdvancedEmptyHandTemplate"> 
-	<property name="UserSpawnType" value="Menu"/> 
- 	<property name="Tags" value="entity,male,npc,walker,melee,DRMid,Knife,Machete,ClubWood,BatWood,Axe,Spear,SMG,PipePistol,PipeShotgun,PipeRifle,PipeMG,M60,Pistol,DPistol,Ak47,TRifle,HRifle,SRifle,LBow,XBow,PShotgun,AShotgun,RocketL"/>
-	<property name="Faction" value="whiteriver"/>
-	<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />				
-	<property name="Mesh" value="#@modfolder:Resources/banshee21.unity3d?banshee2"/>
-	<property name="LookAtAngle" value="0"/>
-	<!--property name="MaxHealth" value="75,150"/-->
-	<property name="Buffs" value="npcEndZsurvivorTransform3LL"/>
-<!-- This activates the backpack -->
-<effect_group name="HasBackpack">
-	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="HasBackpack"/>		
-</effect_group>
-<!-- This activates the Timid behavior -->	
-<!--effect_group name="IsTimid">
-	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="Timid"/>
-</effect_group-->	
-<effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="10"/>
-	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
-</effect_group>
-</entity_class>
-<!--END OF BANSHEE NPC AND ZOMBIE VARIANT-->
 
 </append>
 

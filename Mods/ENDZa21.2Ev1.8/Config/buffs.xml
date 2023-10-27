@@ -225,28 +225,28 @@
 	
 <!--ULTIMATE SCREAMER-->
 <append xpath="/buffs">
-<buff name="buffBansheeQueen01" hidden="true">
+<buff name="buffzombiebitchQueen01" hidden="true">
 	<duration value=".25"/>
 	<effect_group>
-	<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffBansheeQueen02"/>
-	<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="positionAOE" range="10" buff="buffBansheeQueen"/>
+	<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffzombiebitchQueen02"/>
+	<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="positionAOE" range="10" buff="buffzombiebitchQueen"/>
 </effect_group>
 	<effect_group>
-	<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="10" buff="buffBansheeQueendegrade">
+	<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="10" buff="buffzombiebitchQueendegrade">
 	<requirement name="StatComparePercCurrentToMax" stat="health" operation="LTE" value=".5"/>
 </triggered_effect>
 </effect_group>
 </buff>
 
-<buff name="buffBansheeQueen02" hidden="true">
+<buff name="buffzombiebitchQueen02" hidden="true">
 	<duration value=".25"/>
 	<effect_group>
-	<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffBansheeQueen01"/>
-	<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="positionAOE" range="10" buff="buffBansheeQueen"/>
+	<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffzombiebitchQueen01"/>
+	<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="positionAOE" range="10" buff="buffzombiebitchQueen"/>
 </effect_group>
 </buff>
 
-<buff name="buffBansheeQueen" name_key="Icy Veins" tooltip_key="Its not a family reunion, Rekt tell your mom to go home!" icon="ui_game_symbol_cold" icon_color="0,0,128" icon_blink="true">
+<buff name="buffzombiebitchQueen" name_key="Freezing Temps" tooltip_key="Its not a family reunion, Rekt tell your mom to go home!" icon="ui_game_symbol_cold" icon_color="106, 0, 163" icon_blink="true">
 	<stack_type value="replace"/>
 	<duration value="2"/>
 	<update_rate value="1"/>
@@ -261,7 +261,7 @@
 </effect_group>
 </buff>
 
-<buff name="buffBansheeQueendegrade" name_key="Don't Break It!" tooltip_key="Why are my weapons breaking so quick?" icon="ui_game_symbol_block_repair" icon_color="0,0,128" icon_blink="true">
+<buff name="buffzombiebitchQueendegrade" name_key="What is Happening!" tooltip_key="Your gun durability just went down the toilet" icon="ui_game_symbol_block_repair" icon_color="106, 0, 163" icon_blink="true">
 	<stack_type value="replace"/>
 	<duration value="15"/>
 	<effect_group>
@@ -269,42 +269,8 @@
 </passive_effect>
 </effect_group>
 </buff>
-
 </append>
 
-<!--ADDS INSTA HEAL FROM ITEMS THAT PROVIDE HEALTH BUT INTERFERES WITH PHYSICIAN PERK-->
-<!--set xpath="//buff[@name='buffHealHealth']">
-  <stack_type value="ignore"/>
-  <update_rate value="1"/>
-
-  <effect_group name="Food Health">
-    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="@foodHealthAmount">
-      <requirement name="CVarCompare" cvar=".NoHealingManager" operation="Equals" value="0"/>
-    </triggered_effect>
-    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="foodHealthAmount" operation="subtract" value="@foodHealthAmount"/>
-    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="foodHealthAmount" operation="set" value="0">
-      <requirement name="CVarCompare" cvar="foodHealthAmount" operation="LTE" value="0"/>
-    </triggered_effect>
-  </effect_group>
-  
-  <effect_group name="Medical Health">
-    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="@medicalRegHealthAmount">
-      <requirement name="CVarCompare" cvar=".NoHealingManager" operation="Equals" value="0"/>
-    </triggered_effect>
-    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="subtract" value="@medicalRegHealthAmount"/>
-    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="0">
-      <requirement name="CVarCompare" cvar="medicalRegHealthAmount" operation="LTE" value="0"/>
-    </triggered_effect>
-  </effect_group>
-
-  <effect_group name="Cleanup">
-    <requirements compare_type="and">
-      <requirement name="CVarCompare" cvar="foodHealthAmount" operation="LTE" value="0"/>
-      <requirement name="CVarCompare" cvar="medicalRegHealthAmount" operation="LTE" value="0"/>
-    </requirements>
-<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealHealth"/>
-  </effect_group>
-</set-->
 
 <!--PARTICLE EFFECTS-->
 <!--FIRE PARTICLE-->

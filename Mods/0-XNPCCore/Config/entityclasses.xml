@@ -319,7 +319,7 @@
 			<property name="Beds" value="mattressFlat" />
 			 <!-- This is the block it'll call home -->
 			<property name="HomeBlocks" value="cntNPCHomeBlock"/>
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 			<property name="TimeStayAfterDeath" value="5"/>
 			<property name="DeadBodyHitPoints" value="1000"/>
@@ -678,7 +678,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeNPCEmptyHand"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeNPCEmptyHand"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeNPCEmptyHand"/> 
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="750" />
 			<property name="ExperienceGain" value="600"/> 
 		</entity_class>	
@@ -732,7 +732,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeNPCClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeNPCClubWood"/> 
 			<property name="BagItems" value="meleeWpnClubT0WoodenClub" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 			<property name="ExperienceGain" value="600"/> 
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerClub" />
@@ -787,7 +787,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeNPCKnife"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeNPCKnife"/> 
 			<property name="BagItems" value="meleeWpnBladeT1HuntingKnife" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="750" />
 			<property name="ExperienceGain" value="600"/> 
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerKnife" />
@@ -836,7 +836,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeNPCBatWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeNPCBatWood"/>
 			<property name="BagItems" value="meleeWpnClubT1BaseballBat" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 			<property name="ExperienceGain" value="600"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerBat" />
@@ -890,7 +890,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeNPCAxe"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeNPCAxe"/>
 			<property name="BagItems" value="meleeToolAxeT1IronFireaxe" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 			<property name="ExperienceGain" value="600"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerAxe" />
@@ -940,7 +940,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeNPCSpear"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeNPCSpear"/> 
 			<property name="BagItems" value="meleeWpnSpearT1IronSpear" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 			<property name="ExperienceGain" value="600"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerSpear" />
@@ -989,7 +989,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeNPCMachete"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeNPCMachete"/> 
 			<property name="BagItems" value="meleeWpnBladeT3Machete" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 			<property name="ExperienceGain" value="600"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerMachete" />
@@ -1038,7 +1038,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPipePistol,ammoNPC9mmBulletBall"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPipePistol,ammoNPC9mmBulletBall"/>
 			<property name="BagItems" value="gunHandgunT0PipePistol" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1250" />
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerPipePistol" />
@@ -1101,7 +1101,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPistol,ammoNPC9mmBulletBall"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPistol,ammoNPC9mmBulletBall"/>
 			<property name="BagItems" value="gunHandgunT1Pistol" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="2250" />
 			<property name="ExperienceGain" value="1200"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerPistol" />
@@ -1139,7 +1139,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCDPistol,ammoNPC9mmBulletBall"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCDPistol,ammoNPC9mmBulletBall"/>
 			<property name="BagItems" value="gunHandgunT3DesertVulture" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="2750" />
 			<property name="ExperienceGain" value="1400"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerDPistol" />
@@ -1178,7 +1178,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCSMG5,ammoNPC9mmBulletBall"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCSMG5,ammoNPC9mmBulletBall"/> 
 			<property name="BagItems" value="gunHandgunT3SMG5" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="3250" />
 			<property name="ExperienceGain" value="1400"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerSMG" />
@@ -1217,7 +1217,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCM60,ammoNPC762mmBulletBall"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCM60,ammoNPC762mmBulletBall"/> 
 			<property name="BagItems" value="gunMGT3M60" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="3500" />
 			<property name="ExperienceGain" value="1400"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerM60" />
@@ -1254,7 +1254,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCAk47,ammoNPC762mmBulletBall"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCAk47,ammoNPC762mmBulletBall"/> 
 			<property name="BagItems" value="gunMGT1AK47" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="3250" />
 			<property name="ExperienceGain" value="1200"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerAK47" />
@@ -1291,7 +1291,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPipeMG,ammoNPC762mmBulletBall"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPipeMG,ammoNPC762mmBulletBall"/> 
 			<property name="BagItems" value="gunMGT0PipeMachineGun" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1750" />
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerPipeMG" />
@@ -1329,7 +1329,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCTRifle,ammoNPC762mmBulletBall"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCTRifle,ammoNPC762mmBulletBall"/> 
 			<property name="BagItems" value="gunMGT2TacticalAR" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="3500" />
 			<property name="ExperienceGain" value="1200"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerTRifle" />
@@ -1367,7 +1367,7 @@
             <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPipeRifle,ammoNPC762mmBulletBall"/>
             <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPipeRifle,ammoNPC762mmBulletBall"/> 
 			<property name="BagItems" value="gunRifleT0PipeRifle" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 			<property name="ExperienceGain" value="800"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerPipeRifle" />
@@ -1404,7 +1404,7 @@
             <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCHRifle,ammoNPC762mmBulletBall"/>
             <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCHRifle,ammoNPC762mmBulletBall"/> 
 			<property name="BagItems" value="gunRifleT1HuntingRifle" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1250" />
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerHRifle" />
@@ -1441,7 +1441,7 @@
             <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCSRifle,ammoNPC762mmBulletBall"/>
             <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCSRifle,ammoNPC762mmBulletBall"/> 
 			<property name="BagItems" value="gunRifleT3SniperRifle" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="3250" />
 			<property name="ExperienceGain" value="1400"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerSRifle" />
@@ -1478,7 +1478,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPipeShotgun,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPipeShotgun,ammoNPCShotgunShell"/> 
 			<property name="BagItems" value="gunShotgunT0PipeShotgun" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1250" />
 			<property name="ExperienceGain" value="800"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerPipeShotgun" />
@@ -1515,7 +1515,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPShotgun,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPShotgun,ammoNPCShotgunShell"/> 
 			<property name="BagItems" value="gunShotgunT2PumpShotgun" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="2250" />
 			<property name="ExperienceGain" value="1200"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerPShotgun" />
@@ -1552,7 +1552,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCAShotgun,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCAShotgun,ammoNPCShotgunShell"/> 
 			<property name="BagItems" value="gunShotgunT3AutoShotgun" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="3500" />
 			<property name="ExperienceGain" value="1400"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerAShotgun" />
@@ -1589,7 +1589,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCLBow,ammoNPCArrowIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCLBow,ammoNPCArrowIron"/> 
 			<property name="BagItems" value="gunBowT1WoodenBow" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="2000" />
 			<property name="ExperienceGain" value="800"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerLBow" />
@@ -1626,7 +1626,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCXBow,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCXBow,ammoNPCCrossbowBoltIron"/> 
 			<property name="BagItems" value="gunBowT1IronCrossbow" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="2500" />
 			<property name="ExperienceGain" value="1000"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerXBow" />
@@ -1669,7 +1669,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCRocketLauncher,ammoNPCRocketHE"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCRocketLauncher,ammoNPCRocketHE"/> 
 			<property name="BagItems" value="gunExplosivesT3RocketLauncher" />
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="3000" />
 			<property name="ExperienceGain" value="1400"/>
 			<property name="LootDropEntityClass" value="EntityNPCLootContainerRocketL" />
@@ -3828,7 +3828,7 @@
 <!--			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeHandVomit,ammoProjectileZombieVomit"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeHandVomit,ammoProjectileZombieVomit"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeHandVomit,ammoProjectileZombieVomit"/> -->
-			<property name="HireCurrency" value="EZcurrencyLL" />
+			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="750" />
 			<property name="ExperienceGain" value="600"/> 
 			<property name="RightHandJointName" value="Head" />

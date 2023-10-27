@@ -1,4 +1,6 @@
 <configs>
+<!--THIS FILE WAS CREATED BY THEE_LEGION AND ARRAMUS-->
+
 <!--****SEARCH DIRECTORY****-->
 <!--SEARCH "ENDZ ANIMAL & NPC SPAWNING"-->
 <!--SEARCH "SLEEPER HORDE STAGES"-->
@@ -32,6 +34,8 @@
 	npcEndZsurvivorLL
 	npcEndZsurvivor2LL 
 	npcEndZsurvivor3LL
+	
+	zombiebitchQueen
 	
 	EndZgrootLL
 	EndZgrootferalLL 
@@ -113,58 +117,73 @@
 
 <!--ENDZ ANIMAL & NPC SPAWNING-->
 <csv xpath="/entitygroups/entitygroup[@name='ZombiesAll']/text()" delim="\n" op="add" >
-	npcEndZsurvivorLL
-	npcEndZsurvivor2LL 
-	npcEndZsurvivor3LL
+	npcEndZsurvivorLL, .25
+	npcEndZsurvivor2LL, .25
+	npcEndZsurvivor3LL, .25
 	endzbuffalo
 	EndZsheepLL 
-	endzratLL
-	endzgiantsnakeLL
-	endzbloodydogLL
+	endzratLL, .5
+	endzgiantsnakeLL, .5
+	endzbloodydogLL, .5
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add" >
-	npcEndZsurvivorLL
-	npcEndZsurvivor2LL 
-	npcEndZsurvivor3LL
+	npcEndZsurvivorLL, .25
+	npcEndZsurvivor2LL, .25
+	npcEndZsurvivor3LL, .25
 	endzbuffalo
 	EndZsheepLL 
-	endzratLL
-	endzgiantsnakeLL
-	endzbloodydogLL
+	endzratLL, .5
+	endzgiantsnakeLL, .5
+	endzbloodydogLL, .5
+	zombiebitchQueen, .015
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='SnowZombies']/text()" delim="\n" op="add" >
-	npcEndZsurvivorLL
-	npcEndZsurvivor2LL 
-	npcEndZsurvivor3LL
+	npcEndZsurvivorLL, .25
+	npcEndZsurvivor2LL, .25
+	npcEndZsurvivor3LL, .25
 	endzbuffalo
 	EndZsheepLL 
-	endzratLL
-	endzgiantsnakeLL
-	endzbloodydogLL
+	endzratLL, .5
+	endzgiantsnakeLL, .5
+	endzbloodydogLL, .5
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
-	npcEndZsurvivorLL
-	npcEndZsurvivor2LL 
-	npcEndZsurvivor3LL
+	npcEndZsurvivorLL, .25
+	npcEndZsurvivor2LL, .25
+	npcEndZsurvivor3LL, .25
 	endzbuffalo
 	EndZsheepLL 
-	endzratLL
-	endzgiantsnakeLL
-	endzbloodydogLL
+	endzratLL, .5
+	endzgiantsnakeLL, .5
+	endzbloodydogLL, .5
+	zombieWguardianLL, .25
+	zombiesmallbitchLL, .25 
+	zombiespikeLL, .25 
+	zombienecroLL, .25 
+	zombiemutantLL, .25
+	zombiesupermutantLL, .25
+	zombiebitchQueen, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
-	npcEndZsurvivorLL
-	npcEndZsurvivor2LL 
-	npcEndZsurvivor3LL
+	npcEndZsurvivorLL, .25
+	npcEndZsurvivor2LL, .25
+	npcEndZsurvivor3LL, .25
 	endzbuffalo
 	EndZsheepLL 
-	endzratLL
-	endzgiantsnakeLL
-	endzbloodydogLL
+	endzratLL, .5
+	endzgiantsnakeLL, .5
+	endzbloodydogLL, .5
+	zombieWguardianLL, .25
+	zombiesmallbitchLL, .25 
+	zombiespikeLL, .25 
+	zombienecroLL, .25 
+	zombiemutantLL, .25
+	zombiesupermutantLL, .25
+	zombiebitchQueen, .025
 </csv>
 <!--END OF ENDZ ANIMAL & NPC SPAWNING-->
 
@@ -198,10 +217,10 @@ or @name='sleeperHordeStageGS132'
 or @name='sleeperHordeStageGS140'
 or @name='sleeperHordeStageGS148'
 or @name='sleeperHordeStageGS156']/text()" delim="\n" op="add">
-	EndZgrootLL, .10 	
-	zombiegrimlinLL, .05
-	zombiegrimlintwinLL, .05
-	zombieporcLL, .05
+	EndZgrootLL 	
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
+	zombieporcLL, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS164'
@@ -230,13 +249,14 @@ or @name='sleeperHordeStageGS374'
 or @name='sleeperHordeStageGS385'
 or @name='sleeperHordeStageGS396'
 or @name='sleeperHordeStageGS407']/text()" delim="\n" op="add">
-	EndZgrootLL, .20 	
-	zombiegrimlinLL, .20
-	zombiegrimlintwinLL, .20
-	zombieporcLL, .20
-	EndZgrootferalLL, .05
-	zombiedesertmonsterorcLL, .05
-	zombieimpLL, .10
+	EndZgrootLL 	
+	zombiegrimlinLL, .4
+	zombiegrimlintwinLL, .4
+	zombieporcLL, .4
+	EndZgrootferalLL, .5
+	zombiedesertmonsterorcLL, .3
+	zombieimpLL, .4
+	zombiebitchQueen, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS419'
@@ -262,16 +282,18 @@ or @name='sleeperHordeStageGS623']/text()" delim="\n" op="add">
 	zombiegrimlintwinLL
 	zombieporcLL
 	EndZgrootferalLL
-	zombiedesertmonsterorcLL, .25
-	zombieimpLL, .25	
-	zombiesnowguardianLL, .10 
-	FrozenBoe, .10	
+	zombiedesertmonsterorcLL, .4
+	zombieimpLL, .5	
+	zombiesnowguardianLL, .1 
+	FrozenBoe, .1	
 	zombiesmallbitchLL, .05 
 	zombiespikeLL, .05 
 	zombienecroLL, .05
 	zombiemutantLL, .05
 	zombiesupermutantLL, .05
 	zombieWguardianLL, .05
+	EndZgrootradiatedLL, .05
+	zombiebitchQueen, .15
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS636'
@@ -537,6 +559,8 @@ or @name='sleeperHordeStageGS5778'
 	zombiemutantLL, .25
 	zombiesupermutantLL, .25
 	zombieWguardianLL, .25
+	EndZgrootradiatedLL, .25
+	zombiebitchQueen, .25
 </csv>
 <!--END OF SLEEPER HORDE STAGES-->
 	
@@ -561,10 +585,10 @@ or @name='wanderingHordeStageGS64'
 or @name='wanderingHordeStageGS70'
 or @name='wanderingHordeStageGS76'
 or @name='wanderingHordeStageGS82']/text()" delim="\n" op="add">
-	EndZgrootLL, .05
-	zombiegrimlinLL, .05
-	zombiegrimlintwinLL, .05
-	zombieporcLL, .05
+	EndZgrootLL
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
+	zombieporcLL, .1
 	zombieimpLL, .05
 </csv>
 
@@ -586,11 +610,11 @@ or @name='FwanderingHordeStageGS49'
 or @name='FwanderingHordeStageGS54'
 or @name='FwanderingHordeStageGS59'
 or @name='FwanderingHordeStageGS64']/text()" delim="\n" op="add">
-	EndZgrootLL, .15
-	EndZgrootferalLL, .15 	
-	zombiegrimlinLL, .15
-	zombiegrimlintwinLL, .15
-	zombieporcLL, .15
+	EndZgrootLL
+	EndZgrootferalLL, .1 	
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
+	zombieporcLL, .1
 	zombiedesertmonsterorcLL, .05 
 	zombieimpLL, .05
 </csv>
@@ -626,7 +650,7 @@ or @name='scoutHordeStageGS132'
 or @name='scoutHordeStageGS140'
 or @name='scoutHordeStageGS148'
 or @name='scoutHordeStageGS156']/text()" delim="\n" op="add">
-	EndZgrootLL, .1 	
+	EndZgrootLL 	
 	zombiegrimlinLL, .1
 	zombiegrimlintwinLL, .1
 	zombieporcLL, .1
@@ -653,13 +677,14 @@ or @name='scoutHordeStageGS322'
 or @name='scoutHordeStageGS332'
 or @name='scoutHordeStageGS343'
 or @name='scoutHordeStageGS353']/text()" delim="\n" op="add">
-	EndZgrootLL, .20 	
-	zombiegrimlinLL, .20
-	zombiegrimlintwinLL, .20
-	zombieporcLL, .20
-	EndZgrootferalLL, .05
+	EndZgrootLL 	
+	zombiegrimlinLL, .2
+	zombiegrimlintwinLL, .2
+	zombieporcLL, .2
+	EndZgrootferalLL, .2
 	zombiedesertmonsterorcLL, .05
-	zombieimpLL, .10
+	zombieimpLL, .1
+	zombiebitchQueen, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS364'
@@ -932,21 +957,23 @@ or @name='scoutHordeStageGS5697'
 or @name='scoutHordeStageGS5724'
 or @name='scoutHordeStageGS5751'
 or @name='scoutHordeStageGS5778']/text()" delim="\n" op="add">
-	EndZgrootLL, .20 	
-	zombiegrimlinLL, .20
-	zombiegrimlintwinLL, .20
-	zombieporcLL, .20
-	EndZgrootferalLL, .05
-	zombiedesertmonsterorcLL, .05
-	zombieimpLL, .10	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL 	
+	zombiegrimlinLL
+	zombiegrimlintwinLL
+	zombieporcLL
+	EndZgrootferalLL
+	zombiedesertmonsterorcLL, .4
+	zombieimpLL, .4	
+	zombiesnowguardianLL, .4 
+	FrozenBoe, .4
+	zombiesmallbitchLL, .4 
+	zombiespikeLL, .4 
+	zombienecroLL, .4 
+	zombiemutantLL, .4
+	zombiesupermutantLL, .4 
+	zombieWguardianLL, .4
+	EndZgrootradiatedLL, .4
+	zombiebitchQueen, .2
 </csv>
 <!--END OF SCOUT HORDE STAGES-->
 
@@ -966,7 +993,7 @@ or @name='feralHordeStageGS35'
 or @name='feralHordeStageGS40'
 or @name='feralHordeStageGS44'
 or @name='feralHordeStageGS49']/text()" delim="\n" op="add">
-	EndZgrootLL, .25 	
+	EndZgrootLL 	
 	zombiegrimlinLL, .25
 	zombiegrimlintwinLL, .25
 	zombieporcLL, .25
@@ -985,13 +1012,14 @@ or @name='feralHordeStageGS103'
 or @name='feralHordeStageGS109'
 or @name='feralHordeStageGS115'
 or @name='feralHordeStageGS121']/text()" delim="\n" op="add">
-	EndZgrootLL, .20 	
-	zombiegrimlinLL, .20
-	zombiegrimlintwinLL, .20
-	zombieporcLL, .20
-	EndZgrootferalLL, .05
+	EndZgrootLL 	
+	zombiegrimlinLL, .2
+	zombiegrimlintwinLL, .2
+	zombieporcLL, .2
+	EndZgrootferalLL, .1
 	zombiedesertmonsterorcLL, .05
-	zombieimpLL, .10
+	zombieimpLL, .1
+	zombiebitchQueen, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS127'
@@ -1288,21 +1316,23 @@ or @name='feralHordeStageGS4031'
 or @name='feralHordeStageGS4049'
 or @name='feralHordeStageGS4067'
 or @name='feralHordeStageGS4086']/text()" delim="\n" op="add">
-	EndZgrootLL, .20 	
-	zombiegrimlinLL, .20
-	zombiegrimlintwinLL, .20
-	zombieporcLL, .20
-	EndZgrootferalLL, .05
-	zombiedesertmonsterorcLL, .05
-	zombieimpLL, .10
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL 	
+	zombiegrimlinLL, .7
+	zombiegrimlintwinLL, .7
+	zombieporcLL, .7
+	EndZgrootferalLL, .7
+	zombiedesertmonsterorcLL, .5
+	zombieimpLL, .5
+	zombiesnowguardianLL, .4 
+	FrozenBoe, .4
+	zombiesmallbitchLL, .3
+	zombiespikeLL, .4 
+	zombienecroLL, .4
+	zombiemutantLL, .4
+	zombiesupermutantLL, .4 
+	zombieWguardianLL, .4
+	EndZgrootradiatedLL, .4
+	zombiebitchQueen, .15
 </csv>
 <!--FERAL HORDE STAGE(HORDE NIGHTS)-->
 
@@ -1313,7 +1343,7 @@ or @name='badassHordeStageGS8'
 or @name='badassHordeStageGS13'
 or @name='badassHordeStageGS21'
 or @name='badassHordeStageGS30']/text()" delim="\n" op="add">
-	EndZgrootLL, .2	
+	EndZgrootLL	
 	zombiegrimlinLL, .2
 	zombiegrimlintwinLL, .2
 	zombieporcLL, .2
@@ -1326,13 +1356,14 @@ or @name='badassHordeStageGS79'
 or @name='badassHordeStageGS95'
 or @name='badassHordeStageGS112'
 or @name='badassHordeStageGS130']/text()" delim="\n" op="add">
-	EndZgrootLL, .2
-	EndZgrootferalLL, .2 	
-	zombiegrimlinLL, .2
-	zombiegrimlintwinLL, .2
-	zombieporcLL, .2
-	zombiedesertmonsterorcLL, .1 
-	zombieimpLL, .1
+	EndZgrootLL
+	EndZgrootferalLL, .35 	
+	zombiegrimlinLL, .35
+	zombiegrimlintwinLL, .35
+	zombieporcLL, .35
+	zombiedesertmonsterorcLL, .2 
+	zombieimpLL, .2
+	zombiebitchQueen, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS150'
@@ -1377,14 +1408,14 @@ or @name='badassHordeStageGS1821'
 or @name='badassHordeStageGS1888'
 or @name='badassHordeStageGS1956'
 or @name='badassHordeStageGS2026']/text()" delim="\n" op="add">
-	EndZgrootLL, .2
-	EndZgrootferalLL, .2 
-	EndZgrootradiatedLL, .2	
-	zombiegrimlinLL, .2
-	zombiegrimlintwinLL, .2
-	zombieporcLL, .2
-	zombiedesertmonsterorcLL, .1 
-	zombieimpLL, .1	
+	EndZgrootLL
+	EndZgrootferalLL 
+	EndZgrootradiatedLL, .6	
+	zombiegrimlinLL
+	zombiegrimlintwinLL
+	zombieporcLL
+	zombiedesertmonsterorcLL, .35 
+	zombieimpLL, .35	
 	zombiesnowguardianLL, .1 
 	FrozenBoe, .1	
 	zombiesmallbitchLL, .1 
@@ -1393,6 +1424,8 @@ or @name='badassHordeStageGS2026']/text()" delim="\n" op="add">
 	zombiemutantLL, .05
 	zombiesupermutantLL, .05
 	zombieWguardianLL, .05
+	EndZgrootradiatedLL, .05
+	zombiebitchQueen, .025
 </csv>
 <!--END OF BADASS HORDE STAGE-->
 
@@ -1403,10 +1436,10 @@ or @name='badassOnlyHordeStageGS8'
 or @name='badassOnlyHordeStageGS13'
 or @name='badassOnlyHordeStageGS21'
 or @name='badassOnlyHordeStageGS30']/text()" delim="\n" op="add">
-	EndZgrootLL, .2	
-	zombiegrimlinLL, .2
-	zombiegrimlintwinLL, .2
-	zombieporcLL, .2
+	EndZgrootLL	
+	zombiegrimlinLL, .3
+	zombiegrimlintwinLL, .3
+	zombieporcLL, .3
 </csv> 
 
 <csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS40'
@@ -1416,13 +1449,14 @@ or @name='badassOnlyHordeStageGS79'
 or @name='badassOnlyHordeStageGS95'
 or @name='badassOnlyHordeStageGS112'
 or @name='badassOnlyHordeStageGS130']/text()" delim="\n" op="add">
-	EndZgrootLL, .2
-	EndZgrootferalLL, .2 	
-	zombiegrimlinLL, .2
-	zombiegrimlintwinLL, .2
-	zombieporcLL, .2
-	zombiedesertmonsterorcLL, .1 
-	zombieimpLL, .1
+	EndZgrootLL
+	EndZgrootferalLL, .75 	
+	zombiegrimlinLL, .75
+	zombiegrimlintwinLL, .75
+	zombieporcLL, .75
+	zombiedesertmonsterorcLL, .5 
+	zombieimpLL, .5
+	zombiebitchQueen, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS150'
@@ -1467,22 +1501,24 @@ or @name='badassOnlyHordeStageGS1821'
 or @name='badassOnlyHordeStageGS1888'
 or @name='badassOnlyHordeStageGS1956'
 or @name='badassOnlyHordeStageGS2026']/text()" delim="\n" op="add">
-	EndZgrootLL, .2
-	EndZgrootferalLL, .2 
-	EndZgrootradiatedLL, .2	
-	zombiegrimlinLL, .2
-	zombiegrimlintwinLL, .2
-	zombieporcLL, .2
-	zombiedesertmonsterorcLL, .1 
-	zombieimpLL, .1	
-	zombiesnowguardianLL, .1 
-	FrozenBoe, .1	
-	zombiesmallbitchLL, .1 
-	zombiespikeLL, .05 
-	zombienecroLL, .05 
-	zombiemutantLL, .05
-	zombiesupermutantLL, .05
-	zombieWguardianLL, .05
+	EndZgrootLL
+	EndZgrootferalLL 
+	EndZgrootradiatedLL, .75	
+	zombiegrimlinLL
+	zombiegrimlintwinLL
+	zombieporcLL
+	zombiedesertmonsterorcLL, .5 
+	zombieimpLL, .5	
+	zombiesnowguardianLL, .75 
+	FrozenBoe, .75	
+	zombiesmallbitchLL, .35 
+	zombiespikeLL, .35 
+	zombienecroLL, .35 
+	zombiemutantLL, .5
+	zombiesupermutantLL, .35
+	zombieWguardianLL, .35
+	EndZgrootradiatedLL, .35
+	zombiebitchQueen, .15
 </csv>
 <!--END OF BADASS ONLY HORDE STAGE-->
 
@@ -1493,10 +1529,10 @@ or @name='policeCarHordeStageGS8'
 or @name='policeCarHordeStageGS13'
 or @name='policeCarHordeStageGS21'
 or @name='policeCarHordeStageGS30']/text()" delim="\n" op="add">
-	EndZgrootLL, .1	
-	zombiegrimlinLL, .1
-	zombiegrimlintwinLL, .1
-	zombieporcLL, .1
+	EndZgrootLL	
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15
 </csv> 
 
 <csv xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS40'
@@ -1506,13 +1542,14 @@ or @name='policeCarHordeStageGS79'
 or @name='policeCarHordeStageGS95'
 or @name='policeCarHordeStageGS112'
 or @name='policeCarHordeStageGS130']/text()" delim="\n" op="add">
-	EndZgrootLL, .2
-	EndZgrootferalLL, .2 	
-	zombiegrimlinLL, .2
-	zombiegrimlintwinLL, .2
-	zombieporcLL, .2
-	zombiedesertmonsterorcLL, .1 
-	zombieimpLL, .1
+	EndZgrootLL
+	EndZgrootferalLL, .5 	
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15
+	zombiedesertmonsterorcLL, .15 
+	zombieimpLL, .15
+	zombiebitchQueen, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS150'
@@ -1557,14 +1594,14 @@ or @name='policeCarHordeStageGS1821'
 or @name='policeCarHordeStageGS1888'
 or @name='policeCarHordeStageGS1956'
 or @name='policeCarHordeStageGS2026']/text()" delim="\n" op="add">
-	EndZgrootLL, .2
-	EndZgrootferalLL, .2 
-	EndZgrootradiatedLL, .2	
-	zombiegrimlinLL, .2
-	zombiegrimlintwinLL, .2
-	zombieporcLL, .2
-	zombiedesertmonsterorcLL, .1 
-	zombieimpLL, .1	
+	EndZgrootLL
+	EndZgrootferalLL, .5 
+	EndZgrootradiatedLL, .25	
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15
+	zombiedesertmonsterorcLL, .15 
+	zombieimpLL, .15
 	zombiesnowguardianLL, .1 
 	FrozenBoe, .1	
 	zombiesmallbitchLL, .1 
@@ -1573,6 +1610,8 @@ or @name='policeCarHordeStageGS2026']/text()" delim="\n" op="add">
 	zombiemutantLL, .05
 	zombiesupermutantLL, .05
 	zombieWguardianLL, .05
+	EndZgrootradiatedLL, .05
+	zombiebitchQueen, .15
 </csv>
 <!--END OF POLICE CAR HORDE STAGES-->
 
@@ -1612,506 +1651,460 @@ or @name='policeCarHordeStageGS2026']/text()" delim="\n" op="add">
 	zombiemutantLL, .10
 	zombiesupermutantLL, .10 
 	zombieWguardianLL, .10
+	EndZgrootradiatedLL, .10
+	zombiebitchQueen, .10
 </csv>
 <!--END OF FERAL, RADIATED, AND BADASS GROUPS-->
 
 <!--SOLDIER GROUP-->
-<csv xpath="/entitygroups/entitygroup[@name='ZombieSoldierGroup']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-</csv>
-
 <csv xpath="/entitygroups/entitygroup[@name='zombieSoldierGroupGS1']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootLL	
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieSoldierGroupGS50']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootferalLL, .1 	
+	zombiegrimlinLL, .1 
+	zombiegrimlintwinLL, .1 
+	zombieporcLL, .1 
+	zombiedesertmonsterorcLL , .05 
+	zombieimpLL, .1 
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieSoldierGroupGS100']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-	zombiesnowguardianLL 
-	FrozenBoe
+	EndZgrootferalLL, .2	
+	zombiegrimlinLL, .2
+	zombiegrimlintwinLL, .2
+	zombieporcLL, .2
+	zombiedesertmonsterorcLL, .1 
+	zombieimpLL, .1
+	zombiesnowguardianLL, .05
+	FrozenBoe, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieSoldierGroupGS200']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootferalLL, .2 
+	EndZgrootradiatedLL, .15
+	zombiegrimlinLL, .2
+	zombiegrimlintwinLL, .2
+	zombieporcLL, .2	
+	zombiedesertmonsterorcLL, .1 
+	zombieimpLL, .1	
+	zombiesnowguardianLL, .1
+	FrozenBoe, .1	
+	zombiesmallbitchLL, .05
+	zombiespikeLL, .1 
+	zombienecroLL, .1 
+	zombiemutantLL, .1
+	zombiesupermutantLL, .1 
+	zombieWguardianLL, .1
+	zombiebitchQueen, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieSoldierGroupGS400']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootferalLL, .3
+	EndZgrootradiatedLL, .35
+	zombiegrimlinLL, .3
+	zombiegrimlintwinLL, .3
+	zombieporcLL, .3	
+	zombiedesertmonsterorcLL, .15 
+	zombieimpLL, .15
+	zombiesnowguardianLL, .1
+	FrozenBoe, .1	
+	zombiesmallbitchLL, .05
+	zombiespikeLL, .1
+	zombienecroLL, .1
+	zombiemutantLL, .1
+	zombiesupermutantLL, .1
+	zombieWguardianLL, .1
+	zombiebitchQueen, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieSoldierGroupGS800']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootferalLL, .5
+	EndZgrootradiatedLL, .45
+	zombiegrimlinLL, .4
+	zombiegrimlintwinLL, .4
+	zombieporcLL, .4	
+	zombiedesertmonsterorcLL, .15 
+	zombieimpLL, .15
+	zombiesnowguardianLL, .1
+	FrozenBoe, .1	
+	zombiesmallbitchLL, .05
+	zombiespikeLL, .1
+	zombienecroLL, .1
+	zombiemutantLL, .1
+	zombiesupermutantLL, .1
+	zombieWguardianLL, .1
+	zombiebitchQueen, .1
 </csv>
 <!--END OF SOLDIER GROUP-->
 
 <!--JANITOR GROUP-->
-<csv xpath="/entitygroups/entitygroup[@name='ZombieJanitorGroup']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-</csv>
-
 <csv xpath="/entitygroups/entitygroup[@name='zombieJanitorGroupGS1']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootLL, .5	
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
+	zombieporcLL, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieJanitorGroupGS50']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootferalLL, .1 	
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
+	zombieporcLL, .1
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieJanitorGroupGS100']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-	zombiesnowguardianLL 
-	FrozenBoe
+	EndZgrootLL, .7
+	EndZgrootferalLL, .2	
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15
+	zombiedesertmonsterorcLL, .05
+	zombieimpLL, .05
+	zombiesnowguardianLL, .05
+	FrozenBoe, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieJanitorGroupGS200']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .55
+	EndZgrootferalLL, .3 
+	EndZgrootradiatedLL, .1	
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15	
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .05	
+	zombiesnowguardianLL, .05 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .05 
+	zombiespikeLL, .05 
+	zombienecroLL, .05 
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05 
+	zombieWguardianLL, .05
+	zombiebitchQueen, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieJanitorGroupGS400']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .4
+	EndZgrootferalLL, .4 
+	EndZgrootradiatedLL, .2	
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15	
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .05	
+	zombiesnowguardianLL, .05 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .05 
+	zombiespikeLL, .05 
+	zombienecroLL, .05 
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05 
+	zombieWguardianLL, .05
+	zombiebitchQueen, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieJanitorGroupGS800']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .25
+	EndZgrootferalLL, .5 
+	EndZgrootradiatedLL, .4	
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15	
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .05	
+	zombiesnowguardianLL, .05 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .05 
+	zombiespikeLL, .05 
+	zombienecroLL, .05 
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05 
+	zombieWguardianLL, .05
+	zombiebitchQueen, .05
 </csv>
 <!--END OF JANITOR GROUP-->
 
 <!--ZOMBIE GHOST TOWN GROUP-->
-<csv xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-</csv>
-
 <csv xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroupGS1']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootLL	
+	zombiegrimlinLL, .25
+	zombiegrimlintwinLL, .25
+	zombieporcLL, .25
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroupGS50']/text()" delim="\n" op="add" >
 	EndZgrootLL
 	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	zombiegrimlinLL, .25
+	zombiegrimlintwinLL, .25
+	zombieporcLL, .25
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroupGS100']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-	zombiesnowguardianLL 
-	FrozenBoe
+	EndZgrootferalLL, .3 	
+	zombiegrimlinLL, .3
+	zombiegrimlintwinLL, .3
+	zombieporcLL, .3
+	zombiedesertmonsterorcLL, .1 
+	zombieimpLL, .2
+	zombiesnowguardianLL , .05
+	FrozenBoe, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroupGS200']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootferalLL, .4
+	EndZgrootradiatedLL, .3	
+	zombiegrimlinLL, .3
+	zombiegrimlintwinLL, .3
+	zombieporcLL, .3	
+	zombiedesertmonsterorcLL, .1
+	zombieimpLL, .2
+	zombiesnowguardianLL, .05 
+	FrozenBoe, .1
+	zombiesmallbitchLL, .05 
+	zombiespikeLL, .05
+	zombienecroLL, .05
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05 
+	zombieWguardianLL, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroupGS400']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootferalLL, .4 
+	EndZgrootradiatedLL, .3	
+	zombiegrimlinLL, .4
+	zombiegrimlintwinLL, .4
+	zombieporcLL, .4	
+	zombiedesertmonsterorcLL, .1
+	zombieimpLL, .2
+	zombiesnowguardianLL, .05 
+	FrozenBoe, .1
+	zombiesmallbitchLL, .05 
+	zombiespikeLL, .05
+	zombienecroLL, .05
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05 
+	zombieWguardianLL, .05
+	zombiebitchQueen, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroupGS800']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootferalLL, .5 
+	EndZgrootradiatedLL, .45	
+	zombiegrimlinLL, .45
+	zombiegrimlintwinLL, .45
+	zombieporcLL, .45	
+	zombiedesertmonsterorcLL, .15
+	zombieimpLL, .25
+	zombiesnowguardianLL, .1 
+	FrozenBoe, .1
+	zombiesmallbitchLL, .1 
+	zombiespikeLL, .1
+	zombienecroLL, .1
+	zombiemutantLL, .1
+	zombiesupermutantLL, .1 
+	zombieWguardianLL, .1
+	zombiebitchQueen, .05
 </csv>
 <!--END OF ZOMBIE GHOST TOWN GROUP-->
 
 <!--HOSPITAL GROUP-->
-<csv xpath="/entitygroups/entitygroup[@name='HospitalGroup']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-</csv>
-
 <csv xpath="/entitygroups/entitygroup[@name='zombieHospitalGroupGS1']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieHospitalGroupGS50']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootferalLL, .35 	
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieHospitalGroupGS100']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-	zombiesnowguardianLL 
-	FrozenBoe
+	EndZgrootferalLL, .45 	
+	zombiegrimlinLL, .25
+	zombiegrimlintwinLL, .25
+	zombieporcLL, .25
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .1
+	zombiesnowguardianLL, .025
+	FrozenBoe, .05
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieHospitalGroupGS200']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootferalLL, .55
+	EndZgrootradiatedLL, .15	 	
+	zombiegrimlinLL, .35
+	zombiegrimlintwinLL, .35
+	zombieporcLL, .35
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .1
+	zombiesnowguardianLL, .025
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .05
+	zombiespikeLL, .05
+	zombienecroLL, .05 
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05 
+	zombieWguardianLL, .05
+	zombiebitchQueen, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieHospitalGroupGS400']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootferalLL, .65
+	EndZgrootradiatedLL, .35 	
+	zombiegrimlinLL, .45
+	zombiegrimlintwinLL, .45
+	zombieporcLL, .45
+	zombiedesertmonsterorcLL, .1 
+	zombieimpLL, .15
+	zombiesnowguardianLL, .05
+	FrozenBoe, .1	
+	zombiesmallbitchLL, .1
+	zombiespikeLL, .1
+	zombienecroLL, .1 
+	zombiemutantLL, .1
+	zombiesupermutantLL, .05 
+	zombieWguardianLL, .05
+	zombiebitchQueen, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieHospitalGroupGS800']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootferalLL, .75
+	EndZgrootradiatedLL, .55 	
+	zombiegrimlinLL, .55
+	zombiegrimlintwinLL, .55
+	zombieporcLL, .55
+	zombiedesertmonsterorcLL, .1 
+	zombieimpLL, .15
+	zombiesnowguardianLL, .05
+	FrozenBoe, .1	
+	zombiesmallbitchLL, .1
+	zombiespikeLL, .1
+	zombienecroLL, .1 
+	zombiemutantLL, .1
+	zombiesupermutantLL, .05 
+	zombieWguardianLL, .05
+	zombiebitchQueen, .15
 </csv>
 <!--END OF HOSPITAL GROUP-->
 
 <!--LAB WORKER GROUP-->
 <csv xpath="/entitygroups/entitygroup[@name='zombieLabWorkerGroupGS1']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieLabWorkerGroupGS50']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootferalLL, .1 	
+	zombiegrimlinLL, .05
+	zombiegrimlintwinLL, .05
+	zombieporcLL, .05
+	zombiedesertmonsterorcLL, .015 
+	zombieimpLL, .015
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieLabWorkerGroupGS100']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-	zombiesnowguardianLL 
-	FrozenBoe
+	EndZgrootferalLL, .2 	
+	zombiegrimlinLL, .05
+	zombiegrimlintwinLL, .05
+	zombieporcLL, .05
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieLabWorkerGroupGS200']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .8
+	EndZgrootferalLL, .3 
+	EndZgrootradiatedLL, .15	
+	zombiegrimlinLL, .07
+	zombiegrimlintwinLL, .07
+	zombieporcLL, .07
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .025	
+	zombiesmallbitchLL, .025 
+	zombiespikeLL, .025
+	zombienecroLL, .025 
+	zombiemutantLL, .025
+	zombiesupermutantLL, .025 
+	zombieWguardianLL, .025
+	zombiebitchQueen, .015
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieLabWorkerGroupGS400']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .5
+	EndZgrootferalLL, .4 
+	EndZgrootradiatedLL, .3	
+	zombiegrimlinLL, .3
+	zombiegrimlintwinLL, .3
+	zombieporcLL, .3
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .05
+	zombiesnowguardianLL, .05 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .05 
+	zombiespikeLL, .05
+	zombienecroLL, .05 
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05 
+	zombieWguardianLL, .05
+	zombiebitchQueen, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='zombieLabWorkerGroupGS800']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .25
+	EndZgrootferalLL, .5 
+	EndZgrootradiatedLL, .45	
+	zombiegrimlinLL, .3
+	zombiegrimlintwinLL, .3
+	zombieporcLL, .3
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .05
+	zombiesnowguardianLL, .05 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .05 
+	zombiespikeLL, .05
+	zombienecroLL, .05 
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05 
+	zombieWguardianLL, .05
+	zombiebitchQueen, .025
 </csv>
 <!--END OF LAB WORKER GROUP-->
 
 <!--SPIDER GROUP-->
-<csv xpath="/entitygroups/entitygroup[@name='zombieSpiderGroupGS1']/text()" delim="\n" op="add" >
+<!--<csv xpath="/entitygroups/entitygroup[@name='zombieSpiderGroupGS1']/text()" delim="\n" op="add" >
 	EndZgrootLL
 	EndZgrootferalLL 	
 	zombiegrimlinLL
@@ -2198,309 +2191,272 @@ or @name='policeCarHordeStageGS2026']/text()" delim="\n" op="add">
 	zombiemutantLL
 	zombiesupermutantLL 
 	zombieWguardianLL
-</csv>
+</csv>-->
 <!--END OF SPIDER GROUP-->
 
 <!--BIKER GROUP-->
-<csv xpath="/entitygroups/entitygroup[@name='ZombieBikerBarGroup']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-</csv>
-
 <csv xpath="/entitygroups/entitygroup[@name='ZombieBikerBarGroupGS1']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieBikerBarGroupGS50']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootLL, .85
+	EndZgrootferalLL, .1 	
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
+	zombieporcLL, .1
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieBikerBarGroupGS100']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-	zombiesnowguardianLL 
-	FrozenBoe
+	EndZgrootLL, .7
+	EndZgrootferalLL, .2 	
+	zombiegrimlinLL, .2
+	zombiegrimlintwinLL, .2
+	zombieporcLL, .2
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieBikerBarGroupGS200']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .55
+	EndZgrootferalLL, .3 
+	EndZgrootradiatedLL, .15
+	zombiegrimlinLL, .3
+	zombiegrimlintwinLL, .3
+	zombieporcLL, .3	
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .05
+	zombiesnowguardianLL, .05 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .05 
+	zombiespikeLL, .05 
+	zombienecroLL, .05 
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05
+	zombieWguardianLL, .05
+	zombiebitchQueen, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieBikerBarGroupGS400']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .4
+	EndZgrootferalLL, .4 
+	EndZgrootradiatedLL, .3
+	zombiegrimlinLL, .4
+	zombiegrimlintwinLL, .4
+	zombieporcLL, .4	
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .05
+	zombiesnowguardianLL, .05 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .05 
+	zombiespikeLL, .05 
+	zombienecroLL, .05 
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05
+	zombieWguardianLL, .05
+	zombiebitchQueen, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieBikerBarGroupGS800']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .25
+	EndZgrootferalLL, .5 
+	EndZgrootradiatedLL, .45
+	zombiegrimlinLL, .5
+	zombiegrimlintwinLL, .5
+	zombieporcLL, .5	
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .05
+	zombiesnowguardianLL, .05 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .05 
+	zombiespikeLL, .05 
+	zombienecroLL, .05 
+	zombiemutantLL, .05
+	zombiesupermutantLL, .05
+	zombieWguardianLL, .05
+	zombiebitchQueen, .025
 </csv>
 <!--END OF BIKER GROUP-->
 
 <!--NIGHT CLUB GROUP-->
-<csv xpath="/entitygroups/entitygroup[@name='ZombieNightClubGroup']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-</csv>
-
 <csv xpath="/entitygroups/entitygroup[@name='ZombieNightClubGroupGS1']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootLL, .45
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieNightClubGroupGS50']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootLL, .45
+	EndZgrootferalLL, .1 	
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
+	zombieporcLL, .1
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieNightClubGroupGS100']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-	zombiesnowguardianLL 
-	FrozenBoe
+	EndZgrootLL, .5
+	EndZgrootferalLL, .2 	
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieNightClubGroupGS200']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .5
+	EndZgrootferalLL, .2
+	EndZgrootradiatedLL, .1
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .025	
+	zombiesmallbitchLL, .025
+	zombiespikeLL, .025 
+	zombienecroLL, .025
+	zombiemutantLL, .025
+	zombiesupermutantLL, .025 
+	zombieWguardianLL, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieNightClubGroupGS400']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .4
+	EndZgrootferalLL, .2
+	EndZgrootradiatedLL, .1
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .025	
+	zombiesmallbitchLL, .025
+	zombiespikeLL, .025 
+	zombienecroLL, .025
+	zombiemutantLL, .025
+	zombiesupermutantLL, .025 
+	zombieWguardianLL, .025
+	zombiebitchQueen, .015
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieNightClubGroupGS800']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .2
+	EndZgrootferalLL, .2
+	EndZgrootradiatedLL, .1
+	zombiegrimlinLL, .15
+	zombiegrimlintwinLL, .15
+	zombieporcLL, .15
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .025	
+	zombiesmallbitchLL, .025
+	zombiespikeLL, .025 
+	zombienecroLL, .025
+	zombiemutantLL, .025
+	zombiesupermutantLL, .025 
+	zombieWguardianLL, .025
+	zombiebitchQueen, .015
 </csv>
 <!--END OF NIGHT CLUB GROUP-->
 
 <!--SPECIAL INFECTED GROUP-->
-<csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroup']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-</csv>
-
 <csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS1']/text()" delim="\n" op="add" >
 	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootferalLL, .1
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
+	zombieporcLL, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS50']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
+	EndZgrootLL, .85
+	EndZgrootferalLL, .1
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
+	zombieporcLL, .1
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS100']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL
-	zombiedesertmonsterorcLL 
-	zombieimpLL
-	zombiesnowguardianLL 
-	FrozenBoe
+	EndZgrootLL, .7
+	EndZgrootferalLL, .2
+	zombiegrimlinLL, .1
+	zombiegrimlintwinLL, .1
+	zombieporcLL, .1
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS200']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .45
+	EndZgrootferalLL, .35
+	EndZgrootradiatedLL, .2
+	zombiegrimlinLL, .2
+	zombiegrimlintwinLL, .2
+	zombieporcLL, .2
+	zombiedesertmonsterorcLL, .025 
+	zombieimpLL, .025
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .025	
+	zombiesmallbitchLL, .025
+	zombiespikeLL, .025 
+	zombienecroLL, .025
+	zombiemutantLL, .025
+	zombiesupermutantLL, .025 
+	zombieWguardianLL, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS400']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .2
+	EndZgrootferalLL, .4
+	EndZgrootradiatedLL, .4
+	zombiegrimlinLL, .4
+	zombiegrimlintwinLL, .4
+	zombieporcLL, .4
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .05
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .025
+	zombiespikeLL, .025 
+	zombienecroLL, .025
+	zombiemutantLL, .025
+	zombiesupermutantLL, .025 
+	zombieWguardianLL, .025
+	zombiebitchQueen, .015
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS800']/text()" delim="\n" op="add" >
-	EndZgrootLL
-	EndZgrootferalLL 
-	EndZgrootradiatedLL	
-	zombiegrimlinLL
-	zombiegrimlintwinLL
-	zombieporcLL	
-	zombiedesertmonsterorcLL 
-	zombieimpLL	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	EndZgrootLL, .1
+	EndZgrootferalLL, .5
+	EndZgrootradiatedLL, .4
+	zombiegrimlinLL, .4
+	zombiegrimlintwinLL, .4
+	zombieporcLL, .4
+	zombiedesertmonsterorcLL, .05 
+	zombieimpLL, .05
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .025
+	zombiespikeLL, .025 
+	zombienecroLL, .025
+	zombiemutantLL, .025
+	zombiesupermutantLL, .025 
+	zombieWguardianLL, .025
+	zombiebitchQueen, .015
 </csv>
 <!--END OF SPECIAL INFECTED GROUP-->
 
@@ -2522,6 +2478,7 @@ or @name='policeCarHordeStageGS2026']/text()" delim="\n" op="add">
 	zombiemutantLL
 	zombiesupermutantLL 
 	zombieWguardianLL
+	zombiebitchQueen
 </csv>
 <!--END OF ZOMBIES HOARD GROUP-->
 
@@ -2589,6 +2546,7 @@ or @name='defenseHordeStageGS353']/text()" delim="\n" op="add">
 	EndZgrootferalLL, .05
 	zombiedesertmonsterorcLL, .05
 	zombieimpLL, .10
+	zombiebitchQueen, .025
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS364'
@@ -2868,14 +2826,16 @@ or @name='defenseHordeStageGS5778']/text()" delim="\n" op="add">
 	EndZgrootferalLL, .05
 	zombiedesertmonsterorcLL, .05
 	zombieimpLL, .10	
-	zombiesnowguardianLL 
-	FrozenBoe	
-	zombiesmallbitchLL 
-	zombiespikeLL 
-	zombienecroLL 
-	zombiemutantLL
-	zombiesupermutantLL 
-	zombieWguardianLL
+	zombiesnowguardianLL, .025 
+	FrozenBoe, .05	
+	zombiesmallbitchLL, .025
+	zombiespikeLL, .025 
+	zombienecroLL, .025
+	zombiemutantLL, .025
+	zombiesupermutantLL, .025 
+	zombieWguardianLL, .025
+	EndZgrootradiatedLL, .025
+	zombiebitchQueen, .015
 </csv>
 <!--DEFENSE HORDE STAGES-->
 </configs>

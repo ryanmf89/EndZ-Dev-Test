@@ -760,7 +760,6 @@
 	<passive_effect name="StaminaLoss" operation="base_set" value="13" tier="1,6" tags="primary"/>
 	<passive_effect name="DegradationMax" operation="base_set" value="250,350" tier="2,6" />
 	<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>			
-	<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
 	<passive_effect name="ModPowerBonus" operation="perc_add" value=".05" tags="EntityDamage"/>
 	<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>	
 	<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05,.55" tier="1,6"/>
@@ -787,7 +786,7 @@
 	<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkJavelinMaster"/>
 	<passive_effect name="MaxRange" operation="base_set" value="3.2" tags="perkJavelinMaster"/>
 	<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkJavelinMaster"/>
-	<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+	<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
 	<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 	<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 	<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
@@ -3007,7 +3006,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	
 <!--ULTIMATE SCREAMER-->
 <append xpath="/items">
-<item name="meleeHandBansheeQueen">
+<item name="meleeHandscreamerzombiebitchQueen">
 	<property name="Extends" value="meleeHandMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
@@ -3015,7 +3014,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property name="Range" value="4"/>
 	<property name="DamageEntity" value="60"/>
 	<property name="DamageBlock" value="1000"/></property>
-<effect_group name="meleeHandBansheeQueen" tiered="false">
+<effect_group name="meleeHandscreamerzombiebitchQueen" tiered="false">
 	<passive_effect name="ModSlots" operation="base_set" value="0"/>	
 </effect_group>
 </item>

@@ -258,16 +258,16 @@
 <!--ENDZ PERK TREE-->
 <insertAfter xpath="//attribute[@name='attIntellect']">
 	<attribute name="attendztree" name_key="attendztreeName" desc_key="attendztreeDesc" icon="ui_game_symbol_trex" icon_color="106, 0, 163">
-		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-		<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-		<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-		<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-		<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-		<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-		<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-		<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
 
 		<effect_group>
 			<requirement name="ItemHasTags" tags="attendztree"/>
@@ -295,7 +295,7 @@
 <!--END OF ENDZ PERK TREE-->
 
 <append xpath="//perks">
-<perk name="perkimagod" parent="skillendzCombat" name_key="perkimagod" desc_key="perkimagodDesc" icon="ui_game_symbol_bull">
+<perk name="perkimagod" cost_multiplier_per_level="1.38" parent="skillendzCombat" name_key="perkimagod" desc_key="perkimagodDesc" icon="ui_game_symbol_bull">
 <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="2" desc_key="reqattendztreeLevel02"/></level_requirements>
 <level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="4" desc_key="reqattendztreeLevel04"/></level_requirements>
 <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="6" desc_key="reqattendztreeLevel06"/></level_requirements>
@@ -319,7 +319,7 @@
 </append>
 
 <append xpath="//perks">
-<perk name="perkvehicles" parent="skillendzCombat" name_key="perkvehicles" desc_key="perkvehiclesDesc" icon="ui_game_symbol_4x4">
+<perk name="perkvehicles" cost_multiplier_per_level="1.38" parent="skillendzCombat" name_key="perkvehicles" desc_key="perkvehiclesDesc" icon="ui_game_symbol_4x4">
 <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="2" desc_key="reqattendztreeLevel02"/></level_requirements>
 <level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="4" desc_key="reqattendztreeLevel04"/></level_requirements>
 <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="6" desc_key="reqattendztreeLevel06"/></level_requirements>
@@ -355,7 +355,29 @@
 </append>
 
 <append xpath="//perks">
-<perk name="perkendzfood" max_level="3" parent="skillendzCombat" name_key="perkendzfood" desc_key="perkendzfoodDesc" icon="ui_game_symbol_fork">
+<perk name="perkendzmedical" max_level="2" parent="skillendzCombat" name_key="perkendzmedical" desc_key="perkendzmedicalDesc" icon="ui_game_symbol_medical">
+<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="2" desc_key="reqattendztreeLevel02"/></level_requirements>
+<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="8" desc_key="reqattendztreeLevel08"/></level_requirements>
+<!--level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="6" desc_key="reqattendztreeLevel06"/></level_requirements>
+<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="8" desc_key="reqattendztreeLevel08"/></level_requirements>
+<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements-->
+
+<effect_group>
+<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,2" value="1" tags="medicallavenderpatchLL"/>
+
+<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2" value="1" tags="medicalhoneyBandageLL"/>
+
+<effect_description level="1" desc_key="perkendzmedicalRank1Desc" long_desc_key="perkendzmedicalRank1LongDesc"/>
+<effect_description level="2" desc_key="perkendzmedicalRank2Desc" long_desc_key="perkendzmedicalRank2LongDesc"/>
+<!--effect_description level="3" desc_key="perkendzfoodRank3Desc" long_desc_key="perkendzfoodRank3LongDesc"/>
+<effect_description level="4" desc_key="perkendzfoodRank4Desc" long_desc_key="perkendzfoodRank4LongDesc"/>
+<effect_description level="5" desc_key="perkendzfoodRank5Desc" long_desc_key="perkendzfoodRank5LongDesc"/-->
+</effect_group>
+</perk>
+</append>
+
+<append xpath="//perks">
+<perk name="perkendzfood" cost_multiplier_per_level="1.38" max_level="3" parent="skillendzCombat" name_key="perkendzfood" desc_key="perkendzfoodDesc" icon="ui_game_symbol_fork">
 <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="3" desc_key="reqattendztreeLevel03"/></level_requirements>
 <level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="5" desc_key="reqattendztreeLevel05"/></level_requirements>
 <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="7" desc_key="reqattendztreeLevel07"/></level_requirements>
@@ -393,28 +415,6 @@
 </append>
 
 <append xpath="//perks">
-<perk name="perkendzmedical" max_level="2" parent="skillendzCombat" name_key="perkendzmedical" desc_key="perkendzmedicalDesc" icon="ui_game_symbol_medical">
-<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="2" desc_key="reqattendztreeLevel02"/></level_requirements>
-<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="8" desc_key="reqattendztreeLevel08"/></level_requirements>
-<!--level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="6" desc_key="reqattendztreeLevel06"/></level_requirements>
-<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="8" desc_key="reqattendztreeLevel08"/></level_requirements>
-<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements-->
-
-<effect_group>
-<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,2" value="1" tags="medicallavenderpatchLL"/>
-
-<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2" value="1" tags="medicalhoneyBandageLL"/>
-
-<effect_description level="1" desc_key="perkendzmedicalRank1Desc" long_desc_key="perkendzmedicalRank1LongDesc"/>
-<effect_description level="2" desc_key="perkendzmedicalRank2Desc" long_desc_key="perkendzmedicalRank2LongDesc"/>
-<!--effect_description level="3" desc_key="perkendzfoodRank3Desc" long_desc_key="perkendzfoodRank3LongDesc"/>
-<effect_description level="4" desc_key="perkendzfoodRank4Desc" long_desc_key="perkendzfoodRank4LongDesc"/>
-<effect_description level="5" desc_key="perkendzfoodRank5Desc" long_desc_key="perkendzfoodRank5LongDesc"/-->
-</effect_group>
-</perk>
-</append>
-
-<append xpath="//perks">
 <perk name="perkendzclothes" max_level="1" parent="skillendzCombat" name_key="perkendzclothes" desc_key="perkendzclothesDesc" icon="ui_game_symbol_armor_iron">
 <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <!--level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="8" desc_key="reqattendztreeLevel08"/></level_requirements>
@@ -436,7 +436,7 @@
 
 <!--IMPROVED WEAPONS PERKS-->
 <append xpath="//perks">
-<perk name="perkbows" parent="skillendzCombat" name_key="perkbows" desc_key="perkbowsDesc" icon="ui_game_symbol_archery">
+<perk name="perkbows" cost_multiplier_per_level="1.38" parent="skillendzCombat" name_key="perkbows" desc_key="perkbowsDesc" icon="ui_game_symbol_archery">
 <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
@@ -459,7 +459,7 @@
 </append>
 
 <append xpath="//perks">
-<perk name="perkpistols" parent="skillendzCombat" name_key="perkpistols" desc_key="perkpistolsDesc" icon="ui_game_symbol_pistol">
+<perk name="perkpistols" cost_multiplier_per_level="1.38" parent="skillendzCombat" name_key="perkpistols" desc_key="perkpistolsDesc" icon="ui_game_symbol_pistol">
 <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
@@ -482,7 +482,7 @@
 </append>
 
 <append xpath="//perks">
-<perk name="perkshotguns" parent="skillendzCombat" name_key="perkshotguns" desc_key="perkshotgunsDesc" icon="ui_game_symbol_shotgun">
+<perk name="perkshotguns" cost_multiplier_per_level="1.38" parent="skillendzCombat" name_key="perkshotguns" desc_key="perkshotgunsDesc" icon="ui_game_symbol_shotgun">
 <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
@@ -505,7 +505,7 @@
 </append>
 
 <append xpath="//perks">
-<perk name="perkrifles" parent="skillendzCombat" name_key="perkrifles" desc_key="perkriflesDesc" icon="ui_game_symbol_marksmanship">
+<perk name="perkrifles" cost_multiplier_per_level="1.38" parent="skillendzCombat" name_key="perkrifles" desc_key="perkriflesDesc" icon="ui_game_symbol_marksmanship">
 <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
@@ -528,7 +528,7 @@
 </append>
 
 <append xpath="//perks">
-<perk name="perkfullauto" parent="skillendzCombat" name_key="perkfullauto" desc_key="perkfullautoDesc" icon="ui_game_symbol_rifle">
+<perk name="perkfullauto" cost_multiplier_per_level="1.38" parent="skillendzCombat" name_key="perkfullauto" desc_key="perkfullautoDesc" icon="ui_game_symbol_rifle">
 <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
 <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
