@@ -31,9 +31,11 @@
 	endzgiantsnakeLL
 	endzbloodydogLL
 	
-	npcEndZsurvivorLL
-	npcEndZsurvivor2LL 
-	npcEndZsurvivor3LL
+	npcEndZsurvivorLL no weapons
+	npcEndZsurvivor2LL no weapons
+	npcEndZsurvivor3LL no weapons
+	
+	npcEndZsurvivorpistolLL pistol
 	
 	zombiebitchQueen
 	
@@ -120,6 +122,7 @@
 	npcEndZsurvivorLL, .25
 	npcEndZsurvivor2LL, .25
 	npcEndZsurvivor3LL, .25
+	npcEndZsurvivorpistolLL, .25
 	endzbuffalo
 	EndZsheepLL 
 	endzratLL, .5
@@ -131,6 +134,7 @@
 	npcEndZsurvivorLL, .25
 	npcEndZsurvivor2LL, .25
 	npcEndZsurvivor3LL, .25
+	npcEndZsurvivorpistolLL, .25
 	endzbuffalo
 	EndZsheepLL 
 	endzratLL, .5
@@ -143,6 +147,7 @@
 	npcEndZsurvivorLL, .25
 	npcEndZsurvivor2LL, .25
 	npcEndZsurvivor3LL, .25
+	npcEndZsurvivorpistolLL, .25
 	endzbuffalo
 	EndZsheepLL 
 	endzratLL, .5
@@ -154,6 +159,7 @@
 	npcEndZsurvivorLL, .25
 	npcEndZsurvivor2LL, .25
 	npcEndZsurvivor3LL, .25
+	npcEndZsurvivorpistolLL, .25
 	endzbuffalo
 	EndZsheepLL 
 	endzratLL, .5
@@ -172,6 +178,7 @@
 	npcEndZsurvivorLL, .25
 	npcEndZsurvivor2LL, .25
 	npcEndZsurvivor3LL, .25
+	npcEndZsurvivorpistolLL, .25
 	endzbuffalo
 	EndZsheepLL 
 	endzratLL, .5
@@ -221,6 +228,7 @@ or @name='sleeperHordeStageGS156']/text()" delim="\n" op="add">
 	zombiegrimlinLL, .1
 	zombiegrimlintwinLL, .1
 	zombieporcLL, .1
+	npcEndZsurvivorpistolLL, .1
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS164'
@@ -257,6 +265,7 @@ or @name='sleeperHordeStageGS407']/text()" delim="\n" op="add">
 	zombiedesertmonsterorcLL, .3
 	zombieimpLL, .4
 	zombiebitchQueen, .1
+	npcEndZsurvivorpistolLL, .25
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS419'
@@ -294,6 +303,7 @@ or @name='sleeperHordeStageGS623']/text()" delim="\n" op="add">
 	zombieWguardianLL, .05
 	EndZgrootradiatedLL, .05
 	zombiebitchQueen, .15
+	npcEndZsurvivorpistolLL, .25
 </csv>
 
 <csv xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS636'
@@ -561,6 +571,7 @@ or @name='sleeperHordeStageGS5778'
 	zombieWguardianLL, .25
 	EndZgrootradiatedLL, .25
 	zombiebitchQueen, .25
+	npcEndZsurvivorpistolLL, .25
 </csv>
 <!--END OF SLEEPER HORDE STAGES-->
 	
@@ -1669,7 +1680,7 @@ or @name='policeCarHordeStageGS2026']/text()" delim="\n" op="add">
 	zombiegrimlinLL, .1 
 	zombiegrimlintwinLL, .1 
 	zombieporcLL, .1 
-	zombiedesertmonsterorcLL , .05 
+	zombiedesertmonsterorcLL, .05 
 	zombieimpLL, .1 
 </csv>
 
@@ -1863,7 +1874,7 @@ or @name='policeCarHordeStageGS2026']/text()" delim="\n" op="add">
 	zombieporcLL, .3
 	zombiedesertmonsterorcLL, .1 
 	zombieimpLL, .2
-	zombiesnowguardianLL , .05
+	zombiesnowguardianLL, .05
 	FrozenBoe, .05
 </csv>
 

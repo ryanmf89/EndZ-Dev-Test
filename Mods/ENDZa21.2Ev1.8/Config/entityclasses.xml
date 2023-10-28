@@ -1248,7 +1248,6 @@
 	<property name="WalkType" value="6"/>
 	<property name="Mass" value="500"/>
 	<property name="ExperienceGain" value="1000"/>
-	<property name="MaxHealth" value="125,165"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1279,7 +1278,6 @@
 	<property name="WalkType" value="6"/>
 	<property name="Mass" value="500"/>
 	<property name="ExperienceGain" value="1500"/>
-	<property name="MaxHealth" value="300,350"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1287,7 +1285,7 @@
 	<property name="LookAtAngle" value="0"/>
 	<property name="HandItem" value="meleeHandZombieShortFeral"/>
 			
-	<property name="PainResistPerHit" value="100"/>
+	<property name="PainResistPerHit" value=".7"/>
 	<property name="Dismemberment" value="true"/>
 				
 	<property name="MoveSpeed" value="0.03"/>
@@ -1311,14 +1309,13 @@
 	<property name="WalkType" value="6"/>
 	<property name="Mass" value="500"/>
 	<property name="ExperienceGain" value="2000"/>
-	<property name="MaxHealth" value="550,600"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="LookAtAngle" value="0"/>
 			
-	<property name="PainResistPerHit" value="100"/>
+	<property name="PainResistPerHit" value=".9"/>
 	<property name="Dismemberment" value="true"/>
 				
 	<property name="MoveSpeed" value="0.06"/>
@@ -1329,6 +1326,8 @@
 <effect_group name="Base Effects">
 	<passive_effect name="HealthMax" operation="base_set" value="550,600"/>
 	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
 </entity_class>
 <!--END OF ZOMBIE STEVE-->
@@ -1707,6 +1706,28 @@
 	<passive_effect name="HealthMax" operation="base_set" value="75,150"/>
 	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
 </effect_group>
+</entity_class>
+
+<entity_class name="npcEndZsurvivorpistolLL" extends="npcAdvancedPistolTemplate"> 
+	<property name="UserSpawnType" value="Menu"/> 
+ 	<property name="Tags" value="entity,male,npc,walker,ranged,DRMid,Knife,Machete,ClubWood,BatWood,Axe,Spear,SMG,PipePistol,PipeShotgun,PipeRifle,PipeMG,M60,Pistol,DPistol,Ak47,TRifle,HRifle,SRifle,LBow,XBow,PShotgun,AShotgun,RocketL"/>
+	<property name="Faction" value="whiteriver"/> 
+	<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />				
+	<property name="Mesh" value="#@modfolder:Resources/EndZsurvivorpistol1.unity3d?EndZsurvivorpistol"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Buffs" value="npcEndZsurvivorTransformLL"/>
+<!-- This activates the backpack -->
+<effect_group name="HasBackpack">
+	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="HasBackpack"/>		
+</effect_group>
+<!-- This activates the Timid behavior -->	
+<!--effect_group name="IsTimid">
+	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="Timid"/>
+</effect_group-->	
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="75,150"/>
+	<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
+</effect_group>	
 </entity_class>
 
 <entity_class name="npcEndZsurvivorTransformationLL" extends="zombieTemplateMale">
