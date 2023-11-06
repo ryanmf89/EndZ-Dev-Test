@@ -6,15 +6,13 @@
 <!-- Change Pack Mule Perk to unlock all slots -->
 <set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='3,6,10,14,18']/@value">7,14,21,28,35</set>
 
-<!--LESS GRIND-->
-<!-- MotherLode perk is rather, underwhelming, let's fix that -->
 <set xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@value">.5,2</set>
 <set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime']/@value">-0.5</set>
 
 <!--you have to read a proper book to unlock this godly ammo-->
-<append xpath="/progression/perks/book[@name='perkPistolPeteHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo9mmBulletvibe</append>
+<!--append xpath="/progression/perks/book[@name='perkPistolPeteHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo9mmBulletvibe</append>
 <append xpath="/progression/perks/book[@name='perkEnforcerHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo44MagnumBulletvibe</append>
-<append xpath="/progression/perks/book[@name='perkSniperHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo762mmBulletvibe</append>
+<append xpath="/progression/perks/book[@name='perkSniperHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo762mmBulletvibe</append-->
 
 <!--HARVESTING TOOLS CHANGE-->
 <remove xpath="//crafting_skill[@name='craftingHarvestingTools']"></remove>
@@ -426,6 +424,26 @@
 <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="EndZallinoneglassesLL"/>
 
 <effect_description level="1" desc_key="perkendzclothesRank1Desc" long_desc_key="perkendzclothesRank1LongDesc"/>
+<!--effect_description level="2" desc_key="perkendzmedicalRank2Desc" long_desc_key="perkendzmedicalRank2LongDesc"/>
+<effect_description level="3" desc_key="perkendzfoodRank3Desc" long_desc_key="perkendzfoodRank3LongDesc"/>
+<effect_description level="4" desc_key="perkendzfoodRank4Desc" long_desc_key="perkendzfoodRank4LongDesc"/>
+<effect_description level="5" desc_key="perkendzfoodRank5Desc" long_desc_key="perkendzfoodRank5LongDesc"/-->
+</effect_group>
+</perk>
+</append>
+
+<append xpath="//perks">
+<perk name="perkendzvibeammo" max_level="1" parent="skillendzCombat" name_key="perkendzvibeammo" desc_key="perkendzvibeammoDesc" icon="ui_game_symbol_electric_power">
+<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements>
+<!--level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="8" desc_key="reqattendztreeLevel08"/></level_requirements>
+<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="6" desc_key="reqattendztreeLevel06"/></level_requirements>
+<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="8" desc_key="reqattendztreeLevel08"/></level_requirements>
+<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attendztree" operation="GTE" value="10" desc_key="reqattendztreeLevel10"/></level_requirements-->
+
+<effect_group>
+<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vibeammo"/>
+
+<effect_description level="1" desc_key="perkendzvibeammoRank1Desc" long_desc_key="perkendzvibeammoRank1LongDesc"/>
 <!--effect_description level="2" desc_key="perkendzmedicalRank2Desc" long_desc_key="perkendzmedicalRank2LongDesc"/>
 <effect_description level="3" desc_key="perkendzfoodRank3Desc" long_desc_key="perkendzfoodRank3LongDesc"/>
 <effect_description level="4" desc_key="perkendzfoodRank4Desc" long_desc_key="perkendzfoodRank4LongDesc"/>

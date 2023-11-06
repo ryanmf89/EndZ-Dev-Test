@@ -714,95 +714,90 @@
 	<property name="Group" value="Ammo/Weapons,Basics,Melee Weapons,Ranged Weapons"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="NavObject" value="spear"/>
-<property class="Action0">
-	<property name="Class" value="DynamicMelee"/>
-	<property name="Hitmask_override" value="Melee"/>
-	<property name="Sphere" value=".15"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
-	<property name="Sound_start" value="spear_fire"/>
-	<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
-	<property name="UseGrazingHits" value="true"/>
-	<property name="GrazeStart" value=".25"/>
-	<property name="GrazeEnd" value=".32"/>
-	<property name="SwingDegrees" value="10"/>
-	<property name="SwingAngle" value="20"/>
-	<property class="HitSounds">
-	<property name="Override0" value="organic" param1="metalstaborganic"/>
-</property>
-	<property class="GrazeSounds">
-	<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-</property>
-</property>
-<property class="Action1">
-	<property name="Class" value="DynamicMelee"/>
-	<property name="Hitmask_override" value="Melee"/>
-	<property name="Sphere" value=".15"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
-	<property name="Sound_start" value="spear_fire"/>
-	<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
-	<property name="UseGrazingHits" value="true"/>
-	<property name="GrazeStart" value=".25"/>
-	<property name="GrazeEnd" value=".32"/>
-	<property name="SwingDegrees" value="10"/>
-	<property name="SwingAngle" value="20"/>
-	<property name="UsePowerAttackAnimation" value="true"/>
-	<property class="HitSounds">
-	<property name="Override0" value="organic" param1="metalstaborganic"/>
-</property>
-	<property class="GrazeSounds">
-	<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-</property>
-</property>
-<effect_group name="Base Effects">
-	<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
-	<passive_effect name="BlockRange" operation="base_set" value="4"/>
-	<passive_effect name="EntityDamage" operation="base_set" value="14"/> 
-	<passive_effect name="BlockDamage" operation="base_set" value="10"/>
-	<passive_effect name="AttacksPerMinute" operation="base_set" value="65"/>
-	<passive_effect name="StaminaLoss" operation="base_set" value="13" tier="1,6" tags="primary"/>
-	<passive_effect name="DegradationMax" operation="base_set" value="250,350" tier="2,6" />
-	<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>			
-	<passive_effect name="ModPowerBonus" operation="perc_add" value=".05" tags="EntityDamage"/>
-	<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>	
-	<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05,.55" tier="1,6"/>
-	<passive_effect name="EntityDamage" operation="perc_add" value=".05,.55" tier="1,6"/>			
-	<passive_effect name="TargetArmor" operation="perc_add" value="-.25"/>
-	<display_value name="dTargetArmor" value="-.25"/>
-</effect_group>
-<effect_group name="Power Attack">
-	<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
-	<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
-	<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.35" tags="secondary"/>
-	<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
-	<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05,.3" tags="secondary" tier="1,6"/>
-	<passive_effect name="EntityDamage" operation="perc_add" value=".05,.3" tags="secondary" tier="1,6"/>
-</effect_group>
-	<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
-<effect_group name="meleeWpnSpearT0StoneSpear">
-	<passive_effect name="EntityDamage" operation="base_set" value="11.7" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT0StoneSpear -->
-	<passive_effect name="TargetArmor" operation="perc_add" value="-.35" tags="perkJavelinMaster"/><display_value name="dTargetArmor" value="-.3"/>
-	<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkJavelinMaster"/>
-	<passive_effect name="AttacksPerMinute" operation="base_set" value="65" tags="perkJavelinMaster"/>
-	<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
-	<passive_effect name="DegradationMax" operation="base_set" value="250,350" tier="1,6" tags="perkJavelinMaster"/>
-	<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkJavelinMaster"/>
-	<passive_effect name="MaxRange" operation="base_set" value="3.2" tags="perkJavelinMaster"/>
-	<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkJavelinMaster"/>
-	<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
-	<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-	<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-	<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
-	<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
-	<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
-	<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
-	<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
-	<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
-	<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
-	<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
-</effect_group>
-<effect_group name="Throw">
-	<passive_effect name="EntityDamage" operation="perc_add" value="2.85" tags="secondary"/>
-	<passive_effect name="BlockDamage" operation="perc_add" value="2.85" tags="secondary"/>
-	<passive_effect name="StaminaLoss" operation="base_set" value="36.9" tags="secondary"/>
-</effect_group>
+	
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Range" value="2.6"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="Sphere" value=".05"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="spear_fire"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UseGrazingHits" value="true"/>
+		<property name="GrazeStart" value=".25"/>
+		<property name="GrazeEnd" value=".32"/>
+		<property name="SwingDegrees" value="10"/>
+		<property name="SwingAngle" value="20"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalstaborganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+		</property>
+	</property>
+	<!-- <property class="Action1"> -->
+		<!-- <requirement name="StatCompareCurrent" stat="Stamina" operation="GTE" value="20.1"/> -->
+		<!-- <property name="Class" value="ThrownWeapon"/> -->
+		<!-- <property name="Hitmask_override" value="Bullet"/> -->
+		<!-- <property name="Delay" value="1.2"/> -->
+		<!-- <property name="Throw_strength_default" value="6"/> -->
+		<!-- <property name="Throw_strength_max" value="18"/> -->
+		<!-- <property name="Max_strain_time" value="1"/> -->
+		<!-- <property name="Sound_start" value="spear_throw"/> -->
+		<!-- <property name="Explosion.ParticleIndex" value="0"/> no expl. -->
+		<!-- <property name="FlyTime" value="0"/> -->
+		<!-- <property name="Gravity" value="-7.5"/> default is -9.81 -->
+		<!-- <property name="LifeTime" value="60"/> -->
+		<!-- <property class="HitSounds"> -->
+			<!-- <property name="Override0" value="organic" param1="metalstaborganic"/> -->
+		<!-- </property> -->
+	<!-- </property> -->
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Range" value="3.6"/>
+		<property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="spear_fire"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+
+	<effect_group name="moonrockspearLL">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkJavelinMaster"/><display_value name="dTargetArmor" value="-.3"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="65" tags="perkJavelinMaster,perkFlurryOfPerception"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="13" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,350" tier="1,6" tags="perkJavelinMaster"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkJavelinMaster"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkJavelinMaster"/>
+		<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="11.7" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT0StoneSpear -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkJavelinMaster"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+	</effect_group>
+	<!-- <effect_group name="Throw"> -->
+		<!-- <passive_effect name="EntityDamage" operation="perc_add" value="2.85" tags="secondary"/> -->
+		<!-- <passive_effect name="BlockDamage" operation="perc_add" value="2.85" tags="secondary"/> -->
+		<!-- <passive_effect name="StaminaLoss" operation="base_set" value="36.9" tags="secondary"/> -->
+	<!-- </effect_group> -->
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="26.1" tags="secondary"/>
+		
+		
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkJavelinMaster">
+			<requirement name="ProgressionLevel" progression_name="perkSpearHunter6PenetratingShaft" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BlockPenetrationFactor" operation="base_set" value="10000" tags="perkJavelinMaster"/>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
+	</effect_group>
 </item>
 	
 <item name="moonrocksledgeLL">
@@ -1681,69 +1676,54 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property name="TraderStageTemplate" value="baseTier1"/>
 	<property name="UnlockedBy" value="craftingSpears"/>
 	<property name="Weight" value="750"/>
-<property class="Action0">
-	<property name="Class" value="DynamicMelee"/>
-	<property name="Hitmask_override" value="Melee"/>
-	<property name="Sphere" value=".15"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
-	<property name="Sound_start" value="spear_fire"/>
-	<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
-	<property name="UseGrazingHits" value="true"/>
-	<property name="GrazeStart" value=".25"/>
-	<property name="GrazeEnd" value=".32"/>
-	<property name="SwingDegrees" value="10"/>
-	<property name="SwingAngle" value="20"/>
-	<property class="HitSounds">
-	<property name="Override0" value="organic" param1="metalstaborganic"/>
-</property>
-	<property class="GrazeSounds">
-	<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-</property>
-</property>
-<property class="Action1">
-	<property name="Class" value="DynamicMelee"/>
-	<property name="Hitmask_override" value="Melee"/>
-	<property name="Sphere" value=".15"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
-	<property name="Sound_start" value="spear_fire"/>
-	<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
-	<property name="UseGrazingHits" value="true"/>
-	<property name="GrazeStart" value=".25"/>
-	<property name="GrazeEnd" value=".32"/>
-	<property name="SwingDegrees" value="10"/>
-	<property name="SwingAngle" value="20"/>
-	<property name="UsePowerAttackAnimation" value="true"/>
-	<property class="HitSounds">
-	<property name="Override0" value="organic" param1="metalstaborganic"/>
-</property>
-	<property class="GrazeSounds">
-	<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-</property>
-</property>
-<effect_group name="Base Effects">
-	<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
-	<passive_effect name="BlockRange" operation="base_set" value="4"/>
-	<passive_effect name="EntityDamage" operation="base_set" value="28"/> 
-	<passive_effect name="BlockDamage" operation="base_set" value="10"/>
-	<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>
-	<passive_effect name="StaminaLoss" operation="base_set" value="16" tier="1,6" tags="primary"/>
-	<passive_effect name="DegradationMax" operation="base_set" value="450,650" tier="1,6" />
-	<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>	
-	<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
-	<passive_effect name="ModPowerBonus" operation="perc_add" value=".05" tags="EntityDamage"/>
-	<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>			
-	<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05,.55" tier="1,6"/>
-	<passive_effect name="EntityDamage" operation="perc_add" value=".05,.55" tier="1,6"/>
-	<passive_effect name="TargetArmor" operation="perc_add" value="-.25"/>
-	<display_value name="dTargetArmor" value="-.25"/>
-</effect_group>
-<effect_group name="Power Attack">
-	<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
-	<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
-	<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.35" tags="secondary"/>
-	<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
-	<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05,.3" tags="secondary" tier="1,6"/>
-	<passive_effect name="EntityDamage" operation="perc_add" value=".05,.3" tags="secondary" tier="1,6"/>
-</effect_group>
-	<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+	
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Range" value="3.6"/>
+		<property name="Sphere" value=".05"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="spear_fire"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+	
+	<effect_group name="brassspearLL">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.4" tags="perkJavelinMaster"/><display_value name="dTargetArmor" value="-.4"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="75" tags="perkJavelinMaster,perkFlurryOfPerception"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="16" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="450,650" tier="1,6" tags="perkJavelinMaster"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkJavelinMaster"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkJavelinMaster"/>
+		<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="28" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT1IronSpear -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkJavelinMaster"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkJavelinMaster"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkJavelinMaster"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+	</effect_group>
+	
+	<!-- <effect_group name="Throw"> -->
+		<!-- <passive_effect name="EntityDamage" operation="perc_add" value="2.85" tags="secondary"/> -->
+		<!-- <passive_effect name="BlockDamage" operation="perc_add" value="2.85" tags="secondary"/> -->
+		<!-- <passive_effect name="StaminaLoss" operation="base_set" value="40.6" tags="secondary"/> -->
+	<!-- </effect_group> -->
+	
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="35.6" tags="secondary"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkJavelinMaster">
+			<requirement name="ProgressionLevel" progression_name="perkSpearHunter6PenetratingShaft" operation="Equals" value="1"/>
+		</passive_effect>
+	</effect_group>
 </item>
 <!--END OF BRASS RECIPES-->
 	
@@ -1973,51 +1953,51 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 </property>
 </property>
-<property class="Action1">
-	<property name="Class" value="DynamicMelee"/>
-	<property name="Hitmask_override" value="Melee"/>
-	<property name="Sphere" value=".15"/> 
-	<property name="Sound_start" value="spear_fire"/>
-	<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
-	<property name="UseGrazingHits" value="true"/>
-	<property name="GrazeStart" value=".25"/>
-	<property name="GrazeEnd" value=".32"/>
-	<property name="SwingDegrees" value="10"/>
-	<property name="SwingAngle" value="20"/>
-	<property name="UsePowerAttackAnimation" value="true"/>
-	<property class="HitSounds">
-	<property name="Override0" value="organic" param1="metalstaborganic"/>
-</property>
-	<property class="GrazeSounds">
-	<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-</property>
-</property>
-<effect_group name="Base Effects">
-	<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
-	<passive_effect name="BlockRange" operation="base_set" value="4"/>
-	<passive_effect name="EntityDamage" operation="base_set" value="38"/> 
-	<passive_effect name="BlockDamage" operation="base_set" value="10"/>
-	<passive_effect name="AttacksPerMinute" operation="base_set" value="95"/>
-	<passive_effect name="StaminaLoss" operation="base_set" value="21" tier="1,6" tags="primary"/>
-	<passive_effect name="DegradationMax" operation="base_set" value="800" tier="1,6" />
-	<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
-	<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
-	<passive_effect name="ModPowerBonus" operation="perc_add" value=".05" tags="EntityDamage"/>
-	<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-	<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05,.55" tier="1,6"/>
-	<passive_effect name="EntityDamage" operation="perc_add" value=".05,.55" tier="1,6"/>
-	<passive_effect name="TargetArmor" operation="perc_add" value="-.25"/>
-	<display_value name="dTargetArmor" value="-.25"/>
-</effect_group>
-<effect_group name="Power Attack">
-	<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
-	<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
-	<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.35" tags="secondary"/>
-	<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
-	<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05,.3" tags="secondary" tier="1,6"/>
-	<passive_effect name="EntityDamage" operation="perc_add" value=".05,.3" tags="secondary" tier="1,6"/>
-</effect_group>
-	<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Range" value="3.6"/>
+		<property name="Sphere" value=".05"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="spear_fire"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+	
+	<effect_group name="t3vibespearLL">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkJavelinMaster"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="95" tags="perkJavelinMaster,perkFlurryOfPerception"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="21" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="800" tier="1,6" tags="perkJavelinMaster"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkJavelinMaster"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkJavelinMaster"/>
+		<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="38" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT3SteelSpear -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkJavelinMaster"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="base_set" value="15" tags="perkJavelinMaster"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkJavelinMaster"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+	</effect_group>
+	<!-- <effect_group name="Throw"> -->
+		<!-- <passive_effect name="EntityDamage" operation="perc_add" value="2.85" tags="secondary"/> -->
+		<!-- <passive_effect name="BlockDamage" operation="perc_add" value="2.85" tags="secondary"/> -->
+		<!-- <passive_effect name="StaminaLoss" operation="base_set" value="44.8" tags="secondary"/> -->
+	<!-- </effect_group> -->
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="40.3" tags="secondary"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkJavelinMaster">
+			<requirement name="ProgressionLevel" progression_name="perkSpearHunter6PenetratingShaft" operation="Equals" value="1"/>
+		</passive_effect>
+	</effect_group>
 </item>
 	
 <item name="vibeaugerLL">
@@ -3020,7 +3000,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 </append>
 
-<!--STEEL AMMO-->
+<!--VIBE AMMO-->
 <append xpath="/items">
 <item name="resourceBulletCasingvibe">
 	<property name="Extends" value="resourceBulletCasing"/>
@@ -3036,14 +3016,14 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 		
 <item name="ammo9mmBulletvibe">
+	<property name="UnlockedBy" value="perkendzvibeammo"/>
 	<property name="Extends" value="ammo9mmBulletBall"/>
 	<property name="CustomIcon" value="ammo9mmBulletBall"/>
 	<property name="CustomIconTint" value="106, 0, 163"/>
-	<property name="DisplayType" value="ammoBulletSteel"/>
+	<property name="DisplayType" value="ammoBulletvibe"/>
 	<property name="Material" value="Msteel"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="DescriptionKey" value="ammovibeCasedGroupDesc"/>
-	<property name="UnlockedBy" value="perkPistolPeteHPAmmo"/>
 <effect_group name="Base Effects" tiered="false">
 	<passive_effect name="EntityDamage" operation="base_set" value="50"/>
 	<passive_effect name="BlockDamage" operation="base_set" value="6"/>
@@ -3053,14 +3033,14 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 
 <item name="ammo44MagnumBulletvibe">
+	<property name="UnlockedBy" value="perkendzvibeammo"/>
 	<property name="Extends" value="ammo44MagnumBulletBall"/>
 	<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
 	<property name="CustomIconTint" value="106, 0, 163"/>
-	<property name="DisplayType" value="ammoBulletSteel"/>
+	<property name="DisplayType" value="ammoBulletvibe"/>
 	<property name="Material" value="Msteel"/>
 	<property name="EconomicValue" value="9"/>
 	<property name="DescriptionKey" value="ammovibeCasedGroupDesc"/>
-	<property name="UnlockedBy" value="perkEnforcerHPAmmo"/>
 <effect_group name="Base Effects" tiered="false">
 	<passive_effect name="EntityDamage" operation="base_set" value="90"/>
 	<passive_effect name="BlockDamage" operation="base_set" value="10"/>
@@ -3068,14 +3048,14 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 
 <item name="ammo762mmBulletvibe">
+	<property name="UnlockedBy" value="perkendzvibeammo"/>
 	<property name="Extends" value="ammo762mmBulletBall"/>
 	<property name="CustomIcon" value="ammo762mmBulletBall"/>
 	<property name="CustomIconTint" value="106, 0, 163"/>
-	<property name="DisplayType" value="ammoBulletSteel"/>
+	<property name="DisplayType" value="ammoBulletvibe"/>
 	<property name="Material" value="Msteel"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="DescriptionKey" value="ammovibeCasedGroupDesc"/>
-	<property name="UnlockedBy" value="perkSniperHPAmmo"/>
 <effect_group name="Base Effects" tiered="false">
 	<passive_effect name="EntityDamage" operation="base_set" value="75"/>
 	<passive_effect name="BlockDamage" operation="base_set" value="7"/>
@@ -3083,25 +3063,134 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 </effect_group>
 </item>
+
+<item name="ammoShotgunShellvibe">
+	<property name="UnlockedBy" value="perkendzvibeammo"/>
+	<property name="Extends" value="ammoShotgunShell"/>
+	<property name="CustomIcon" value="ammoShotgunShell"/>
+	<property name="CustomIconTint" value="106, 0, 163"/>
+	<property name="DescriptionKey" value="ammovibeCasedGroupDesc"/>
+	<property name="DisplayType" value="ammoShotgunvibe"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+	<property name="EconomicValue" value="11"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	
+	<effect_group name="ammoShotgunShellvibe" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="15.1"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5.4"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="10"/>
+		<passive_effect name="MaxRange" operation="base_set" value="10"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="4"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2"/>
+		<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4.5"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4.5"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.13"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+	</effect_group>
+</item>
+
+<item name="ammoArrowSteelAPvibe">
+	<property name="UnlockedBy" value="perkendzvibeammo"/>
+	<property name="Extends" value="ammoArrowIron"/>
+	<property name="CustomIcon" value="ammoArrowSteelAP"/>
+	<property name="CustomIconTint" value="106, 0, 163"/>
+	<property name="DescriptionKey" value="ammovibeCasedGroupDesc"/>
+	<property name="DisplayType" value="ammoArrowAPvibe"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_steelPrefab.prefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="TraderStageTemplate" value="arrowsTier2"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="StickyOffset" value=".13"/>
+	
+	<effect_group name="ammoArrowSteelAPvibe" tiered="false"> <!-- ammoArrowSteelAP -->
+		<passive_effect name="EntityDamage" operation="base_set" value="65"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5" />
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
+	</effect_group>
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>
+
+<item name="ammoCrossbowBoltSteelAPvibe">
+	<property name="UnlockedBy" value="perkendzvibeammo"/> <!-- BOOK_PERK -->
+	<property name="Extends" value="ammoCrossbowBoltIron"/>
+	<property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
+	<property name="CustomIconTint" value="106, 0, 163"/>
+	<property name="DescriptionKey" value="ammovibeCasedGroupDesc"/>
+	<property name="DisplayType" value="ammoArrowAPvibe"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/bolt_steelPrefab.prefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="TraderStageTemplate" value="arrowsTier2"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value=".75"/>
+	
+	<effect_group name="ammoCrossbowBoltSteelAPvibe" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
+		<passive_effect name="EntityDamage" operation="base_set" value="85" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5" tags="perkArchery"/>
+	</effect_group>
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>
 </append>
 
 <!--CHANGES LEVER ACTION TO USE THE 44 MAGNUM BULLETS-->
-<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP,ammo44MagnumBulletvibe</set>
+<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP</set>
 
 <!--ADDS STEEL BULLETS TO EXSISTING GUNS-->
-<append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletvibe</append>
+<!--append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletvibe</append>
 <append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletvibe</append>
 <append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletvibe</append>
 <append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletvibe</append>
 <append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletvibe</append>
 <append xpath="/items/item[@name='gunRifleT0PipeRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletvibe</append>
 <append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletvibe</append>
-<!--append xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletvibe</append-->
 <append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletvibe</append>
 <append xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletvibe</append>
 <append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletvibe</append>
 <append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletvibe</append>	
-<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletvibe</append>	
+<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletvibe</append-->	
 
 <!--A NEW MULTITOOL FOR THE GAME-->
 <!--multi tool, pick,axe,shovel,and knife in one-->
@@ -4380,7 +4469,6 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 <!--ALL WEAPONS FIRE RATE IS X1.25 FROM VANILLA-->
 <!--ALL MAG SIZES ARE 2X THE AMOUNT OF VANILLA FIREARMS(EXCEPT BOWS)-->
 <!--ALL WEAPONS HAVE 2X THE AMOUNT OF DEGREDATION MAX ON THE ITEM ITSELF-->
-<!--SHOTGUNS HAVE +10 ON DAMAGE, BOWS AND OTHER WEAPONS HAVE +30 DAMAGE FROM VANILLA FIREARMS AND BOWS-->
 <append xpath="/items">
 <item name="gunwoodbowLL">
 	<property name="Tags" value="weapon,ranged,bowDrawPenalty,archery,bow,attAgility,perkArchery,canHaveCosmetic,bowSkill"/>
@@ -4412,7 +4500,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Class" value="Catapult"/>
 		<property name="Hitmask_override" value="Arrow"/>
 		<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding"/>
+		<property name="Magazine_items" value="ammoArrowSteelAPvibe,ammoArrowFlaming,ammoArrowExploding"/>
 		<!-- <property name="Reload_time" value=".9"/> -->
 		<property name="Sound_start" value="bow2_fire"/>
 		<property name="Sound_repeat" value=""/>
@@ -4440,8 +4528,8 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	        <property name="triggerEffectTriggerPullDualsense" value="PistolZoom"/>
 	</property>
 
-	<effect_group name="gunBowT1WoodenBow">
-		<passive_effect name="EntityDamage" operation="base_set" value="75"/>
+	<effect_group name="gunwoodbowLL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="75"/-->
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="25" tags="perkArchery"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.08" tier="1,6" tags="perkArchery"/> <!-- random effective rng -->
 		<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
@@ -4528,7 +4616,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
 		<property name="Hitmask_override" value="Arrow"/>
 		<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding"/>
+		<property name="Magazine_items" value="ammoArrowSteelAPvibe,ammoArrowFlaming,ammoArrowExploding"/>
 		<!-- <property name="Reload_time" value=".9"/> -->
 		<property name="Sound_start" value="bow3_fire"/>
 		<property name="Sound_repeat" value=""/>
@@ -4552,8 +4640,8 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Zoom_max_in" value="40"/>
 	        <property name="triggerEffectTriggerPullDualsense" value="PistolZoom"/>
 	</property>
-	<effect_group name="gunBowT3CompoundBow">
-		<passive_effect name="EntityDamage" operation="base_set" value="105"/>
+	<effect_group name="guncompoundbowLL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="105"/-->
 		<passive_effect name="ProjectileVelocity" operation="perc_add" value=".2" tags="perkArchery"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="34" tags="perkArchery"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.08" tier="1,6" tags="perkArchery"/> <!-- random effective rng -->
@@ -4634,7 +4722,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Class" value="Launcher"/>
 		<property name="Hitmask_override" value="Arrow"/>
 		<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammoCrossbowBoltStone,ammoCrossbowBoltIron,ammoCrossbowBoltSteelAP,ammoCrossbowBoltFlaming,ammoCrossbowBoltExploding"/>
+		<property name="Magazine_items" value="ammoCrossbowBoltSteelAPvibe,ammoCrossbowBoltFlaming,ammoCrossbowBoltExploding"/>
 		<!-- <property name="Reload_time" value="4"/> -->
 		<property name="Sound_start" value="crossbow2_fire"/>
 		<property name="Sound_repeat" value=""/>
@@ -4654,8 +4742,8 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
                 <property name="zoomTriggerEffectTriggerPullDualsense" value="PistolZoom"/>
                 <property name="zoomTriggerEffectTriggerPullXbox" value="PistolZoom"/>
 	</property>
-	<effect_group name="gunBowT3CompoundCrossbow">
-		<passive_effect name="EntityDamage" operation="base_set" value="135"/>
+	<effect_group name="gunCompoundCrossbowLL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="135"/-->
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="40" tags="perkArchery"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.08" tier="1,6" tags="perkArchery"/> <!-- random effective rng -->
 		<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
@@ -4704,13 +4792,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 
 <item name="gunpistolLL">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,attAgility,perkGunslinger,9mmGun,canHaveCosmetic,handgunSkill"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="UnlockedBy" value="perkpistols"/>	
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="1"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Pistol/PistolPrefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZvibepistol1.unity3d?EndZvibepistol"/>
 	<property name="Material" value="MHandGunParts"/>
-	<property name="TintColor" value="66, 33, 0"/>
 	<property name="Weight" value="1"/>
 	<property name="RepairTools" value="resourcevibeRepairKitLL"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -4734,7 +4821,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
-		<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP,ammo9mmBulletvibe"/>
+		<property name="Magazine_items" value="ammo9mmBulletvibe"/>
 		<property name="Sound_start" value="Pistol_Fire"/>
 		<property name="Sound_loop" value="Pistol_Fire"/>
 		<property name="Sound_end" value=""/>
@@ -4753,12 +4840,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Class" value="Zoom"/>
 		<property name="Zoom_max_out" value="55"/>
 		<property name="Zoom_max_in" value="55"/>
-		<property name="ScopeCameraOffset" value="0,.0008,0"/>
+		<property name="ScopeCameraOffset" value="0,-.0065,0"/><!-- Left/Right, +Down/-Up, Back/Front -->
         	<property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
         	<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
 	</property>
-	<effect_group name="gunHandgunT1Pistol">
-		<passive_effect name="EntityDamage" operation="base_set" value="67"/>
+	<effect_group name="gunpistolLL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="67"/-->
 		<passive_effect name="MaxRange" operation="base_set" value="50" tags="perkGunslinger,9mmGun"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="17" tags="perkGunslinger,9mmGun"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tier="1,6" tags="perkGunslinger,9mmGun"/> <!-- random effective rng -->
@@ -4800,13 +4887,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 	
 <item name="gunSMGLL">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,attAgility,perkGunslinger,9mmGun,canHaveCosmetic,handgunSkill"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="UnlockedBy" value="perkfullauto"/>	
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="6"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/SMG/smgPrefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZvibesub1.unity3d?EndZvibesub"/>
 	<property name="Material" value="MHandGunParts"/>
-	<property name="TintColor" value="80, 80, 80"/>
 	<property name="Weight" value="1"/>
 	<property name="RepairTools" value="resourcevibeRepairKitLL"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -4828,7 +4914,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP,ammo9mmBulletvibe"/>
+		<property name="Magazine_items" value="ammo9mmBulletvibe"/>
 		<property name="Reload_time" value="4.1"/>
 		<property name="Sound_start" value="smg_fire"/>
 		<property name="Sound_loop" value="smg_fire"/>
@@ -4854,12 +4940,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Class" value="Zoom"/>
 		<property name="Zoom_max_out" value="55"/>
 		<property name="Zoom_max_in" value="55"/>
-		<property name="ScopeCameraOffset" value="-.0003,0,-.01"/>
+		<property name="ScopeCameraOffset" value="0,-.025,0"/><!-- Left/Right, Down/Up, Back/Front -->
 	        <property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
 	        <property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
 	</property>
-	<effect_group name="gunHandgunT3SMG5">
-		<passive_effect name="EntityDamage" operation="base_set" value="80"/>
+	<effect_group name="gunSMGLL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="80"/-->
 		<passive_effect name="MaxRange" operation="base_set" value="65" tags="perkGunslinger,9mmGun"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="30" tags="perkGunslinger,9mmGun"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tier="1,6" tags="perkGunslinger,9mmGun"/> <!-- random effective rng -->
@@ -4901,13 +4987,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 	
 <item name="gungoldenvultureLL">
-	<property name="Tags" value="weapon,ranged,revolver,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,attAgility,perkGunslinger,canHaveCosmetic,handgunSkill"/>
+	<property name="Tags" value="weapon,ranged,revolver,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="UnlockedBy" value="perkpistols"/>	
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="75"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Desert Eagle/desertEaglePrefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZvibedeagle1.unity3d?EndZvibedeagle"/>
 	<property name="Material" value="MHandGunParts"/>
-	<property name="TintColor" value="80, 80, 80"/>
 	<property name="Weight" value="1"/>
 	<property name="RepairTools" value="resourcevibeRepairKitLL"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -4931,7 +5016,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
-		<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP,ammo44MagnumBulletvibe"/>
+		<property name="Magazine_items" value="ammo44MagnumBulletvibe"/>
 		<property name="Sound_start" value="desertvulture_fire"/>
 		<property name="Sound_loop" value="desertvulture_fire"/>
 		<property name="Sound_end" value=""/>
@@ -4949,12 +5034,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Class" value="Zoom"/>
 		<property name="Zoom_max_out" value="55"/>
 		<property name="Zoom_max_in" value="55"/>
-		<property name="ScopeCameraOffset" value="0,.0008,0"/>
+		<property name="ScopeCameraOffset" value="0,.012,0"/><!-- Left/Right, +Down/-Up, Back/Front -->
 	        <property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
 	        <property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
 	</property>
-	<effect_group name="gunHandgunT3DesertVulture">
-		<passive_effect name="EntityDamage" operation="base_set" value="120"/>
+	<effect_group name="gungoldenvultureLL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="120"/-->
 		<passive_effect name="MaxRange" operation="base_set" value="50" tags="perkGunslinger"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="30" tags="perkGunslinger"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tier="1,6" tags="perkGunslinger"/> <!-- random effective rng -->
@@ -4996,13 +5081,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 
 <item name="gundubzyLL">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,dBarrel,attStrength,perkBoomstick,canHaveCosmetic,shotgunSkill"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,dBarrel,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,canHaveCosmetic,attachmentsIncluded,shotgunSkill"/>
 	<property name="UnlockedBy" value="perkshotguns"/>	
 	<property name="DisplayType" value="rangedShotgunNoMag"/>
 	<property name="HoldType" value="56"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/DoubleBarrelShotgun/doubleBarrelShotgunPrefab.prefab"/>
 	<property name="Material" value="MShotgunParts"/>
-	<property name="TintColor" value="83, 69, 54"/>
 	<property name="Weight" value="1"/>
 	<property name="RepairTools" value="resourcevibeRepairKitLL"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -5027,7 +5111,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 <property class="Action0">
 	<property name="Class" value="Ranged"/>
 	<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
-	<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug"/>
+	<property name="Magazine_items" value="ammoShotgunShellvibe"/>
 	<property name="Reload_time" value="2.6"/>
 	<property name="Sound_start" value="shotgundb_fire"/>
 	<property name="Sound_repeat" value=""/>
@@ -5056,8 +5140,8 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
 	<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
 </property>
-<effect_group name="gunShotgunT1DoubleBarrel">
-	<passive_effect name="EntityDamage" operation="base_set" value="21"/>
+<effect_group name="gundubzyLL">
+	<!--passive_effect name="EntityDamage" operation="base_set" value="21"/-->
 	<passive_effect name="RoundsPerMinute" operation="base_set" value="1.25" tags="perkBoomstick"/>
 	<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
 	<passive_effect name="MagazineSize" operation="base_set" value="4" tags="perkBoomstick"/>
@@ -5089,13 +5173,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 	
 <item name="gunpumpshotLL">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,noScopes,attStrength,perkBoomstick,canHaveCosmetic,shotgunSkill"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,canHaveCosmetic,shotgunSkill"/>
 	<property name="UnlockedBy" value="perkshotguns"/><!-- gunShotgunT2PumpShotgunSchematic, -->
 	<property name="DisplayType" value="rangedShotgun"/>
 	<property name="HoldType" value="5"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Pump Shotgun/pumpShotgunPrefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZpumpshotty1.unity3d?EndZpumpshotty"/>
 	<property name="Material" value="MShotgunParts"/>
-	<property name="TintColor" value="80, 80, 80"/>
 	<property name="Weight" value="1"/>
 	<property name="RepairTools" value="resourcevibeRepairKitLL"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -5121,7 +5204,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 <property class="Action0">
 	<property name="Class" value="Ranged"/>
 	<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
-	<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug"/>
+	<property name="Magazine_items" value="ammoShotgunShellvibe"/>
 	<property name="Reload_time" value="2.6"/>
 	<property name="Sound_start" value="pump_shotgun_fire"/>
 	<property name="Sound_repeat" value=""/>
@@ -5145,12 +5228,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property name="Class" value="Zoom"/>
 	<property name="Zoom_max_out" value="55"/>
 	<property name="Zoom_max_in" value="55"/>
-	<property name="ScopeCameraOffset" value="0,0,0"/>
+	<property name="ScopeCameraOffset" value="0,.006,.025"/><!-- Left/Right, -Down/+Up, -Back/+Front -->
 	<property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
 	<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
 </property>
-<effect_group name="gunShotgunT2PumpShotgun">
-	<passive_effect name="EntityDamage" operation="base_set" value="25"/>
+<effect_group name="gunpumpshotLL">
+	<!--passive_effect name="EntityDamage" operation="base_set" value="25"/-->
 	<passive_effect name="RoundsPerMinute" operation="base_set" value="75" tags="perkBoomstick"/>
 	<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
 	<passive_effect name="MagazineSize" operation="base_set" value="16" tags="perkBoomstick"/>
@@ -5215,7 +5298,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 <property class="Action0">
 	<property name="Class" value="Ranged"/>
 	<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
-	<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug"/>
+	<property name="Magazine_items" value="ammoShotgunShellvibe"/>
 	<property name="Reload_time" value="2.6"/>
 	<property name="Sound_start" value="autoshotgun_fire"/>
 	<property name="Sound_loop" value="autoshotgun_fire"/>
@@ -5242,8 +5325,8 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
     <property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
     <property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
 </property>
-<effect_group name="gunShotgunT3AutoShotgun">
-	<passive_effect name="EntityDamage" operation="base_set" value="30"/>
+<effect_group name="gunautoshotLL">
+	<!--passive_effect name="EntityDamage" operation="base_set" value="30"/-->
 	<passive_effect name="RoundsPerMinute" operation="base_set" value="87" tags="perkBoomstick"/>
 	<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
 	<passive_effect name="MagazineSize" operation="base_set" value="32" tags="perkBoomstick"/>
@@ -5277,13 +5360,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	
 	
 <item name="gunhuntrifleLL">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,mediumTopAttachments,largeTopAttachments,attPerception,perkDeadEye,canHaveCosmetic,rifleSkill"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
 	<property name="UnlockedBy" value="perkrifles"/>
 	<property name="DisplayType" value="rangedGunNoMag"/>
 	<property name="HoldType" value="30"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZhuntingrifle1.unity3d?EndZhuntingrifle"/>
 	<property name="Material" value="MRifleParts"/>
-	<property name="TintColor" value="101, 84, 67"/>
 	<property name="Weight" value="1"/>
 	<property name="RepairTools" value="resourcevibeRepairKitLL"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -5308,7 +5390,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 <property class="Action0">
 	<property name="Class" value="Ranged"/>
 	<property name="Delay" value=".5"/> <!-- obsolete if rounds per minute exists -->
-	<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletvibe"/>
+	<property name="Magazine_items" value="ammo762mmBulletvibe"/>
 	<property name="Reload_time" value="2.66"/>
 	<property name="Sound_start" value="sniperrifle_fire"/>
 	<property name="Sound_repeat" value=""/>
@@ -5331,11 +5413,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property name="Class" value="Zoom"/>
 	<property name="Zoom_max_out" value="55"/>
 	<property name="Zoom_max_in" value="55"/>
+	<property name="ScopeCameraOffset" value=".0057,.0137,-.05"/><!-- Left/Right, -Down/+Up, -Back/+Front -->
     <property name="zoomTriggerEffectTriggerPullDualsense" value="PistolZoom"/>
     <property name="zoomTriggerEffectTriggerPullXbox" value="PistolZoom"/>
 </property>
-<effect_group name="gunRifleT1HuntingRifle">
-	<passive_effect name="EntityDamage" operation="base_set" value="88"/>
+<effect_group name="gunhuntrifleLL">
+	<!--passive_effect name="EntityDamage" operation="base_set" value="88"/-->
 	<passive_effect name="MaxRange" operation="base_set" value="150" tags="perkDeadEye"/>
 	<passive_effect name="DamageFalloffRange" operation="base_set" value="59" tags="perkDeadEye"/>
 	<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.05" tier="1,6" tags="perkDeadEye"/> <!-- random effective rng -->
@@ -5380,13 +5463,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 		
 <item name="gunleverrifleLL">
-	<property name="Tags" value="weapon,ranged,revolver,holdBreathAiming,reloadPenalty,gun,mediumTopAttachments,largeTopAttachments,attPerception,perkDeadEye,canHaveCosmetic,rifleSkill"/>
+	<property name="Tags" value="revolver,weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="UnlockedBy" value="perkrifles"/>
 	<property name="HoldType" value="85"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/LeverActionRifle/leverActionRiflePrefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZleveraction1.unity3d?EndZleveraction"/>
 	<property name="Material" value="MRifleParts"/>
-	<property name="TintColor" value="98, 117, 132"/>
 	<property name="Weight" value="1"/>
 	<property name="RepairTools" value="resourcevibeRepairKitLL"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -5411,7 +5493,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".5"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP,ammo44MagnumBulletvibe"/>
+		<property name="Magazine_items" value="ammo44MagnumBulletvibe"/>
 		<property name="Reload_time" value="2.5"/>
 		<property name="Sound_start" value="lever_action_rifle_fire"/>
 		<property name="Sound_loop" value=""/>
@@ -5432,12 +5514,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Class" value="Zoom"/>
 		<property name="Zoom_max_out" value="55"/>
 		<property name="Zoom_max_in" value="55"/>
-		<!-- <property name="ScopeCameraOffset" value="0,.0262,-.05"/> -->
+		<property name="ScopeCameraOffset" value="-.001,.03,-.05"/><!-- Left/Right, -Down/+Up, -Back/+Front -->
                 <property name="zoomTriggerEffectTriggerPullDualsense" value="PistolZoom"/>
                 <property name="zoomTriggerEffectTriggerPullXbox" value="PistolZoom"/>
 	</property>
-	<effect_group name="gunRifleT2LeverActionRifle">
-		<passive_effect name="EntityDamage" operation="base_set" value="129"/>
+	<effect_group name="gunleverrifleLL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="129"/-->
 		<passive_effect name="MaxRange" operation="base_set" value="150" tags="perkDeadEye"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="69" tags="perkDeadEye"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.05" tier="1,6" tags="perkDeadEye"/> <!-- random effective rng -->
@@ -5482,13 +5564,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 	
 <item name="gunsniperLL">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,mediumTopAttachments,largeTopAttachments,attPerception,perkDeadEye,canHaveCosmetic,rifleSkill"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
 	<property name="UnlockedBy" value="perkrifles"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="77"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Sharp Shooter/sharpShooterGunPrefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZsniper1.unity3d?EndZsniper"/>
 	<property name="Material" value="MRifleParts"/>
-	<property name="TintColor" value="126, 135, 145"/>
 	<property name="Weight" value="1"/>
 	<property name="RepairTools" value="resourcevibeRepairKitLL"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -5513,7 +5594,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".5"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletvibe"/>
+		<property name="Magazine_items" value="ammo762mmBulletvibe"/>
 		<property name="Reload_time" value="2.5"/>
 		<property name="Sound_start" value="sharpshooter_fire"/>
 		<property name="Sound_loop" value="sharpshooter_fire"/>
@@ -5533,11 +5614,11 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Class" value="Zoom"/>
 		<property name="Zoom_max_out" value="55"/>
 		<property name="Zoom_max_in" value="55"/>
-		<property name="ScopeCameraOffset" value="0,.0262,-.05"/>
+		<property name="ScopeCameraOffset" value="0,.0365,-.05"/><!-- Left/Right, -Down/+Up, -Back/+Front -->
 	        <property name="triggerEffectTriggerPullDualsense" value="PistolZoom"/>
 	</property>
-	<effect_group name="gunRifleT3SniperRifle">
-		<passive_effect name="EntityDamage" operation="base_set" value="135"/>
+	<effect_group name="gunsniperLL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="135"/-->
 		<passive_effect name="MaxRange" operation="base_set" value="150" tags="perkDeadEye"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="80" tags="perkDeadEye"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.05" tier="1,6" tags="perkDeadEye"/> <!-- random effective rng -->
@@ -5581,13 +5662,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 	
 <item name="gunak47LL">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic,machinegunSkill"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="UnlockedBy" value="perkfullauto"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="48"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/AK47/ak47Prefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZvibeassault1.unity3d?EndZvibeassault"/>
 	<property name="Material" value="MMachineGunParts"/>
-	<property name="TintColor" value="151, 81, 63"/>
 	<property name="Weight" value="1"/>
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
@@ -5607,7 +5687,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletvibe"/>
+		<property name="Magazine_items" value="ammo762mmBulletvibe"/>
 		<property name="Sound_start" value="ak47_fire"/>
 		<property name="Sound_loop" value="ak47_fire"/>
 		<property name="Sound_empty" value="dryfire"/>
@@ -5626,12 +5706,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Class" value="Zoom"/>
 		<property name="Zoom_max_out" value="55"/>
 		<property name="Zoom_max_in" value="55"/>
-		<property name="ScopeCameraOffset" value="-.00062,0,.055"/>
+		<property name="ScopeCameraOffset" value="-.00062,-.029,.055"/> <!-- Left/Right, +Down/-Up, Back/Front -->
                 <property name="zoomTriggerEffectTriggerPullDualsense" value="PistolZoom"/>
                 <property name="zoomTriggerEffectTriggerPullXbox" value="PistolZoom"/>
 	</property>
-	<effect_group name="gunMGT1AK47">
-		<passive_effect name="EntityDamage" operation="base_set" value="70"/>
+	<effect_group name="gunak47LL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="70"/-->
 		<passive_effect name="MaxRange" operation="base_set" value="90" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="41" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.05" tier="1,6" tags="perkMachineGunner"/> <!-- random effective rng -->
@@ -5675,13 +5755,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 
 <item name="guntacARLL">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic,machinegunSkill"/><!-- attachmentsIncluded -->
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic,attachmentsIncluded,machinegunSkill"/><!-- attachmentsIncluded -->
 	<property name="UnlockedBy" value="perkfullauto"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="71"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Tactical Assault Rifle/tacticalAssaultRiflePrefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZg361.unity3d?EndZg36"/>
 	<property name="Material" value="MMachineGunParts"/>
-	<property name="TintColor" value="102, 102, 51"/>
 	<property name="Weight" value="1"/>
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
@@ -5701,7 +5780,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletvibe"/>
+		<property name="Magazine_items" value="ammo762mmBulletvibe"/>
 		<property name="Sound_start" value="tacticalar_fire"/>
 		<property name="Sound_loop" value="tacticalar_fire"/>
 		<property name="Sound_empty" value="dryfire"/>
@@ -5718,13 +5797,13 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Class" value="Zoom"/>
 		<property name="Zoom_max_out" value="55"/>
 		<property name="Zoom_max_in" value="55"/>
-		<property name="ScopeCameraOffset" value="-.00062,0,.055"/>
+		<property name="ScopeCameraOffset" value="-.00095,0,.055"/><!-- Left/Right, +Down/-Up, Back/Front -->
                 <property name="zoomTriggerEffectTriggerPullDualsense" value="RifleZoom"/>
                 <property name="zoomTriggerEffectTriggerPullXbox" value="PistolZoom"/>
 	</property>
 
-	<effect_group name="gunMGT2TacticalAR">
-		<passive_effect name="EntityDamage" operation="base_set" value="83"/>
+	<effect_group name="guntacARLL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="83"/-->
 		<passive_effect name="MaxRange" operation="base_set" value="90" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="49" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.05" tier="1,6" tags="perkMachineGunner"/> <!-- random effective rng -->
@@ -5768,13 +5847,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 </item>
 	
 <item name="gunM60LL">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic,machinegunSkill"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,bottomAttachments,mediumTopAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="UnlockedBy" value="perkfullauto"/>	
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/MachineGun/m60MachinegunPrefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZlmg1.unity3d?EndZlmg"/>
 	<property name="Material" value="MMachineGunParts"/>
-	<property name="TintColor" value="71, 84, 59"/>
 	<property name="Weight" value="1"/>
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
@@ -5794,7 +5872,7 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletvibe"/>
+		<property name="Magazine_items" value="ammo762mmBulletvibe"/>
 		<property name="Sound_start" value="m60_fire"/>
 		<property name="Sound_loop" value="m60_fire"/>
 		<property name="Sound_empty" value="dryfire"/>
@@ -5815,12 +5893,12 @@ Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Class" value="Zoom"/>
 		<property name="Zoom_max_out" value="55"/>
 		<property name="Zoom_max_in" value="55"/>
-		<property name="ScopeCameraOffset" value="-.00062,0,.055"/>
-                <property name="zoomTriggerEffectTriggerPullDualsense" value="RifleZoom"/>
-                <property name="zoomTriggerEffectTriggerPullXbox" value="PistolZoom"/>
+		<property name="ScopeCameraOffset" value="-.0001,-.0225,.095"/><!-- Left/Right, +Down/-Up, Back/Front -->  		
+        <property name="zoomTriggerEffectTriggerPullDualsense" value="RifleZoom"/>
+        <property name="zoomTriggerEffectTriggerPullXbox" value="PistolZoom"/>
 	</property>
-	<effect_group name="gunMGT3M60">
-		<passive_effect name="EntityDamage" operation="base_set" value="100"/>
+	<effect_group name="gunM60LL">
+		<!--passive_effect name="EntityDamage" operation="base_set" value="100"/-->
 		<passive_effect name="MaxRange" operation="base_set" value="90" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="58" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.1,.05" tier="1,6" tags="perkMachineGunner"/> <!-- random effective rng -->

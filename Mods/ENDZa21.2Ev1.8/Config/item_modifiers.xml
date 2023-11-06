@@ -549,4 +549,72 @@
 </item_modifier>
 </append>
 
+<!--VIBE GUNS-->
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="gunpistolLL">
+	<property name="ScopeCameraOffset" value="0,-.021,.1"/> <!-- Left/Right, Down/Up, Back/Front --> 
+</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="gunSMGLL">
+	<property name="ScopeCameraOffset" value="0,-.047,0"/> <!-- Left/Right, Down/Up, Back/Front --> 
+</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="gungoldenvultureLL">
+	<property name="ScopeCameraOffset" value="0,-.013,0"/> <!-- Left/Right, +Down/-Up, Back/Front -->
+</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="gunak47LL">
+	<property name="ScopeCameraOffset" value="-0,-.032,.25"/> <!-- Left/Right, +Down/-Up, Back/Front -->
+</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="guntacARLL">
+	<property name="ScopeCameraOffset" value="-0,-.0165,0"/> <!-- Left/Right, +Down/-Up, Back/Front -->
+</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="gunM60LL">
+	<property name="ScopeCameraOffset" value=".0001,-.0545,.25"/> <!-- Left/Right, -Down/+Up, -Back/+Front -->
+</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="gundubzyLL">
+	<property name="ScopeCameraOffset" value=".0001,-.0545,.25"/> <!-- Left/Right, -Down/+Up, -Back/+Front -->
+</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="gunpumpshotLL">
+	<property name="ScopeCameraOffset" value="0,-.019,.025"/> <!-- Left/Right, -Down/+Up, -Back/+Front -->
+</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="gunhuntrifleLL">
+	<property name="ScopeCameraOffset" value=".0072,-.0135,.025"/> <!-- Left/Right, -Down/+Up, -Back/+Front -->
+</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="gunleverrifleLL">
+	<property name="ScopeCameraOffset" value="0,.0175,.025"/> <!-- Left/Right, -Down/+Up, -Back/+Front -->
+</item_property_overrides>
+</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+<item_property_overrides name="gunsniperLL">
+	<property name="ScopeCameraOffset" value="0,.0077,.025"/> <!-- Left/Right, -Down/+Up, -Back/+Front -->
+</item_property_overrides>
+</append>
+<!--VIBE GUNS-->
+
 </configs>

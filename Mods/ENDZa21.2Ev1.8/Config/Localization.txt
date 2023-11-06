@@ -14,82 +14,86 @@ startershovelLLDesc,Items,melee,,,"cant be crafted, but can be repaired with sto
 starteraxeLL,Items,melee,,,"[787777]Starter Axe"
 starteraxeLLDesc,Items,melee,,,"cant be crafted, but can be repaired with stone."
 
-resourceHotCoalsLL,Items,Resource,,,"[850101]Hot Coals"
+resourceHotCoalsLL,Items,Resource,,,"[f20202]Hot Coals"
 resourceHotCoalsLLDesc,Items,Resource,,,"crafted in the campfire"
 
-resourceMoonRocksLL,Items,Resource,,,"[7ec2c0]Moon Rock"
+resourceMoonRocksLL,Items,Resource,,,"[05f5ee]Moon Rock"
 resourceMoonRocksLLDesc,Items,Resource,,,"From the temp of those hot coals made this stronger material known as moon rocks use this to craft tiered weapons and tools stronger then stone"
-resourcemoonmixLL,Items,Resource,,,"[7ec2c0]Moon Rock Mortar"
+resourcemoonmixLL,Items,Resource,,,"[05f5ee]Moon Rock Mortar"
 resourcemoonmixLLDesc,Items,Resource,,,"This strong resource is made in the mixer to upgrade to moonrock blocks"
-moonrockshovelLL,Items,melee,,,"[7ec2c0]Moon Rock Shovel"
+moonrockshovelLL,Items,melee,,,"[05f5ee]Moon Rock Shovel"
 moonrockshovelLLDesc,Items,melee,,,"Shovel crafted from moonrocks and is lightweight for you to harvest more without getting tired, repair with moonrocks!"
-moonrockaxeLL,Items,melee,,,"[7ec2c0]Moon Rock Axe"
+moonrockaxeLL,Items,melee,,,"[05f5ee]Moon Rock Axe"
 moonrockaxeLLDesc,Items,melee,,,"Axe crafted from moonrocks and is lightweight for you to harvest more without getting tired, repair with moonrocks!"
-moonrockbatonLL,Items,melee,,,"[7ec2c0]Moon Rock Baton"
+moonrockbatonLL,Items,melee,,,"[05f5ee]Moon Rock Baton"
 moonrockbatonLLDesc,Items,melee,,,"Should be a happy Duckie, repair with moonrocks!"
-moonrockspearLL,Items,melee,,,"[7ec2c0]Moon Rock Spear"
+moonrockspearLL,Items,melee,,,"[05f5ee]Moon Rock Spear"
 moonrockspearLLDesc,Items,melee,,,"A spear crafted from moon rocks and is slightly better then the stone spear, repair with moonrocks"
-moonrocksledgeLL,Items,melee,,,"[7ec2c0]Moon Rock SledgeHammer"
+moonrocksledgeLL,Items,melee,,,"[05f5ee]Moon Rock SledgeHammer"
 moonrocksledgeLLDesc,Items,melee,,,"A sledge crafted from moon rocks and early in your life this will be a lifesaver against the zombie jerks, repair with moonrocks!"
-moonrockclubLL,Items,melee,,,"[7ec2c0]Moon Rock Club"
+moonrockclubLL,Items,melee,,,"[05f5ee]Moon Rock Club"
 moonrockclubLLDesc,Items,melee,,,"this should be handy, repair with moonrocks"
 
-resourcebrassRepairKitLL,Items,Resource,,,"[8f6f17]Brass Repair Kit"
+resourcebrassRepairKitLL,Items,Resource,,,"[f5b505]Brass Repair Kit"
 resourcebrassRepairKitLLDesc,Items,Resource,,,"use this repair kit to repair brass weapons and tools"
-resourceForgedBrassLL,Items,Resource,,,"[8f6f17]Forged Brass"
+resourceForgedBrassLL,Items,Resource,,,"[f5b505]Forged Brass"
 resourceForgedBrassLLDesc,Items,Resource,,,"Brass smelted into bars and used to make weapons and tools stronger then forged iron"
-brassshovelLL,Items,melee,,,"[8f6f17]Brass Shovel"
+brassshovelLL,Items,melee,,,"[f5b505]Brass Shovel"
 brassshovelLLDesc,Items,melee,,,"A shovel crafted from forged brass, repair with a brass repair kit!"
-brassaxeLL,Items,melee,,,"[8f6f17]Brass Axe"
+brassaxeLL,Items,melee,,,"[f5b505]Brass Axe"
 brassaxeLLDesc,Items,melee,,,"A axe crafted from forged brass, repair with a brass repair kit!"
-brasspickaxeLL,Items,melee,,,"[8f6f17]Brass PickAxe"
+brasspickaxeLL,Items,melee,,,"[f5b505]Brass PickAxe"
 brasspickaxeLLDesc,Items,melee,,,"A pickaxe crafted from forged brass, repair with a brass repair kit!"
-brasssledgeLL,Items,melee,,,"[8f6f17]Brass Sledgehammer"
+brasssledgeLL,Items,melee,,,"[f5b505]Brass Sledgehammer"
 brasssledgeLLDesc,Items,melee,,,"A gigantic hammer crafted from forged brass, repair with a brass repair kit!"
-brassknifeLL,Items,melee,,,"[8f6f17]Brass Dagger"
+brassknifeLL,Items,melee,,,"[f5b505]Brass Dagger"
 brassknifeLLDesc,Items,melee,,,"A sharp blade crafted from forged brass, repair with a brass repair kit!"
-brassclubLL,Items,melee,,,"[8f6f17]Brass Club"
+brassclubLL,Items,melee,,,"[f5b505]Brass Mace"
 brassclubLLDesc,Items,melee,,,"A sturdy club crafted from forged brass, repair with a brass repair kit!"
-brassknucksLL,Items,melee,,,"[8f6f17]Brass Knuckles"
+brassknucksLL,Items,melee,,,"[f5b505]Brass Knuckles"
 brassknucksLLDesc,Items,melee,,,"Everyone loves a set of deadly brass knucks now its time to go punch some undead pricks, repair with a brass repair kit!"
-brassspearLL,Items,melee,,,"[8f6f17]Brass Long Spear"
+brassspearLL,Items,melee,,,"[f5b505]Brass Long Spear"
 brassspearLLDesc,Items,melee,,,"Crafted from forged brass and super sharp, repair with a brass repair kit!"
-brassstunbatonLL,Items,melee,,,"[8f6f17]Brass Stun Baton"
+brassstunbatonLL,Items,melee,,,"[f5b505]Brass Stun Baton"
 brassstunbatonLLDesc,Items,melee,,,"A even happier Duckie, repair with a brass repair kit!"
 
-resourcevibeRepairKitLL,Items,Resource,,,"[6a00a3]Vibranium Repair Kit"
+resourcevibeRepairKitLL,Items,Resource,,,"[a503fc]Vibranium Repair Kit"
 resourcevibeRepairKitLLDesc,Items,Resource,,,"use this repair kit to repair vibranium weapons and tools"
-resourceforgedvibeLL,Items,Resource,,,"[6a00a3]Forged Vibranium"
+resourceforgedvibeLL,Items,Resource,,,"[a503fc]Forged Vibranium"
 resourceforgedvibeLLDesc,Items,Resource,,,"The strongest metal on the planet! search and craft at the workbench with other forged items"
-resourcescrapvibeLL,Items,Resource,,,"[6a00a3]Scrap Vibranium"
+resourcescrapvibeLL,Items,Resource,,,"[a503fc]Scrap Vibranium"
 resourcescrapvibeLLDesc,Items,Resource,,,"In the Forge use an anvil to craft Forged Vibranium with this resource"
-vibepickaxeLL,Items,melee,,,"[6a00a3]Vibranium Pickaxe"
+vibepickaxeLL,Items,melee,,,"[a503fc]Vibranium Pickaxe"
 vibepickaxeLLDesc,Items,melee,,,"such a good strong harvest tool, repair with a vibranium repair kit!"
-vibeaxeLL,Items,melee,,,"[6a00a3]Vibranium Axe"
+vibeaxeLL,Items,melee,,,"[a503fc]Vibranium Axe"
 vibeaxeLLDesc,Items,melee,,,"such a good strong harvest tool, repair with a vibranium repair kit!"
-vibeshovelLL,Items,melee,,,"[6a00a3]Vibranium Shovel"
+vibeshovelLL,Items,melee,,,"[a503fc]Vibranium Shovel"
 vibeshovelLLDesc,Items,melee,,,"such a good strong harvest tool, repair with a vibranium repair kit!"
-vibeChainsawLL,Items,melee,,,"[6a00a3]Vibranium Chainsaw"
+vibeChainsawLL,Items,melee,,,"[a503fc]Vibranium Chainsaw"
 vibeChainsawLLDesc,Items,melee,,,"Crafted from vibranium and is the best chainsaw you can find, repair with a vibranium repair kit!"
-vibeaugerLL,Items,melee,,,"[6a00a3]Vibranium Auger"
+vibeaugerLL,Items,melee,,,"[a503fc]Vibranium Auger"
 vibeaugerLLDesc,Items,melee,,,"Crafted from vibranium and is the best auger you can find, repair with a vibranium repair kit!"
-vibesledgeLL,Items,melee,,,"[6a00a3]Vibranium Sledgehammer"
+vibesledgeLL,Items,melee,,,"[a503fc]Vibranium Sledgehammer"
 vibesledgeLLDesc,Items,melee,,,"Crafted from vibranium and is good to smash skulls of zombie infidels, repair with a vibranium repair kit!"
-vibemacheteLL,Items,melee,,,"[6a00a3]Vibranium Sword"
+vibemacheteLL,Items,melee,,,"[a503fc]Vibranium Sword"
 vibemacheteLLDesc,Items,melee,,,"Crafted from vibranium and this sword will kill anything in its path, repair with a vibranium repair kit!"
-vibeknucksLL,Items,melee,,,"[6a00a3]Vibranium Knuckles"
+vibeknucksLL,Items,melee,,,"[a503fc]Vibranium Knuckles"
 vibeknucksLLDesc,Items,melee,,,"Crafted from vibranium and these knuckles have power like THOR, repair with a vibranium repair kit!"
-vibebatLL,Items,melee,,,"[6a00a3]Vibranium Mace"
+vibebatLL,Items,melee,,,"[a503fc]Vibranium Mace"
 vibebatLLDesc,Items,melee,,,"Crafted from vibranium and this mace will send zombies flying, repair with a vibranium repair kit!"
-t3vibespearLL,Items,melee,,,"[6a00a3]Vibranium HellFire Spear"
+t3vibespearLL,Items,melee,,,"[a503fc]Vibranium HellFire Spear"
 t3vibespearLLDesc,Items,melee,,,"Vibranium Spear is the strongest spear in the world, repair with a vibranium repair kit!!"
-multiharvesttoolLL,Items,melee,,,"[6a00a3]Vibranium Multi Tool"
+multiharvesttoolLL,Items,melee,,,"[a503fc]Vibranium Multi Tool"
 multiharvesttoolLLDesc,Items,melee,,,"this tool acts as a pickaxe, axe, shovel and knife, repair with a vibranium repair kit!"
-ammo44MagnumBulletvibe,Items,ammo,,,"[6a00a3].44 Rounds, Vibranium (Ammo)"
-ammo9mmBulletvibe,Items,ammo,,,"[6a00a3]9mm, Vibranium (Ammo)"
-ammo762mmBulletvibe,Items,ammo,,,"[6a00a3]7.62mm, Vibranium (Ammo)"
-ammovibeCasedGroupDesc,Items,ammo,,,Vibranium ammunition is a more effective way to dispatch the zombie idiots.
-resourceBulletCasingvibe,Items,ammo,,,"[6a00a3]Vibranium Bullet Casing"
+
+ammoArrowSteelAPvibe,Items,ammo,,,"[a503fc]Arrow, Vibranium (Ammo)"
+ammoCrossbowBoltSteelAPvibe,Items,ammo,,,"[a503fc]Crossbow Bolt, Vibranium (Ammo)"
+ammoShotgunShellvibe,Items,ammo,,,"[a503fc]Shotgun Shells, Vibranium (Ammo)"
+ammo44MagnumBulletvibe,Items,ammo,,,"[a503fc].44 Rounds, Vibranium (Ammo)"
+ammo9mmBulletvibe,Items,ammo,,,"[a503fc]9mm, Vibranium (Ammo)"
+ammo762mmBulletvibe,Items,ammo,,,"[a503fc]7.62mm, Vibranium (Ammo)"
+ammovibeCasedGroupDesc,Items,ammo,,,Vibranium ammunition is used in Vibranium Bows and Firearms.
+resourceBulletCasingvibe,Items,ammo,,,"[a503fc]Vibranium Bullet Casing"
 resourceBulletCasingvibelDesc,Items,ammo,,,Vibranium bullets are much stronger then your normal bullet.
 
 endzStarterCrate,blocks,Container,,,EndZ Starter Crate
@@ -98,43 +102,6 @@ endzStarterCrateOpen,blocks,Container,,,"Starting Gear: Open This"
 
 generatorbankLL,Blocks,Block,,,"Improved Generator Bank"
 generatorbankLLDesc,Blocks,Block,,,"will suck the gas from your pocket but will produce high volts to power more items with one genny"
-
-cntWallOvenWorking,blocks,Container,,,Working Wall Oven
-cntWallOvenPowered,blocks,Container,,,Powered Wall Oven
-faucet02Working,blocks,Block,,,Working Household Faucet 2
-faucet04Working,blocks,Block,,,Working Household Faucet
-faucetBrass02Working,blocks,Block,,,Working Brass Faucet 2
-faucetBrass04Working,blocks,Block,,,Working Brass Faucet
-tableLampLightPlayer,blocks,Light,,,Table Lamp
-workLightPlayer,blocks,Light,,,Work Light
-signExitLightPlayer,blocks,Light,,,Exit Sign
-industrialLight02RedPlayer,blocks,Light,,,Red Industrial Light
-ceilingFanLightPlayer,blocks,Light,,,Ceiling Fan Light
-signShopOpenPlayer,blocks,Sign,,,Shop Sign: Open
-deskLampLightPlayer,blocks,Light,,,Desk Lamp
-lightPlayerVariantHelper,blocks,Light,,,Working Lamps and Lights
-sconce1LightShadowPlayer,blocks,Light,,,Sconce Light
-porchLight01Player,blocks,Light,,,Old Outdoor Light
-porchLight04BrassPlayer,blocks,Light,,,Brass Outdoor Light
-wirelessWireRelay,blocks,Electricity,,,Wireless Wire Relay
-wirelessWireRelayDesc,blocks,Electricity,,,Use this in place of a Wire Relay to connect devices without those pesky cables ruining the aesthetic of your base.
-cntGasGrillWorking,blocks,Block,,,Working Gas Grill
-cntCharcoalGrillWorking,blocks,Block,,,Working Charcoal Grill
-porchLight04Player,blocks,Light,,,Iron Outdoor Light
-ceilingLight02Player,blocks,Light,,,Silver Dome Light
-ceilingLight02BrassPlayer,blocks,Light,,,Brass Dome Light
-ceilingLight04Player,blocks,Light,,,Warehouse Ceiling Light
-ceilingLight05Player,blocks,Light,,,Silver Glass Light
-ceilingLight05BrassPlayer,blocks,Light,,,Brass Glass Light
-recessedLightPlayer,blocks,Light,,,Recessed Light
-wallLight01Player,blocks,Light,,,Warehouse Outdoor Light
-fluorescentLightPlayer,blocks,Light,,,Hanging Fluorescent Light
-trackLightPlayer,blocks,Light,,,Track Light
-chandelierLightPlayer,blocks,Light,,,Chandelier
-faucet04WorkingSchematic,items,Schematic,,,Working Faucet Schematic
-cntWallOvenWorkingSchematic,items,Schematic,,,Working Ovens and Grills Schematic
-decoClawFootBathTubWorking,blocks,Block,,,Working Clawfoot Bathtub
-cntBathTubEmptyWorking,blocks,Block,,,Working Bathtub
 
 woodLogSpike1,blocks,Block,,,Wood Log Spike(Upgradeable)
 woodLogSpike1Desc,blocks,Block,,,this is one sharp spike, can be upgraded further
@@ -251,6 +218,7 @@ zombiePartyGirl,entityclasses,Entity,,,Diamond
 zombiePartyGirlFeral,entityclasses,Entity,,,Feral Diamond
 zombiePartyGirlRadiated,entityclasses,Entity,,,Radiated Diamond
 
+zombieminotaurboss,entityclasses,Entity,,,ZED
 zombiesmallbitchLL,entityclasses,Entity,,,Infected Experiment 1
 zombiespikeLL,entityclasses,Entity,,,Infected Experiment 2
 zombiemutantLL,entityclasses,Entity,,,Infected Experiment 3
@@ -280,6 +248,12 @@ npcEndZsurvivorTransformation2LL,entityclasses,Entity,,,EndZ Zombie Bill
 
 npcEndZsurvivor3LL,entityclasses,Entity,,,EndZ Survivor Ernest
 npcEndZsurvivorTransformation3LL,entityclasses,Entity,,,EndZ Zombie Ernest
+
+npcEndZsurvivor4LL,entityclasses,Entity,,,EndZ Survivor Carl
+npcEndZsurvivorTransformation4LL,entityclasses,Entity,,,EndZ Zombie Carl
+
+npcEndZsurvivor5LL,entityclasses,Entity,,,EndZ Survivor Patty
+npcEndZsurvivorTransformation5LL,entityclasses,Entity,,,EndZ Zombie Patty
 
 quest_progressionZombieHunting1_name,quests,Quest,,,Zombie Hunting (1)
 quest_progressionZombieHunting1_subtitle,quests,Quest,,,Zombie Hunting Pt. 1
@@ -576,12 +550,17 @@ materialMsteelLL_shapes,blocks,Block,,,Steel
 steelShapesLL:VariantHelper,blocks,Block,,,"Steel Shapes(Player)"
 
 materialMmoonrock_shapes,blocks,Block,,,Moonrock
-moonrockShapes:VariantHelper,blocks,Block,,,"[7ec2c0]Moonrock Shapes(Player)"
+moonrockShapes:VariantHelper,blocks,Block,,,"[05f5ee]Moonrock Shapes"
 
 materialMvibe_shapes,blocks,Block,,,Vibranium
-vibeShapes:VariantHelper,blocks,Block,,,"[6a00a3]Vibranium Shapes(Player)"
+vibeShapes:VariantHelper,blocks,Block,,,"[a503fc]Vibranium Shapes"
 
-perkbows,,,,,"[fc9d03]EndZ Vibranium Bows"
+perkendzvibeammo,,,,,"[a503fc]EndZ Vibranium Ammo"
+perkendzvibeammoDesc,,,,,"Unlocks the Vibranium Ammo, can only be used in Vibranium Bows and Firearms. Cannot be used in basic Firearms."
+perkendzvibeammoRank1Desc,,,,,"Tier 1"
+perkendzvibeammoRank1LongDesc,,,,,"Unlocks- Vibranium Ammo! 7.62, 9mm, .44, Shotgun Shells, Arrow, Crossbow Bolt."
+
+perkbows,,,,,"[a503fc]EndZ Vibranium Bows"
 perkbowsDesc,,,,,"This tree unlocks Vibranium Bows(These items cannot be looted, only crafted. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO BOWS FROM VANILLA) THESE ARE LIMITED TO MOD ATTACHMENTS."
 perkbowsRank1Desc,,,,,"Level 1"
 perkbowsRank1LongDesc,,,,,"Unlocks Level 2- Vibranium Wooden Bow, Vibranium Compound Bow, and Vibranium Compound Crossbow"
@@ -594,20 +573,20 @@ perkbowsRank4LongDesc,,,,,"Unlocks Level 5- Vibranium Wooden Bow, Vibranium Comp
 perkbowsRank5Desc,,,,,"Level 5"
 perkbowsRank5LongDesc,,,,,"Unlocks Level 6- Vibranium Wooden Bow, Vibranium Compound Bow, and Vibranium Compound Crossbow"
 
-perkpistols,,,,,"[fc9d03]EndZ Vibranium Pistols"
+perkpistols,,,,,"[a503fc]EndZ Vibranium Pistols"
 perkpistolsDesc,,,,,"This tree unlocks Vibranium Pistols(These items cannot be looted, only crafted. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO PISTOLS FROM VANILLA.) THESE ARE LIMITED TO MOD ATTACHMENTS."
 perkpistolsRank1Desc,,,,,"Level 1"
-perkpistolsRank1LongDesc,,,,,"Unlocks Level 2- Vibranium Pistol and Vibranium Desert Vulture"
+perkpistolsRank1LongDesc,,,,,"Unlocks Level 2- Vibranium Pistol and Vibranium Golden Vulture"
 perkpistolsRank2Desc,,,,,"Level 2"
-perkpistolsRank2LongDesc,,,,,"Unlocks Level 3- Vibranium Pistol and Vibranium Desert Vulture"
+perkpistolsRank2LongDesc,,,,,"Unlocks Level 3- Vibranium Pistol and Vibranium Golden Vulture"
 perkpistolsRank3Desc,,,,,"Level 3"
-perkpistolsRank3LongDesc,,,,,"Unlocks Level 4- Vibranium Pistol and Vibranium Desert Vulture"
+perkpistolsRank3LongDesc,,,,,"Unlocks Level 4- Vibranium Pistol and Vibranium Golden Vulture"
 perkpistolsRank4Desc,,,,,"Level 4"
-perkpistolsRank4LongDesc,,,,,"Unlocks Level 5- Vibranium Pistol and Vibranium Desert Vulture"
+perkpistolsRank4LongDesc,,,,,"Unlocks Level 5- Vibranium Pistol and Vibranium Golden Vulture"
 perkpistolsRank5Desc,,,,,"Level 5"
-perkpistolsRank5LongDesc,,,,,"Unlocks Level 6- Vibranium Pistol and Vibranium Desert Vulture"
+perkpistolsRank5LongDesc,,,,,"Unlocks Level 6- Vibranium Pistol and Vibranium Golden Vulture"
 
-perkshotguns,,,,,"[fc9d03]EndZ Vibranium Shotguns"
+perkshotguns,,,,,"[a503fc]EndZ Vibranium Shotguns"
 perkshotgunsDesc,,,,,"This tree unlocks Vibranium Shotguns(These items cannot be looted, only crafted. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +10BASE DAMAGE TO SHOTGUNS FROM VANILLA.) THESE ARE LIMITED TO MOD ATTACHMENTS."
 perkshotgunsRank1Desc,,,,,"Level 1"
 perkshotgunsRank1LongDesc,,,,,"Unlocks Level 2- Vibranium Double Barrel, Vibranium Pump Shotgun, and Vibranium Auto Shotgun"
@@ -620,7 +599,7 @@ perkshotgunsRank4LongDesc,,,,,"Unlocks Level 5- Vibranium Double Barrel, Vibrani
 perkshotgunsRank5Desc,,,,,"Level 5"
 perkshotgunsRank5LongDesc,,,,,"Unlocks Level 6- Vibranium Double Barrel, Vibranium Pump Shotgun, and Vibranium Auto Shotgun"
 
-perkrifles,,,,,"[fc9d03]EndZ Vibranium Rifles"
+perkrifles,,,,,"[a503fc]EndZ Vibranium Rifles"
 perkriflesDesc,,,,,"This tree unlocks Vibranium Rifles(These items cannot be looted, only crafted. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO RIFLES FROM VANILLA.) THESE ARE LIMITED TO MOD ATTACHMENTS."
 perkriflesRank1Desc,,,,,"Level 1"
 perkriflesRank1LongDesc,,,,,"Unlocks Level 2- Vibranium Hunting Rifle, Vibranium Lever Action Rifle, and Vibranium Sniper Rifle"
@@ -633,46 +612,46 @@ perkriflesRank4LongDesc,,,,,"Unlocks Level 5- Vibranium Hunting Rifle, Vibranium
 perkriflesRank5Desc,,,,,"Level 5"
 perkriflesRank5LongDesc,,,,,"Unlocks Level 6- Vibranium Hunting Rifle, Vibranium Lever Action Rifle, and Vibranium Sniper Rifle"
 
-perkfullauto,,,,,"[fc9d03]EndZ Vibranium Machine Guns"
+perkfullauto,,,,,"[a503fc]EndZ Vibranium Machine Guns"
 perkfullautoDesc,,,,,"This tree unlocks Vibranium Machine Guns(These items cannot be looted, only crafted. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO FULL AUTO GUNS FROM VANILLA.) THESE ARE LIMITED TO MOD ATTACHMENTS."
 perkfullautoRank1Desc,,,,,"Level 1"
-perkfullautoRank1LongDesc,,,,,"Unlocks Level 2- Vibranium SMG, Vibranium AK47, Vibranium Tactical Assault Rifle, and Vibranium M60"
+perkfullautoRank1LongDesc,,,,,"Unlocks Level 2- Vibranium SMG, Vibranium FNH Scar, Vibranium G36, and Vibranium LMG"
 perkfullautoRank2Desc,,,,,"Level 2"
-perkfullautoRank2LongDesc,,,,,"Unlocks Level 3- Vibranium SMG, Vibranium AK47, Vibranium Tactical Assault Rifle, and Vibranium M60"
+perkfullautoRank2LongDesc,,,,,"Unlocks Level 3- Vibranium SMG, Vibranium FNH Scar, Vibranium G36, and Vibranium LMG"
 perkfullautoRank3Desc,,,,,"Level 3"
-perkfullautoRank3LongDesc,,,,,"Unlocks Level 4- Vibranium SMG, Vibranium AK47, Vibranium Tactical Assault Rifle, and Vibranium M60"
+perkfullautoRank3LongDesc,,,,,"Unlocks Level 4- Vibranium SMG, Vibranium FNH Scar, Vibranium G36, and Vibranium LMG"
 perkfullautoRank4Desc,,,,,"Level 4"
-perkfullautoRank4LongDesc,,,,,"Unlocks Level 5- Vibranium SMG, Vibranium AK47, Vibranium Tactical Assault Rifle, and Vibranium M60"
+perkfullautoRank4LongDesc,,,,,"Unlocks Level 5- Vibranium SMG, Vibranium FNH Scar, Vibranium G36, and Vibranium LMG"
 perkfullautoRank5Desc,,,,,"Level 5"
-perkfullautoRank5LongDesc,,,,,"Unlocks Level 6- Vibranium SMG, Vibranium AK47, Vibranium Tactical Assault Rifle, and Vibranium M60"
+perkfullautoRank5LongDesc,,,,,"Unlocks Level 6- Vibranium SMG, Vibranium FNH Scar, Vibranium G36, and Vibranium LMG"
 
-gundubzyLL,Items,gun,,,"[fc9d03]Vibranium Dubzy Shotgun"
-gundubzyLLDesc,Items,gun,,,"quad tap that zitch! These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +10BASE DAMAGE TO SHOTGUNS FROM VANILLA."
-gunpumpshotLL,Items,gun,,,"[fc9d03]Vibranium Pump Shotgun"
-gunpumpshotLLDesc,Items,gun,,,"plow down alot of zombies. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +10BASE DAMAGE TO SHOTGUNS FROM VANILLA."
-gunautoshotLL,Items,gun,,,"[fc9d03]Vibranium Auto Shotgun"
-gunautoshotLLDesc,Items,gun,,,"plow down alot of zombies. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +10BASE DAMAGE TO SHOTGUNS FROM VANILLA."
-gunhuntrifleLL,Items,gun,,,"[fc9d03]Vibranium Hunting Rifle"
-gunhuntrifleLLDesc,Items,gun,,,"hunting has never been more fun. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO RIFLES FROM VANILLA."
-gunleverrifleLL,Items,gun,,,"[fc9d03]Vibranium Lever Rifle"
-gunleverrifleLLDesc,Items,gun,,,"hunting has never been more fun, this does take .44 magnum rounds. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO RIFLES FROM VANILLA."
-gunsniperLL,Items,gun,,,"[fc9d03]Vibranium Sniper Rifle"
-gunsniperLLDesc,Items,gun,,,"hunting has never been more fun. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO RIFLES FROM VANILLA."
-gunak47LL,Items,gun,,,"[fc9d03]Vibranium AK-47"
-gunak47LLDesc,Items,gun,,,"mow down them zombie jerks. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO FULL AUTO GUNS FROM VANILLA."
-guntacARLL,Items,gun,,,"[fc9d03]Vibranium Tac Assault Rifle"
-guntacARLLDesc,Items,gun,,,"mow down them zombie jerks. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO FULL AUTO GUNS FROM VANILLA."
-gunM60LL,Items,gun,,,"[fc9d03]Vibranium M60"
-gunM60LLDesc,Items,gun,,,"mow down them zombie jerks. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO FULL AUTO GUNS FROM VANILLA."
-gunwoodbowLL,Items,gun,,,"[fc9d03]Vibranium Wooden Bow"
-gunwoodbowLLDesc,Items,gun,,,"Sneaky Sneaky. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO BOWS FROM VANILLA"
-guncompoundbowLL,Items,gun,,,"[fc9d03]Vibranium Compound Bow"
-guncompoundbowLLDesc,Items,gun,,,"Sneaky Sneaky. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO BOWS FROM VANILLA"
-gunCompoundCrossbowLL,Items,gun,,,"[fc9d03]Vibranium Compound Crossbow"
-gunCompoundCrossbowLLDesc,Items,gun,,,"Sneaky Sneaky. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO BOWS FROM VANILLA"
-gunpistolLL,Items,gun,,,"[fc9d03]Vibranium Pistol"
-gunpistolLLDesc,Items,gun,,,"LUCKY PISTOL. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO PISTOLS FROM VANILLA."
-gunSMGLL,Items,gun,,,"[fc9d03]Vibranium SMG"
-gunSMGLLDesc,Items,gun,,,"can clear small crowds. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO FULL AUTO GUNS FROM VANILLA."
-gungoldenvultureLL,Items,gun,,,"[fc9d03]Vibranium Golden Vulture"
-gungoldenvultureLLDesc,Items,gun,,,"its loud but gives a kick! These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA. +30BASE DAMAGE TO PISTOLS FROM VANILLA."
+gundubzyLL,Items,gun,,,"[a503fc]Vibranium Dubzy Shotgun"
+gundubzyLLDesc,Items,gun,,,"quad tap that zitch! These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+gunpumpshotLL,Items,gun,,,"[a503fc]Vibranium Pump Shotgun"
+gunpumpshotLLDesc,Items,gun,,,"plow down alot of zombies. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+gunautoshotLL,Items,gun,,,"[a503fc]Vibranium Auto Shotgun"
+gunautoshotLLDesc,Items,gun,,,"plow down alot of zombies. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+gunhuntrifleLL,Items,gun,,,"[a503fc]Vibranium Hunting Rifle"
+gunhuntrifleLLDesc,Items,gun,,,"hunting has never been more fun. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+gunleverrifleLL,Items,gun,,,"[a503fc]Vibranium Lever Rifle"
+gunleverrifleLLDesc,Items,gun,,,"hunting has never been more fun, this does take .44 magnum rounds. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+gunsniperLL,Items,gun,,,"[a503fc]Vibranium Sniper Rifle"
+gunsniperLLDesc,Items,gun,,,"hunting has never been more fun. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+gunak47LL,Items,gun,,,"[a503fc]Vibranium FNH Scar"
+gunak47LLDesc,Items,gun,,,"mow down them zombie jerks. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+guntacARLL,Items,gun,,,"[a503fc]Vibranium G36"
+guntacARLLDesc,Items,gun,,,"mow down them zombie jerks. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+gunM60LL,Items,gun,,,"[a503fc]Vibranium LMG"
+gunM60LLDesc,Items,gun,,,"mow down them zombie jerks. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+gunwoodbowLL,Items,gun,,,"[a503fc]Vibranium Wooden Bow"
+gunwoodbowLLDesc,Items,gun,,,"Sneaky Sneaky. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xDEGREDATION AMOUNT FROM VANILLA."
+guncompoundbowLL,Items,gun,,,"[a503fc]Vibranium Compound Bow"
+guncompoundbowLLDesc,Items,gun,,,"Sneaky Sneaky. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xDEGREDATION AMOUNT FROM VANILLA."
+gunCompoundCrossbowLL,Items,gun,,,"[a503fc]Vibranium Compound Crossbow"
+gunCompoundCrossbowLLDesc,Items,gun,,,"Sneaky Sneaky. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xDEGREDATION AMOUNT FROM VANILLA."
+gunpistolLL,Items,gun,,,"[a503fc]Vibranium Pistol"
+gunpistolLLDesc,Items,gun,,,"LUCKY PISTOL. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+gunSMGLL,Items,gun,,,"[a503fc]Vibranium SMG"
+gunSMGLLDesc,Items,gun,,,"can clear small crowds. These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."
+gungoldenvultureLL,Items,gun,,,"[a503fc]Vibranium Golden Vulture"
+gungoldenvultureLLDesc,Items,gun,,,"its loud but gives a kick! These items are repaired with a Vibranium Repair Kit. x1.25FIRE RATE. 2xMAGAZINE SIZE 2xDEGREDATION AMOUNT FROM VANILLA."

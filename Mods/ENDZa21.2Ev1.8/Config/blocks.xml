@@ -5,26 +5,123 @@
 30000</set>
 <set xpath="/blocks/block[@name='bladeTrap']/property[@name='Material']/@value">
 MmoonrockLL</set>
-		
+
+<!--WORKSTATIONS AND WORKSTATION RESPAWNERS-->		
 <!-- Forge -->
 <append xpath="/blocks/block[@name='cntForgeWorkstationBroken']" >
 	<drop event="Destroy" name="forge" prob=".20" count="1" tag="salvageHarvest" tool_category="Disassemble"/>
 	<drop event="Destroy" name="toolBellows" prob=".20" count="1" tag="salvageHarvest" tool_category="Disassemble"/>
-	<drop event="Destroy" name="toolForgeCrucible" prob=".20" count="1" tag="salvageHarvest" tool_category="Disassemble"/>
+	<drop event="Destroy" name="toolForgeCrucible" prob=".10" count="1" tag="salvageHarvest" tool_category="Disassemble"/>
 	<drop event="Destroy" name="toolAnvil" prob=".20" count="1" tag="salvageHarvest" tool_category="Disassemble"/>
 </append>
+
+<append xpath="/blocks/block[@name='cntForgeWorkstationBroken']"><property name="DowngradeBlock" value="forgeRespawner"/></append>
+<append xpath="/blocks">
+<block name="forgeRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/respawner1.unity3d?respawner.Prefab"/>		
+	<property name="Collide" value="melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="cntForgeWorkstationBroken" />
+	<property name="PlantGrowing.GrowthRate" value="120" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+
 <!-- Workbench -->
 <append xpath="/blocks/block[@name='cntCollapsedWorkbench']" >
 	<drop event="Destroy" name="workbench" prob=".20" count="1" tag="salvageHarvest" tool_category="Disassemble"/>
 </append>
+
+<append xpath="/blocks/block[@name='cntCollapsedWorkbench']"><property name="DowngradeBlock" value="workbenchRespawner"/></append>
+<append xpath="/blocks">
+<block name="workbenchRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/respawner1.unity3d?respawner.Prefab"/>		
+	<property name="Collide" value="melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="cntCollapsedWorkbench" />
+	<property name="PlantGrowing.GrowthRate" value="120" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+
 <!-- Cememt Mixer -->
 <append xpath="/blocks/block[@name='cntCollapsedCementMixer']" >
-	<drop event="Destroy" name="cementMixer" prob=".20" count="1" tag="salvageHarvest" tool_category="Disassemble"/>
+	<drop event="Destroy" name="cementMixer" prob=".15" count="1" tag="salvageHarvest" tool_category="Disassemble"/>
 </append>
+
+<append xpath="/blocks/block[@name='cntCollapsedCementMixer']"><property name="DowngradeBlock" value="CmixerRespawner"/></append>
+<append xpath="/blocks">
+<block name="CmixerRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/respawner1.unity3d?respawner.Prefab"/>		
+	<property name="Collide" value="melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="cntCollapsedCementMixer" />
+	<property name="PlantGrowing.GrowthRate" value="120" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+
 <!-- Chem Station -->
 <append xpath="/blocks/block[@name='cntCollapsedChemistryStation']" >
-	<drop event="Destroy" name="chemistryStation" prob=".20" count="1" tag="salvageHarvest" tool_category="Disassemble"/>
+	<drop event="Destroy" name="chemistryStation" prob=".15" count="1" tag="salvageHarvest" tool_category="Disassemble"/>
 </append>
+
+<append xpath="/blocks/block[@name='cntCollapsedChemistryStation']"><property name="DowngradeBlock" value="CStationRespawner"/></append>
+<append xpath="/blocks">
+<block name="CStationRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/respawner1.unity3d?respawner.Prefab"/>		
+	<property name="Collide" value="melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="cntCollapsedChemistryStation" />
+	<property name="PlantGrowing.GrowthRate" value="120" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+<!--END OF WORKSTATIONS AND WORKSTATION RESPAWNERS-->
 
 <append xpath="/blocks/block[@name='frameShapes']">						<property name="Stacknumber" value="2500"/></append><!--changes shape stack size-->
 <append xpath="/blocks/block[@name='woodShapes']">						<property name="Stacknumber" value="2500"/></append><!--changes shape stack size-->
@@ -361,117 +458,6 @@ MmoonrockLL</set>
 </block>
 </append>
 
-<!--insertBefore xpath="/blocks/block[@name='awningShapes']">
-<block name="moonrockShapes" shapes="All">
-	<property name="DescriptionKey" value="moonrockMasterLLDesc"/>
-	<property name="DisplayType" value="blockHardened"/>
-	<property name="Material" value="Mmoonrock_shapes"/>
-	<property name="MaxDamage" value="15000"/>
-	<property name="Shape" value="New"/>
-	<property name="Texture" value="537"/>
-	<property name="UiBackgroundTexture" value="537"/>
-	<property name="EconomicValue" value="320"/>
-	<property name="EconomicBundleSize" value="20"/>
-	<property name="Stacknumber" value="2500"/>
-	<property class="RepairItems">
-		<property name="resourcemoonmixLL" value="8"/>
-	</property>
-	<drop event="Harvest" name="resourcemoonmixLL" count="3" tag="allHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="vibeShapes"/>
-		<property name="Item" value="resourceforgedvibeLL"/>
-		<property name="ItemCount" value="10"/>
-		<property name="UpgradeHitCount" value="4"/>
-	</property>
-	<property name="UpgradeSound" value="place_block_concrete"/>
-	<property name="SortOrder1" value="S040"/>
-	<property name="Group" value="Building,advBuilding"/>
-	<property name="FilterTags" value="MC_Shapes"/>
-</block>
-			
-<block name="vibeShapes" shapes="All">
-	<property name="DescriptionKey" value="moonrockMasterLLDesc"/>
-	<property name="DisplayType" value="blockHardened"/>
-	<property name="Material" value="Mvibe_shapes"/>
-	<property name="MaxDamage" value="30000"/>
-	<property name="Shape" value="New"/>
-	<property name="Texture" value="543"/>
-	<property name="UiBackgroundTexture" value="543"/>
-	<property name="EconomicValue" value="320"/>
-	<property name="EconomicBundleSize" value="20"/>
-	<property name="Stacknumber" value="2500"/>
-	<property class="RepairItems">
-		<property name="resourceforgedvibeLL" value="8"/>
-	</property>
-	<drop event="Harvest" name="resourceforgedvibeLL" count="3" tag="allHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="SortOrder1" value="S040"/>
-	<property name="Group" value="Building,advBuilding"/>
-	<property name="FilterTags" value="MC_Shapes"/>
-</block>
-</insertBefore-->
-
-<!--insertBefore xpath="/blocks/block[@name='stoneNoUpgradeMaster']">
-<block name="moonrockLLNoUpgradeMaster">
-	<property name="CreativeMode" value="None"/>
-	<property name="DescriptionKey" value="concreteNoUpgradeGroupDesc"/>
-	<property name="DisplayType" value="blockHardened"/>
-	<property name="Material" value="MmoonrockLL"/>
-	<property name="Texture" value="8"/>
-	<property name="EconomicValue" value="50"/>
-	<property name="EconomicBundleSize" value="20"/>
-	<property class="RepairItems">
-		<property name="resourcemoonmixLL" value="8"/>
-	</property>
-	<drop event="Harvest" name="resourceRockSmall" count="25" tag="allHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="SortOrder1" value="M070"/>
-	<property name="SortOrder2" value="0000"/>
-	<property name="Group" value="Building,advBuilding"/>
-	<property name="FilterTags" value="MC_building"/>
-</block>
-
-<block name="moonrockLLMaster">
-	<property name="Extends" value="moonrockLLNoUpgradeMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="DescriptionKey" value="concreteGroupDesc"/>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="moonrockLLMaster"/>
-		<property name="Item" value="resourceForgedSteel"/>
-		<property name="ItemCount" value="10"/>
-		<property name="UpgradeHitCount" value="4"/>
-	</property>
-	<property name="UpgradeSound" value="place_block_concrete"/>
-	<property name="SortOrder1" value="M080"/>
-	<property name="SortOrder2" value="0000"/>
-</block>
-
-<block name="vibeLLMaster">
-	<property name="CreativeMode" value="None"/>
-	<property name="DescriptionKey" value="steelBlockGroupDesc"/>
-	<property name="Material" value="MvibeLL"/>
-	<property name="DisplayType" value="blockHardened"/>
-	<property name="Texture" value="355,355,356,356,356,356"/>
-	<property name="EconomicValue" value="160"/>
-	<property name="PassThroughDamage" value="true"/>
-	<property class="RepairItems">
-		<property name="resourceforgedvibeLL" value="8"/>
-	</property>
-	<property name="UpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="resourceforgedvibeLL" count="15" tag="allHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="SortOrder1" value="M090"/>
-	<property name="SortOrder2" value="0000"/>
-	<property name="Group" value="Building,advBuilding"/>
-	<property name="FilterTags" value="MC_building"/>
-</block>
-</insertBefore-->
-
 <!--IMPROVED GENERATOR BANK-->
 <append xpath="/blocks">
 <block name="generatorbankLL">
@@ -515,135 +501,6 @@ MmoonrockLL</set>
 	<property name="Group" value="Science,TCScience"/>
 	<property name="Tags" value="electricianSkill"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
-</block>
-</append>
-
-<!--working workstations-->
-<append xpath="/blocks">
-<block name="cntWallOvenWorking">
-	<property name="Class" value="Workstation"/>
-	<property name="CustomIcon" value="cntWallOven"/>
-	<property name="Material" value="Mmetal"/>
-	<property name="Texture" value="346,345,341,345,262,345"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
-	<property name="DisplayType" value="blockMulti"/>
-	<property name="HeatMapStrength" value="4"/>
-	<property name="HeatMapTime" value="4000"/>
-	<property name="HeatMapFrequency" value="1000"/>
-	<property name="ActiveRadiusEffects" value="buffCampfireAOE(2)"/>
-	<property class="Workstation">
-	<property name="Modules" value="tools,output,fuel,input"/>
-	<property name="CraftingAreaRecipes" value="campfire" />
-	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
-	<property name="CraftActionName" value="lblContextActionCook"/>
-	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
-	<property name="OpenSound" value="campfire_open"/>
-	<property name="CloseSound" value="campfire_close"/>
-	<property name="ParticleName" value="campfire"/>
-	<property name="ParticleOffset" value="0.5,0,0.5"/>
-	<property name="CraftSound" value="campfire_cook_click"/>
-	<property name="CraftCompleteSound" value="campfire_complete_item"/>
-	<property name="WorkstationJournalTip" value="heatMapTip"/>
-	<property name="Stacknumber" value="1"/>
-	<property class="RepairItems">
-	<property name="resourceScrapIron" value="10"/>
-</property>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,10" prob="1"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
-	<property name="DescriptionKey" value="campfireDesc"/>
-	<property name="SellableToTrader" value="false"/>
-</block>
-		
-<block name="cntCharcoalGrillWorking">
-	<property name="Class" value="Campfire"/>
-	<property name="CustomIcon" value="cntCharcoalGrillClosed"/>
-	<property name="Material" value="Mmetal"/>
-	<property name="Model" value="#Entities/LootContainers?Grill_Simple_ClosedPrefab.prefab"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-	<property name="ImposterExchange" value="imposterBlock" param1="144"/>
-	<property name="HeatMapStrength" value="4"/>
-	<property name="HeatMapTime" value="5000"/>
-	<property name="HeatMapFrequency" value="1000"/>
-	<property name="Stacknumber" value="1"/>
-	<property name="ActiveRadiusEffects" value="buffCampfireAOE(2)"/>
-	<property class="Workstation">
-	<property name="Modules" value="tools,output,fuel,input"/>
-	<property name="CraftingAreaRecipes" value="campfire" />
-	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
-	<property name="CraftActionName" value="lblContextActionCook"/>
-	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
-	<property name="OpenSound" value="campfire_open"/>
-	<property name="CloseSound" value="campfire_close"/>
-	<property name="ParticleName" value="fire_small"/>
-	<property name="ParticleOffset" value="0.5,0.7,0.5"/>
-	<property name="CraftSound" value="campfire_cook_click"/>
-	<property name="CraftCompleteSound" value="campfire_complete_item"/>
-	<property name="WorkstationJournalTip" value="heatMapTip"/>
-	<property class="RepairItems">
-	<property name="resourceScrapIron" value="10"/>
-</property>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="toolCookingGrill" count="0,1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,10" prob="1"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
-	<property name="DescriptionKey" value="campfireDesc"/>
-	<property name="SellableToTrader" value="false"/>
-	<property name="StabilitySupport" value="false"/>
-</block>
-		
-<block name="cntGasGrillWorking">
-	<property name="Class" value="Workstation"/>
-	<property name="CustomIcon" value="cntGasGrillClosed"/>
-	<property name="Material" value="Mmetal"/>
-	<property name="Model" value="#Entities/LootContainers?GasGrill_FullPrefab.prefab"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="HeatMapStrength" value="4"/>
-	<property name="HeatMapTime" value="5000"/>
-	<property name="HeatMapFrequency" value="1000"/>
-	<property name="Stacknumber" value="1"/>
-	<property name="ActiveRadiusEffects" value="buffCampfireAOE(2)"/>
-	<property class="Workstation">
-	<property name="Modules" value="tools,output,fuel,input"/>
-	<property name="CraftingAreaRecipes" value="campfire" />
-	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
-	<property name="CraftActionName" value="lblContextActionCook"/>
-	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
-	<property name="OpenSound" value="campfire_open"/>
-	<property name="CloseSound" value="campfire_close"/>
-	<property name="ParticleName" value="fire_small"/>
-	<property name="ParticleOffset" value="0.5,0.6,0.5"/>
-	<property name="CraftSound" value="campfire_cook_click"/>
-	<property name="CraftCompleteSound" value="campfire_complete_item"/>
-	<property name="WorkstationJournalTip" value="heatMapTip"/>
-	<property class="RepairItems">
-	<property name="resourceScrapIron" value="10"/>
-</property>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="toolCookingGrill" count="0,1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,10" prob="1"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
-	<property name="DescriptionKey" value="campfireDesc"/>
-	<property name="SellableToTrader" value="false"/>
-	<property name="StabilitySupport" value="false"/>
 </block>
 </append>
 	

@@ -34,6 +34,8 @@
 	npcEndZsurvivorLL no weapons
 	npcEndZsurvivor2LL no weapons
 	npcEndZsurvivor3LL no weapons
+	npcEndZsurvivor4LL no weapons
+	npcEndZsurvivor5LL no weapons
 	
 	npcEndZsurvivorpistolLL pistol
 	
@@ -104,6 +106,8 @@
 	npcEndZsurvivorLL
 	npcEndZsurvivor2LL
 	npcEndZsurvivor3LL
+	npcEndZsurvivor4LL
+	npcEndZsurvivor5LL
 </entitygroup>	
 <entitygroup name="npcEndZsurvivorTransformation">
 	npcEndZsurvivorTransformationLL
@@ -114,6 +118,15 @@
 <entitygroup name="npcEndZsurvivorTransformation3">
 	npcEndZsurvivorTransformation3LL
 </entitygroup>
+<entitygroup name="npcEndZsurvivorTransformation4">
+	npcEndZsurvivorTransformation4LL
+</entitygroup>
+<entitygroup name="npcEndZsurvivorTransformation5">
+	npcEndZsurvivorTransformation5LL
+</entitygroup>
+<entitygroup name="zombieminotaurbossTransformation1">
+	zombieminotaurboss
+</entitygroup>
 </append>
 <!--END OF NPC TRANSFORM FOR ENDZ NPC'S-->
 
@@ -122,6 +135,8 @@
 	npcEndZsurvivorLL, .25
 	npcEndZsurvivor2LL, .25
 	npcEndZsurvivor3LL, .25
+	npcEndZsurvivor4LL, .25
+	npcEndZsurvivor5LL, .25
 	npcEndZsurvivorpistolLL, .25
 	endzbuffalo
 	EndZsheepLL 
@@ -134,6 +149,8 @@
 	npcEndZsurvivorLL, .25
 	npcEndZsurvivor2LL, .25
 	npcEndZsurvivor3LL, .25
+	npcEndZsurvivor4LL, .25
+	npcEndZsurvivor5LL, .25
 	npcEndZsurvivorpistolLL, .25
 	endzbuffalo
 	EndZsheepLL 
@@ -147,6 +164,8 @@
 	npcEndZsurvivorLL, .25
 	npcEndZsurvivor2LL, .25
 	npcEndZsurvivor3LL, .25
+	npcEndZsurvivor4LL, .25
+	npcEndZsurvivor5LL, .25
 	npcEndZsurvivorpistolLL, .25
 	endzbuffalo
 	EndZsheepLL 
@@ -159,6 +178,8 @@
 	npcEndZsurvivorLL, .25
 	npcEndZsurvivor2LL, .25
 	npcEndZsurvivor3LL, .25
+	npcEndZsurvivor4LL, .25
+	npcEndZsurvivor5LL, .25
 	npcEndZsurvivorpistolLL, .25
 	endzbuffalo
 	EndZsheepLL 
@@ -178,6 +199,8 @@
 	npcEndZsurvivorLL, .25
 	npcEndZsurvivor2LL, .25
 	npcEndZsurvivor3LL, .25
+	npcEndZsurvivor4LL, .25
+	npcEndZsurvivor5LL, .25
 	npcEndZsurvivorpistolLL, .25
 	endzbuffalo
 	EndZsheepLL 
@@ -571,6 +594,7 @@ or @name='sleeperHordeStageGS5778'
 	zombieWguardianLL, .25
 	EndZgrootradiatedLL, .25
 	zombiebitchQueen, .25
+	zombieminotaurboss, .05
 	npcEndZsurvivorpistolLL, .25
 </csv>
 <!--END OF SLEEPER HORDE STAGES-->
@@ -985,6 +1009,7 @@ or @name='scoutHordeStageGS5778']/text()" delim="\n" op="add">
 	zombieWguardianLL, .4
 	EndZgrootradiatedLL, .4
 	zombiebitchQueen, .2
+	zombieminotaurboss, .05
 </csv>
 <!--END OF SCOUT HORDE STAGES-->
 
@@ -1344,6 +1369,7 @@ or @name='feralHordeStageGS4086']/text()" delim="\n" op="add">
 	zombieWguardianLL, .4
 	EndZgrootradiatedLL, .4
 	zombiebitchQueen, .15
+	zombieminotaurboss, .05
 </csv>
 <!--FERAL HORDE STAGE(HORDE NIGHTS)-->
 
@@ -1530,6 +1556,7 @@ or @name='badassOnlyHordeStageGS2026']/text()" delim="\n" op="add">
 	zombieWguardianLL, .35
 	EndZgrootradiatedLL, .35
 	zombiebitchQueen, .15
+	zombieminotaurboss, .05
 </csv>
 <!--END OF BADASS ONLY HORDE STAGE-->
 
@@ -1623,6 +1650,7 @@ or @name='policeCarHordeStageGS2026']/text()" delim="\n" op="add">
 	zombieWguardianLL, .05
 	EndZgrootradiatedLL, .05
 	zombiebitchQueen, .15
+	zombieminotaurboss, .02
 </csv>
 <!--END OF POLICE CAR HORDE STAGES-->
 
@@ -2847,6 +2875,7 @@ or @name='defenseHordeStageGS5778']/text()" delim="\n" op="add">
 	zombieWguardianLL, .025
 	EndZgrootradiatedLL, .025
 	zombiebitchQueen, .015
+	zombieminotaurboss, .005
 </csv>
 <!--DEFENSE HORDE STAGES-->
 </configs>

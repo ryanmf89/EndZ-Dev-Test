@@ -29,11 +29,26 @@
 </item_display_info>
 </append>
 
-<!--STEEL AMMO-->
+<!--VIBE AMMO-->
 <append xpath="/ui_display_info/item_display">
-<item_display_info display_type="ammoBulletSteel" display_group="groupAmmo">
+<item_display_info display_type="ammoBulletvibe" display_group="groupAmmo">
 	<display_entry name="EntityDamage" title_key="statEntityDamageRanged"/>
 	<display_entry name="BlockDamage" title_key="statBlockDamage"/>
+</item_display_info>
+
+<item_display_info display_type="ammoArrowAPvibe" display_group="groupAmmo">
+	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkArchery,admin"/>
+	<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkArchery,admin"/>
+	<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkArchery,admin"/>
+	<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkArchery,admin"/>
+</item_display_info>
+
+<item_display_info display_type="ammoShotgunvibe" display_group="groupAmmo">
+	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageShotgun" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="RoundRayCount" title_key="statRoundRayCount" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<!--<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>-->
+	<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 </item_display_info>
 </append>
 

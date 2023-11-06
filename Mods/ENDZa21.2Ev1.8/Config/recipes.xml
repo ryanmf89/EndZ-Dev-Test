@@ -650,9 +650,9 @@
 </recipe>
 </append>
 
-<!--STEEL AMMO-->
+<!--VIBE AMMO-->
 <append xpath="/recipes">
-<recipe name="resourceBulletCasingvibe" count="5" craft_time="1" craft_area="forge" tags="perkAdvancedEngineering">
+<recipe name="resourceBulletCasingvibe" count="2" craft_time="1" craft_area="forge" tags="perkAdvancedEngineering">
 	<ingredient name="resourcescrapvibeLL" count="5"/>
 	<ingredient name="resourceClayLump" count="5"/>
 <effect_group>
@@ -660,24 +660,43 @@
 </effect_group>
 </recipe> 
 		
-<recipe name="ammo9mmBulletvibe" count="5" craft_time="2" craft_area="workbench" tags="learnable,ammo9mmBulletvibe,workbenchCrafting">
+<recipe name="ammo9mmBulletvibe" count="2" craft_time="2" craft_area="workbench" tags="learnable,ammo9mmBulletvibe,workbenchCrafting,vibeammo">
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="5"/>
 	<ingredient name="resourceBulletCasingvibe" count="1"/>
 </recipe>
 
-<recipe name="ammo44MagnumBulletvibe" count="5" craft_time="2" craft_area="workbench" tags="learnable,ammo44MagnumBulletvibe,workbenchCrafting">
+<recipe name="ammo44MagnumBulletvibe" count="2" craft_time="2" craft_area="workbench" tags="learnable,ammo44MagnumBulletvibe,workbenchCrafting,vibeammo">
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="5"/>
 	<ingredient name="resourceBulletCasingvibe" count="1"/>
 </recipe>
 		
-<recipe name="ammo762mmBulletvibe" count="5" craft_time="2" craft_area="workbench" tags="learnable,ammo762mmBulletvibe,workbenchCrafting">
+<recipe name="ammo762mmBulletvibe" count="2" craft_time="2" craft_area="workbench" tags="learnable,ammo762mmBulletvibe,workbenchCrafting,vibeammo">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceBulletCasingvibe" count="1"/>
+</recipe>
+
+<recipe name="ammoShotgunShellvibe" count="2" craft_time="2" craft_area="workbench" tags="learnable,ammoShotgunShellvibe,workbenchCrafting,vibeammo">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceBulletCasingvibe" count="1"/>
+</recipe>
+
+<recipe name="ammoArrowSteelAPvibe" count="2" craft_time="2" craft_area="workbench" tags="learnable,ammoArrowSteelAPvibe,workbenchCrafting,vibeammo">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceBulletCasingvibe" count="1"/>
+</recipe>
+
+<recipe name="ammoCrossbowBoltSteelAPvibe" count="2" craft_time="2" craft_area="workbench" tags="learnable,ammoArrowSteelAPvibe,workbenchCrafting,vibeammo">
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="5"/>
 	<ingredient name="resourceBulletCasingvibe" count="1"/>
 </recipe>
 </append>
+<!--VIBE AMMO-->
 
 <!--MAKE WATER CRAFTABLE FROM SNOWBALLS-->
 <append xpath="/recipes">
